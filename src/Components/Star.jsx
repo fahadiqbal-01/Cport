@@ -1,22 +1,41 @@
 import { _round } from "gsap/gsap-core";
 import { easeIn, easeInOut, easeOut } from "motion";
+import { useAnimation, useInView } from "motion/react";
 import * as motion from "motion/react-client";
-import React from "react";
+import React, { useEffect, useRef } from "react";
 
 const Star = ({ className, innerFill, outerFill }) => {
+  const ref = useRef(null);
+  const isINView = useInView(ref, { once: true });
+  const mainControls = useAnimation();
+
+  useEffect(() => {
+    if (isINView) {
+      mainControls.start("visible");
+    }
+  }, [isINView]);
+
   return (
     <>
       <div className={`w-[700px] pointer-events-none ${className} `}>
         <motion.svg
-          className=" p-0 m-0"
-          style={_round}
-          whileInView={{ rotate: 360 }}
+          ref={ref}
+          variants={{
+            hidden: { rotate: 0 },
+            visible: { rotate: 360 },
+          }}
+          initial="hidden"
+          animate={mainControls}
           whileHover={{ rotate: 150 }}
-          transition={{ duration: 0.8, ease: easeInOut }}
+          transition={{
+            duration: 1,
+            ease: easeInOut,
+          }}
+          className=" p-0 m-0"
           viewBox="0 0 200 200"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <g fill={outerFill} className=" pointer-events-auto " >
+          <g fill={outerFill} className=" pointer-events-auto ">
             <path
               className=" "
               d="M100,50 
