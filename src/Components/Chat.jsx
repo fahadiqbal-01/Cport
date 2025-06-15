@@ -1,9 +1,6 @@
 import React, { useState } from "react";
 import * as motion from "motion/react-client";
 import { easeInOut } from "motion";
-import About from "../Pages/About";
-import HomeMain from "../subPages/HomeMain";
-import NavBar from "./NavBar";
 
 const Chat = () => {
 

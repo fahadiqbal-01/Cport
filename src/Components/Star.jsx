@@ -5,27 +5,12 @@ import * as motion from "motion/react-client";
 import React, { useEffect, useRef } from "react";
 
 const Star = ({ className, innerFill, outerFill }) => {
-  const ref = useRef(null);
-  const isINView = useInView(ref, { once: true });
-  const mainControls = useAnimation();
-
-  useEffect(() => {
-    if (isINView) {
-      mainControls.start("visible");
-    }
-  }, [isINView]);
-
   return (
     <>
       <div className={`w-[700px] pointer-events-none ${className} `}>
         <motion.svg
-          ref={ref}
-          variants={{
-            hidden: { rotate: 0 },
-            visible: { rotate: 360 },
-          }}
-          initial="hidden"
-          animate={mainControls}
+          initial={{ rotate: 0 }}
+          whileInView={{ rotate: 360 }}
           whileHover={{ rotate: 150 }}
           transition={{
             duration: 1,

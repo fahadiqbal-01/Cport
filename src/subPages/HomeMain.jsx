@@ -10,7 +10,6 @@ import { _round } from "gsap/gsap-core";
 import HSlider from "../Components/HSlider";
 
 const HomeMain = () => {
-  
   return (
     <section>
       <Container className=" grid grid-cols-3  ">
