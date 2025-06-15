@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import * as motion from "motion/react-client";
 import { Link, Navigate } from "react-router-dom";
-import { easeOut } from "motion";
+import { easeIn, easeInOut, easeOut } from "motion";
 
 const NavBar = () => {
   return (
@@ -14,10 +14,10 @@ const NavBar = () => {
               whileInView={{ opacity: 100, x: 0 }}
               transition={{
                 duration: 1,
-                ease: easeOut,
+                ease: easeInOut,
               }}
               className=" drop-shadow-2xl px-[10px] font-thin text-[16px] text-black cursor-pointer select-none font-GeneralSans z-50
-              after:content-[''] after:h-[30px] after:w-[3px] after:bg-yellow-500 after:absolute after:left-0 after:bottom-[-3px] after:duration-500
+              after:content-[''] after:h-[30px] after:w-[3px] after:bg-yellow-500 after:absolute after:left-0 after:bottom-[-3px] after:duration-300
                after:ease-out after:-z-50 hover:after:w-[100%]  relative"
             >
               Home
@@ -33,10 +33,10 @@ const NavBar = () => {
               whileInView={{ opacity: 100, x: 0 }}
               transition={{
                 duration: 1,
-                ease: easeOut,
+                ease: easeInOut,
               }}
               className=" drop-shadow-2xl px-[10px] font-thin text-[16px] text-black cursor-pointer select-none font-GeneralSans z-50
-              after:content-[''] after:h-[30px] after:w-[3px] after:bg-yellow-500 after:absolute after:right-0 after:bottom-[-3px] after:duration-500
+              after:content-[''] after:h-[30px] after:w-[3px] after:bg-yellow-500 after:absolute after:right-0 after:bottom-[-3px] after:duration-300
                after:ease-out after:-z-50 hover:after:w-[100%]  relative"
             >
               Explore

@@ -4,7 +4,7 @@ import HomeMain from "../subPages/HomeMain";
 
 const Home = () => {
   return (
-    <section>
+    <section >
       <Container>
         <HomeMain />
       </Container>
