@@ -29,7 +29,7 @@ const Star = ({ className, innerFill, outerFill }) => {
           whileHover={{ rotate: 150 }}
           transition={{
             duration: 1,
-            ease: easeInOut,
+            ease: easeOut,
           }}
           className=" p-0 m-0"
           viewBox="0 0 200 200"

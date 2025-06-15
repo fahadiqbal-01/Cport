@@ -24,13 +24,13 @@ const NavBar = () => {
               ref={ref}
               variants={{
                 hidden: { opacity: 0, x: -100 },
-                visible: { opacity: 1, x: 0 },
+                visible: { opacity: 100, x: 0 },
               }}
               initial="hidden"
               animate={mainControls}
               transition={{
-                duration: 0.5,
-                easeInOut,
+                duration: 1,
+                easeOut,
               }}
               className=" drop-shadow-2xl px-[10px] font-thin text-[16px] text-black cursor-pointer select-none font-GeneralSans z-50
               after:content-[''] after:h-[30px] after:w-[3px] after:bg-yellow-500 after:absolute after:left-0 after:bottom-[-3px] after:duration-500
@@ -48,13 +48,13 @@ const NavBar = () => {
               ref={ref}
               variants={{
                 hidden: { opacity: 0, x: 100 },
-                visible: { opacity: 1, x: 0 },
+                visible: { opacity: 100, x: 0 },
               }}
               initial="hidden"
               animate={mainControls}
               transition={{
-                duration: 0.5,
-                easeInOut,
+                duration: 1,
+                easeOut,
               }}
               className=" drop-shadow-2xl px-[10px] font-thin text-[16px] text-black cursor-pointer select-none font-GeneralSans z-50
               after:content-[''] after:h-[30px] after:w-[3px] after:bg-yellow-500 after:absolute after:right-0 after:bottom-[-3px] after:duration-500
