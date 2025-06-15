@@ -79,5 +79,5 @@ body {
   margin: 0;
   width: full;
   background: #fafcf8;
-  overflow: hidden;
+  overflow-x: hidden;
 }

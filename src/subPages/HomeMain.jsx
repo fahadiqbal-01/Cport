@@ -6,9 +6,8 @@ import { easeInOut, easeOut, scale } from "motion";
 import Chat from "../Components/Chat";
 import { SiGnuicecat } from "react-icons/si";
 import { Link } from "react-router-dom";
-import { BsSignpost2 } from "react-icons/bs";
-import { Box } from "ogl";
 import { _round } from "gsap/gsap-core";
+import HSlider from "../Components/HSlider";
 
 const HomeMain = () => {
   return (
@@ -23,12 +22,11 @@ const HomeMain = () => {
         </div>
 
         <div className=" z-50 ">
-
           <motion.h2
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 100 }}
             transition={{ duration: 1, ease: easeInOut }}
-            className=" font-GeneralSans text-black text-[16px] text-center mt-[140px] "
+            className=" font-GeneralSans text-black text-[16px] text-center mt-[110px] "
           >
             Hi, I'm Fahad
           </motion.h2>
@@ -36,7 +34,7 @@ const HomeMain = () => {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 100 }}
             transition={{ duration: 1, ease: easeInOut }}
-            className=" text-[68px] font-cabinet text-center text-black leading-[65px] mt-[10px] "
+            className=" text-[68px] font-cabinet text-center text-black leading-[65px] mt-[20px] "
           >
             Creative mind you can trust for clarity, style, and purpose
           </motion.h1>
@@ -57,7 +55,7 @@ const HomeMain = () => {
           <div className=" mt-[90px] ">
             <motion.div
               initial={{ opacity: 0 }}
-             whileInView={{ opacity:100}}
+              whileInView={{ opacity: 100 }}
               transition={{ duration: 0.8, ease: easeInOut }}
               className=" p-0 m-0 pointer-events-none "
             >
@@ -72,6 +70,7 @@ const HomeMain = () => {
             >
               Step into my digital home
             </motion.h2>
+            <div></div>
           </div>
         </div>
 
@@ -83,6 +82,7 @@ const HomeMain = () => {
           />
         </div>
       </Container>
+      <HSlider />
     </section>
   );
 };
