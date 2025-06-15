@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import Star from "../Components/Star";
 import Container from "../Components/Container";
 import * as motion from "motion/react-client";
@@ -7,12 +7,23 @@ import Chat from "../Components/Chat";
 import { SiGnuicecat } from "react-icons/si";
 import { Link } from "react-router-dom";
 import { _round } from "gsap/gsap-core";
+import { useAnimation, useInView } from "motion/react";
 
 const HomeMain = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+  const mainControls = useAnimation();
+
+  useEffect(() => {
+    if (isInView) {
+      mainControls.start("visible");
+    }
+  }, [isInView]);
+
   return (
     <section className=" h-[2000px] ">
       <Container className=" grid grid-cols-3 ">
-        <div className=" relative" >
+        <div className=" relative">
           <Star
             className=" absolute top-0 right-0 "
             innerFill="#fafcf8"
@@ -22,24 +33,39 @@ const HomeMain = () => {
 
         <div className=" z-50 ">
           <motion.h2
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 100 }}
+            ref={ref}
+            variants={{
+              hidden: { opacity: 0 },
+              visible: { opacity: 100 },
+            }}
+            initial="hidden"
+            animate={mainControls}
             transition={{ duration: 1.4, ease: easeInOut }}
             className=" font-GeneralSans text-black text-[16px] text-center mt-[110px] "
           >
             Hi, I'm Fahad
           </motion.h2>
           <motion.h1
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 100 }}
+            ref={ref}
+            variants={{
+              hidden: { opacity: 0 },
+              visible: { opacity: 100 },
+            }}
+            initial="hidden"
+            animate={mainControls}
             transition={{ duration: 1.4, ease: easeInOut }}
             className=" text-[68px] font-cabinet text-center text-black leading-[65px] mt-[20px] w-fit "
           >
             Creative mind you can trust for clarity, style, and purpose
           </motion.h1>
           <motion.p
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 100 }}
+            ref={ref}
+            variants={{
+              hidden: { opacity: 0 },
+              visible: { opacity: 100 },
+            }}
+            initial="hidden"
+            animate={mainControls}
             transition={{ duration: 1.4, ease: easeInOut }}
             className=" text-center font-GeneralSans text-[16px] text-black leading-7 mt-[25px] w-fit "
           >
@@ -53,8 +79,13 @@ const HomeMain = () => {
 
           <div className=" mt-[90px] ">
             <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 100 }}
+              ref={ref}
+              variants={{
+                hidden: { opacity: 0 },
+                visible: { opacity: 100 },
+              }}
+              initial="hidden"
+              animate={mainControls}
               transition={{ duration: 1.4, ease: easeInOut }}
               className=" p-0 m-0 pointer-events-none "
             >
@@ -62,8 +93,13 @@ const HomeMain = () => {
             </motion.div>
 
             <motion.h2
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 100 }}
+              ref={ref}
+              variants={{
+                hidden: { opacity: 0 },
+                visible: { opacity: 100 },
+              }}
+              initial="hidden"
+              animate={mainControls}
               transition={{ duration: 1.4, ease: easeInOut }}
               className=" font-cabinet text-[28px] font-medium text-center "
             >
@@ -73,7 +109,7 @@ const HomeMain = () => {
           </div>
         </div>
 
-        <div className=" relative" >
+        <div className=" relative">
           <Star
             className=" absolute top-0 left-0 "
             innerFill="#fafcf8"
@@ -81,9 +117,7 @@ const HomeMain = () => {
           />
         </div>
       </Container>
-      <div>
-        SLIDER
-      </div>
+      <div>SLIDER</div>
     </section>
   );
 };
