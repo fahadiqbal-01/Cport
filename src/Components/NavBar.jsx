@@ -13,7 +13,7 @@ const NavBar = () => {
               initial={{ opacity: 0, x: -100 }}
               whileInView={{ opacity: 100, x: 0 }}
               transition={{
-                duration: 1.5,
+                duration: 1,
                 ease: easeOut,
               }}
               className=" drop-shadow-2xl px-[10px] font-thin text-[16px] text-black cursor-pointer select-none font-GeneralSans z-50
@@ -32,7 +32,7 @@ const NavBar = () => {
               initial={{ opacity: 0, x: 100 }}
               whileInView={{ opacity: 100, x: 0 }}
               transition={{
-                duration: 1.5,
+                duration: 1,
                 ease: easeOut,
               }}
               className=" drop-shadow-2xl px-[10px] font-thin text-[16px] text-black cursor-pointer select-none font-GeneralSans z-50

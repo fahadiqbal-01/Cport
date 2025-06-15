@@ -7,7 +7,6 @@ import Chat from "../Components/Chat";
 import { SiGnuicecat } from "react-icons/si";
 import { Link } from "react-router-dom";
 import { _round } from "gsap/gsap-core";
-import HSlider from "../Components/HSlider";
 
 const HomeMain = () => {
   return (
@@ -82,7 +81,9 @@ const HomeMain = () => {
           />
         </div>
       </Container>
-      <HSlider />
+      <div>
+        SLIDER
+      </div>
     </section>
   );
 };
