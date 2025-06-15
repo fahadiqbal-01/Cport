@@ -1,6 +1,6 @@
 import React from "react";
 import Star from "../Components/Star";
-import Container from "../components/Container";
+import Container from "../Components/Container";
 import * as motion from "motion/react-client";
 import { easeInOut, easeOut, scale } from "motion";
 import Chat from "../Components/Chat";
