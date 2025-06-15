@@ -4,7 +4,7 @@ import "keen-slider/keen-slider.min.css";
 import { big, small } from "motion/react-client";
 
 const HSlider = () => {
-  const animation = { duration: 18000, easing: (t) => t };
+  const animation = { duration: 15000, easing: (t) => t };
 
   const [sliderRef] = useKeenSlider({
     initial: 0,
