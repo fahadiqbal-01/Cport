@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+@theme {
+  --color-Licorice: #23140c;
+  --color-Khaki: #d0ba98;
+  --color-DarkRed: #91040c;
+  --font-aktura: "Aktura", "sans-serif";
+  --font-rosaline: "Rosaline", "sans-serif";
+  --font-styro: "Styro", "sans-serif";
+  --font-melodrama: "Melodrama", "sans-serif";
+  --font-cabinet: "Cabinet", "sans-serif";
+  --font-kihim: "kihim", "sans-serif";
+  --font-kohinoor: "kohinoor", "sans-serif";
+  --font-Stardom: "Stardom", "sans-serif";
+  --font-Zodiak: "Zodiak", "sans-serif";
+  --font-Striper: "Striper", "sans-serif";
+  --font-GeneralSans: "GeneralSans", "sans-serif";
+}
+
+@font-face {
+  font-family: Aktura;
+  src: url(/src/assets/fonts/Aktura_Complete/Aktura_Complete/Fonts/OTF/Aktura-Regular.otf)
+    format("opentype");
+}
+@font-face {
+  font-family: Rosaline;
+  src: url(/src/assets/fonts/Rosaline_Complete/Rosaline_Complete/Fonts/OTF/Rosaline-Regular.otf)
+    format("opentype");
+}
+@font-face {
+  font-family: Styro;
+  src: url(/src/assets/fonts/Styro_Complete/Styro_Complete/Fonts/OTF/Styro-Black.otf)
+    format("opentype");
+}
+
+@font-face {
+  font-family: Styro;
+  src: url(/src/assets/fonts/Melodrama_Complete/Melodrama_Complete/Fonts/OTF/Melodrama-Bold.otf)
+    format("opentype");
+}
+@font-face {
+  font-family: Styro;
+  src: url(/src/assets/fonts/CabinetGrotesk_Complete/CabinetGrotesk_Complete/Fonts/OTF/CabinetGrotesk-Black.otf)
+    format("opentype");
+}
+@font-face {
+  font-family: kihim;
+  src: url(/src/assets/fonts/Kihim_Complete/Kihim_Complete/Fonts/OTF/Kihim-Regular.otf)
+    format("opentype");
+}
+@font-face {
+  font-family: kohinoor;
+  src: url(/src/assets/fonts/KohinoorZerone_Complete/KohinoorZerone_Complete/Fonts/OTF/KohinoorZerone-Zero.otf)
+    format("opentype");
+}
+@font-face {
+  font-family:Stardom ;
+  src: url(/src/assets/fonts/Stardom_Complete/Stardom_Complete/Fonts/OTF/Stardom-Regular.otf)
+    format("opentype");
+}
+@font-face {
+  font-family:Zodiak ;
+  src: url(/src/assets/fonts/Zodiak_Complete/Zodiak_Complete/Fonts/OTF/Zodiak-Bold.otf)
+    format("opentype");
+}
+@font-face {
+  font-family:Striper ;
+  src: url(/src/assets/fonts/Striper_Complete/Striper_Complete/Fonts/OTF/Striper-Regular.otf)
+    format("opentype");
+}
+@font-face {
+  font-family:GeneralSans ;
+  src: url(/src/assets/fonts/GeneralSans_Complete/GeneralSans_Complete/Fonts/OTF/GeneralSans-Medium.otf)
+    format("opentype");
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  width: full;
+  background: #fafcf8;
+  overflow: hidden;
+}
