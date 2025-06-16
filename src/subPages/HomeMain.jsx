@@ -8,8 +8,10 @@ import { SiGnuicecat } from "react-icons/si";
 import { Link } from "react-router-dom";
 import { _round } from "gsap/gsap-core";
 import { useAnimation, useInView } from "motion/react";
+import Slider from "../Components/Slider";
 
 const HomeMain = () => {
+
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
   const mainControls = useAnimation();
@@ -19,6 +21,7 @@ const HomeMain = () => {
       mainControls.start("visible");
     }
   }, [isInView]);
+
 
   return (
     <section className=" h-[2000px] ">
@@ -117,7 +120,9 @@ const HomeMain = () => {
           />
         </div>
       </Container>
-      <div>SLIDER</div>
+      <div>
+        <Slider />
+      </div>
     </section>
   );
 };

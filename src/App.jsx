@@ -1,13 +1,12 @@
 import { useState } from "react";
-import Home from "./Pages/Home";
 import RootLayout from "./Layouts/RootLayout";
-import About from "./Pages/About";
 import Explore from "./Pages/Explore";
 import {
   createBrowserRouter,
   createRoutesFromElements,
   Route,
   RouterProvider,
+  Routes,
 } from "react-router-dom";
 import HomeMain from "./subPages/HomeMain";
 import ChatWithME from "./Pages/ChatWithME";
