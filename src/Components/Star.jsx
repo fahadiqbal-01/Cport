@@ -31,10 +31,6 @@ const Star = ({ className, innerFill, outerFill }) => {
           whileHover={{ rotate: 150 }}
           whileTap={{ scale: 0.7 }}
           transition={{
-            animation: {
-              duration: 0.8,
-              ease: easeInOut,
-            },
             duration: 1,
             ease: easeOut,
           }}

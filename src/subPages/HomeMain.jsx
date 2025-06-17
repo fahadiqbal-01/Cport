@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react";
 import Star from "../Components/Star";
 import Container from "../Components/Container";
 import * as motion from "motion/react-client";
-import { easeInOut, easeOut, scale } from "motion";
+import { delay, easeIn, easeInOut, easeOut, scale } from "motion";
 import Chat from "../Components/Chat";
 import { SiGnuicecat } from "react-icons/si";
 import { Link } from "react-router-dom";
@@ -118,9 +118,24 @@ const HomeMain = () => {
           />
         </div>
       </Container>
-      <div>
+      <motion.div
+        ref={ref}
+        variants={{
+          hidden: { y: 20, opacity: 0 },
+          visible: { y: 0, opacity: 1 },
+        }}
+        initial="hidden"
+        animate={mainControls}
+        transition={{
+          animation: {
+            delay: 1,
+          },
+          duration: 1,
+          ease: easeIn,
+        }}
+      >
         <LeftSlide />
-      </div>
+      </motion.div>
     </section>
   );
 };
