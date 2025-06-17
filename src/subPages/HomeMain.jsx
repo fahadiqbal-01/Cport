@@ -41,7 +41,7 @@ const HomeMain = () => {
             }}
             initial="hidden"
             animate={mainControls}
-            transition={{delay:0.5, duration: 1.4, ease: easeInOut }}
+            transition={{ delay: 0.5, duration: 1.4, ease: easeInOut }}
             className=" font-GeneralSans text-black text-[16px] text-center mt-[110px] "
           >
             Hi, I'm Fahad
@@ -54,7 +54,7 @@ const HomeMain = () => {
             }}
             initial="hidden"
             animate={mainControls}
-            transition={{ duration: 1.4, ease: easeInOut }}
+            transition={{ delay: 0.5, duration: 1.4, ease: easeInOut }}
             className=" text-[68px] font-cabinet text-center text-black leading-[65px] mt-[20px] w-fit "
           >
             Creative mind you can trust for clarity, style, and purpose
@@ -67,7 +67,7 @@ const HomeMain = () => {
             }}
             initial="hidden"
             animate={mainControls}
-            transition={{ delay:0.5, duration: 1.4, ease: easeInOut }}
+            transition={{ delay: 0.5, duration: 1.4, ease: easeInOut }}
             className=" text-center font-GeneralSans text-[16px] text-black leading-7 mt-[25px] w-fit "
           >
             A collection of work shaped by creativity and thoughtful details,
@@ -87,7 +87,7 @@ const HomeMain = () => {
               }}
               initial="hidden"
               animate={mainControls}
-              transition={{delay:0.5, duration: 1.4, ease: easeInOut }}
+              transition={{ delay: 0.5, duration: 1.4, ease: easeInOut }}
               className=" p-0 m-0 pointer-events-none "
             >
               <SiGnuicecat className=" mx-auto text-[60px] pb-0 fill-black pointer-events-auto w-fit " />
@@ -101,7 +101,7 @@ const HomeMain = () => {
               }}
               initial="hidden"
               animate={mainControls}
-              transition={{ duration: 1.4, ease: easeInOut }}
+              transition={{ delay: 0.5, duration: 1.4, ease: easeInOut }}
               className=" font-cabinet text-[28px] font-medium text-center "
             >
               Step into my digital home

@@ -1,5 +1,5 @@
 import { _round } from "gsap/gsap-core";
-import { easeIn, easeInOut, easeOut } from "motion";
+import { delay, easeIn, easeInOut, easeOut } from "motion";
 import { useAnimation, useInView } from "motion/react";
 import * as motion from "motion/react-client";
 import React, { useEffect, useRef } from "react";
@@ -17,18 +17,25 @@ const Star = ({ className, innerFill, outerFill }) => {
 
   return (
     <>
-      <div className={`w-[700px] pointer-events-none select-none ${className} `}>
+      <div
+        className={`w-[700px] pointer-events-none select-none ${className} `}
+      >
         <motion.svg
           ref={ref}
           variants={{
-            hidden: { rotate: 0 },
-            visible: { rotate: 360 },
+            hidden: { opacity: 0, rotate: 0 },
+            visible: { opacity: 100, rotate: 360 },
           }}
           initial="hidden"
           animate={mainControls}
           whileHover={{ rotate: 150 }}
           whileTap={{ scale: 0.7 }}
           transition={{
+            animation: {
+              delay: 0.5,
+              duration: 1,
+              ease: easeIn,
+            },
             duration: 1,
             ease: easeOut,
           }}

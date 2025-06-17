@@ -30,6 +30,7 @@ const NavBar = () => {
               initial={`hidden`}
               animate={mainControls}
               transition={{
+                delay: 0.5,
                 duration: 1,
                 ease: easeOut,
               }}
@@ -42,18 +43,20 @@ const NavBar = () => {
           </Link>
 
           <motion.li
-             ref={ref}
-              variants={{
-                hidden: { y: -100 },
-                visible: { y: 0 },
-              }}
-              initial={`hidden`}
-              animate={mainControls}
-              transition={{
-                duration: 1,
-                ease: easeOut,
-              }}
-           className=" inline-block drop-shadow-2xl ml-[10px] text-[30px] font-aktura cursor-default select-none text-center leading-[30px] ">
+            ref={ref}
+            variants={{
+              hidden: { y: -100 },
+              visible: { y: 0 },
+            }}
+            initial={`hidden`}
+            animate={mainControls}
+            transition={{
+              delay: 0.5,
+              duration: 1,
+              ease: easeOut,
+            }}
+            className=" inline-block drop-shadow-2xl ml-[10px] text-[30px] font-aktura cursor-default select-none text-center leading-[30px] "
+          >
             FAHAD <br /> IQBAL
           </motion.li>
           <Link to="/explore">
@@ -66,6 +69,7 @@ const NavBar = () => {
               initial={`hidden`}
               animate={mainControls}
               transition={{
+                delay: 0.5,
                 duration: 1,
                 ease: easeOut,
               }}
