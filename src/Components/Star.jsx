@@ -23,8 +23,8 @@ const Star = ({ className, innerFill, outerFill }) => {
         <motion.svg
           ref={ref}
           variants={{
-            hidden: { rotate: 0 },
-            visible: { rotate: 360 },
+            hidden: { scale: 0, rotate: 0 },
+            visible: { scale: 1, rotate: 360 },
           }}
           initial="hidden"
           animate={mainControls}
@@ -33,6 +33,9 @@ const Star = ({ className, innerFill, outerFill }) => {
           viewport={{ once: true }}
           style={{ willChange: "transform" }}
           transition={{
+            whileHover: {
+              delay: 0,
+            },
             delay: 0.5,
             duration: 1,
             ease: easeOut,
