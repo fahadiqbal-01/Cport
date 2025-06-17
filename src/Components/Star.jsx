@@ -18,7 +18,7 @@ const Star = ({ className, innerFill, outerFill }) => {
   return (
     <>
       <div
-        className={`w-[800px] pointer-events-none select-none ${className} `}
+        className={`w-[700px] pointer-events-none select-none ${className} `}
       >
         <motion.svg
           ref={ref}
