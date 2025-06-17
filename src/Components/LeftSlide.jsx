@@ -5,7 +5,7 @@ const LeftSlide = () => {
   return (
     <Marquee
       gradient={false}
-      speed={200}
+      speed={50}
       pauseOnHover={false}
       loop={0} // 0 = infinite loop
     >
@@ -43,6 +43,7 @@ const slideStyle = {
   background: "transparent",
   color: "white",
   textAlignY: "start",
+  willChange: "transform",
 };
 
 export default LeftSlide;
