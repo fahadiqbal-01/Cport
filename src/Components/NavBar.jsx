@@ -34,7 +34,7 @@ const NavBar = () => {
                 duration: 1,
                 ease: easeOut,
               }}
-              className=" drop-shadow-2xl px-[10px] font-thin text-[16px] text-black cursor-pointer select-none font-GeneralSans z-50
+              className=" drop-shadow-2xl px-[10px] font-thin text-[16px] text-black cursor-pointer select-none font-GeneralSans z-50 
               after:content-[''] after:h-[30px] after:w-[3px] after:bg-yellow-500 after:absolute after:left-0 after:bottom-[-3px] after:duration-300
                after:ease-out after:-z-50 hover:after:w-[100%]  relative"
             >

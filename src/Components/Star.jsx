@@ -18,7 +18,7 @@ const Star = ({ className, innerFill, outerFill }) => {
   return (
     <>
       <div
-        className={`w-[700px] pointer-events-none select-none ${className} `}
+        className={`w-[800px] pointer-events-none select-none ${className} `}
       >
         <motion.svg
           ref={ref}
@@ -28,14 +28,9 @@ const Star = ({ className, innerFill, outerFill }) => {
           }}
           initial="hidden"
           animate={mainControls}
-          whileHover={{ rotate: 150 }}
-          whileTap={{ scale: 0.7 }}
           viewport={{ once: true }}
           style={{ willChange: "transform" }}
           transition={{
-            whileHover: {
-              delay: 0,
-            },
             delay: 0.5,
             duration: 1,
             ease: easeOut,
