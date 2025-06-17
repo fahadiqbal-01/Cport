@@ -17,7 +17,6 @@
   --font-GeneralSans: "GeneralSans", "sans-serif";
 }
 
-
 @font-face {
   font-family: Aktura;
   src: url(/src/assets/fonts/Aktura_Complete/Aktura_Complete/Fonts/OTF/Aktura-Regular.otf)
@@ -55,22 +54,22 @@
     format("opentype");
 }
 @font-face {
-  font-family:Stardom ;
+  font-family: Stardom;
   src: url(/src/assets/fonts/Stardom_Complete/Stardom_Complete/Fonts/OTF/Stardom-Regular.otf)
     format("opentype");
 }
 @font-face {
-  font-family:Zodiak ;
+  font-family: Zodiak;
   src: url(/src/assets/fonts/Zodiak_Complete/Zodiak_Complete/Fonts/OTF/Zodiak-Bold.otf)
     format("opentype");
 }
 @font-face {
-  font-family:Striper ;
+  font-family: Striper;
   src: url(/src/assets/fonts/Striper_Complete/Striper_Complete/Fonts/OTF/Striper-Regular.otf)
     format("opentype");
 }
 @font-face {
-  font-family:GeneralSans ;
+  font-family: GeneralSans;
   src: url(/src/assets/fonts/GeneralSans_Complete/GeneralSans_Complete/Fonts/OTF/GeneralSans-Medium.otf)
     format("opentype");
 }
@@ -81,4 +80,7 @@ body {
   width: full;
   background: #fafcf8;
   overflow-x: hidden;
+}
+html {
+  scroll-behavior: smooth;
 }
