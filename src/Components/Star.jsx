@@ -24,13 +24,16 @@ const Star = ({ className, innerFill, outerFill }) => {
           ref={ref}
           variants={{
             hidden: { rotate: 0 },
-            visible: { rotate: -150 },
+            visible: { rotate: 360 },
           }}
           initial="hidden"
           animate={mainControls}
           whileHover={{ rotate: 150 }}
           whileTap={{ scale: 0.7 }}
+          viewport={{ once: true }}
+          style={{ willChange: "transform" }}
           transition={{
+            delay: 0.5,
             duration: 1,
             ease: easeOut,
           }}
