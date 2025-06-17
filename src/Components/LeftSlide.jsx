@@ -13,7 +13,7 @@ const LeftSlide = () => {
         <img className=" rounded-2xl " src="/porsche.png" alt="" />
       </div>
       <div style={slideStyle}>
-        <img className=" rounded-2xl " src="vintagecar.png" alt="" />
+        <img className=" rounded-2xl " src="/Maverick.png" alt="" />
       </div>
       <div style={slideStyle}>
         <img className=" rounded-2xl " src="" alt="" />
