@@ -32,9 +32,8 @@ const Star = ({ className, innerFill, outerFill }) => {
           whileTap={{ scale: 0.7 }}
           transition={{
             animation: {
-              delay: 0.5,
-              duration: 1,
-              ease: easeOut,
+              duration: 0.8,
+              ease: easeInOut,
             },
             duration: 1,
             ease: easeOut,
