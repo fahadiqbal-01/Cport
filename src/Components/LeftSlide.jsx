@@ -31,7 +31,7 @@ const LeftSlide = () => {
         whileInView={{ opacity: 100, y: 0 }}
         transition={{
           delay: 0.3,
-          duration: 0.3,
+          duration: 0.4,
           ease: easeOut,
         }}
         className=" mb-[20px] "

@@ -16,7 +16,10 @@ const Chat = () => {
 
   return (
     <>
-      <a className=" flex justify-center mt-[60px] select-none ">
+      <a
+        href="mailto:yourname@example.com"
+        className=" flex justify-center mt-[60px] select-none "
+      >
         <motion.button
           ref={ref}
           variants={{

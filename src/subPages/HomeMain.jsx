@@ -7,6 +7,7 @@ import Chat from "../Components/Chat";
 import { _round } from "gsap/gsap-core";
 import { useAnimation, useInView } from "motion/react";
 import LeftSlide from "../Components/LeftSlide";
+import Homeimg from "../Components/Homeimg";
 
 const HomeMain = () => {
   const ref = useRef(null);
@@ -31,19 +32,8 @@ const HomeMain = () => {
         </div>
 
         <div className=" z-50 ">
-          <motion.img
-            ref={ref}
-            variants={{
-              hidden: { opacity: 0 },
-              visible: { opacity: 100 },
-            }}
-            initial="hidden"
-            animate={mainControls}
-            transition={{ delay: 0.5, duration: 1.4, ease: easeInOut }}
-            className=" w-[100px] h-[100px] border-2 border-yellow-500 rounded-2xl mt-[60px] mx-auto "
-            src=""
-            alt=""
-          />
+          <Homeimg />
+
           <motion.h2
             ref={ref}
             variants={{
@@ -86,8 +76,7 @@ const HomeMain = () => {
             visual experiences that inspire and connect.
           </motion.p>
 
-            <Chat />
-
+          <Chat />
         </div>
 
         <div className=" relative">
