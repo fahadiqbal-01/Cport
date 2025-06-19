@@ -1,5 +1,5 @@
 import { _round } from "gsap/gsap-core";
-import { delay, easeIn, easeInOut, easeOut } from "motion";
+import { delay, easeIn, easeInOut, easeOut, scale } from "motion";
 import { useAnimation, useInView } from "motion/react";
 import * as motion from "motion/react-client";
 import React, { useEffect, useRef } from "react";
@@ -8,6 +8,7 @@ const Star = ({ className, innerFill, outerFill }) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
   const mainControls = useAnimation();
+
 
   useEffect(() => {
     if (isInView) {

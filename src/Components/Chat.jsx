@@ -16,7 +16,7 @@ const Chat = () => {
 
   return (
     <>
-      <div className=" flex justify-center mt-[50px] ">
+      <a className=" flex justify-center mt-[60px] select-none ">
         <motion.button
           ref={ref}
           variants={{
@@ -32,7 +32,7 @@ const Chat = () => {
         >
           Chat with me
         </motion.button>
-      </div>
+      </a>
     </>
   );
 };

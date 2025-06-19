@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import RootLayout from "./Layouts/RootLayout";
 import Explore from "./Pages/Explore";
 import {
@@ -9,7 +9,6 @@ import {
   Routes,
 } from "react-router-dom";
 import HomeMain from "./subPages/HomeMain";
-import ChatWithME from "./Pages/ChatWithME";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -18,7 +17,6 @@ function App() {
     createRoutesFromElements(
       <Route path="/" element={<RootLayout />}>
         <Route index element={<HomeMain />} />
-        <Route path="/ChatWithME" element={<ChatWithME />} />
         <Route path="/Explore" element={<Explore />} />
       </Route>
     )
