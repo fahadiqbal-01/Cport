@@ -17,7 +17,7 @@ const Chat = () => {
   return (
     <>
       <a
-        href="mailto:fahad.iqbal.im.47@icloud.com"
+        href="mailto:c.port.w@icloud.com"
         className=" flex justify-center mt-[60px] select-none "
       >
         <motion.button
