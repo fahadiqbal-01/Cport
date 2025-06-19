@@ -52,6 +52,21 @@ const LeftSlide = () => {
         pauseOnHover={false}
         loop={0} // 0 = infinite loop
       >
+        
+        <motion.div
+          initial={{ scale: 0.9 }}
+          whileHover={{ scale: 1 }}
+          transition={{
+            duration: 0.3,
+            ease: easeOut,
+          }}
+          style={slideStyle}
+        >
+          <img
+            className=" rounded-2xl grayscale-[100%] hover:grayscale-0 duration-300 ease-out "
+            src="/vintagecar.png"
+          />
+        </motion.div>
         <motion.div
           initial={{ scale: 0.9 }}
           whileHover={{ scale: 1 }}
@@ -92,12 +107,12 @@ const LeftSlide = () => {
         >
           <img
             className=" rounded-2xl grayscale-[100%] hover:grayscale-0 duration-300 ease-out "
-            src=""
+            src="/MoreAmore.png"
           />
         </motion.div>
         <motion.div
-          initial={{ scale: 0.9 }}
-          whileHover={{ scale: 1 }}
+          initial={{ scale: 1.2 }}
+          whileHover={{ scale: 1.3 }}
           transition={{
             duration: 0.3,
             ease: easeOut,
@@ -106,21 +121,7 @@ const LeftSlide = () => {
         >
           <img
             className=" rounded-2xl grayscale-[100%] hover:grayscale-0 duration-300 ease-out "
-            src=""
-          />
-        </motion.div>
-        <motion.div
-          initial={{ scale: 0.9 }}
-          whileHover={{ scale: 1 }}
-          transition={{
-            duration: 0.3,
-            ease: easeOut,
-          }}
-          style={slideStyle}
-        >
-          <img
-            className=" rounded-2xl grayscale-[100%] hover:grayscale-0 duration-300 ease-out "
-            src=""
+            src="/redhood.png"
           />
         </motion.div>
         <motion.div
