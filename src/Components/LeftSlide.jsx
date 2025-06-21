@@ -17,8 +17,8 @@ const LeftSlide = () => {
 
   return (
     <motion.div
-      initial={{ opacity: 0, y: 30 }}
-      whileInView={{ opacity: 100, y: 0 }}
+      initial={{ opacity: 0}}
+      whileInView={{ opacity: 100}}
       transition={{
         delay: 0.3,
         duration: 0.3,
@@ -27,8 +27,8 @@ const LeftSlide = () => {
       className="mt-[110px] "
     >
       <motion.div
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 100, y: 0 }}
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 100 }}
         transition={{
           delay: 0.3,
           duration: 0.4,
