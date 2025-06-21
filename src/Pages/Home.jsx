@@ -1,15 +1,14 @@
 import React from "react";
-import Container from "../Components/Container";
 import HomeMain from "../subPages/HomeMain";
 import LeftSlide from "../Components/LeftSlide";
+import Homesec from "../subPages/Homesec";
 
 const Home = () => {
   return (
     <section>
-      <Container>
-        <HomeMain />
-        <LeftSlide />
-      </Container>
+      <HomeMain />
+      <LeftSlide />
+      <Homesec />
     </section>
   );
 };

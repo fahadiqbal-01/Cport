@@ -45,16 +45,12 @@ const NavBar = () => {
           <motion.li
             ref={ref}
             variants={{
-              hidden: { y: -100 },
-              visible: { y: 0 },
+              hidden: { opacity: 0 },
+              visible: { opacity: 100 },
             }}
-            initial={`hidden`}
+            initial="hidden"
             animate={mainControls}
-            transition={{
-              delay: 0.5,
-              duration: 1,
-              ease: easeOut,
-            }}
+            transition={{ delay: 0.5, duration: 1.4, ease: easeInOut }}
             className=" inline-block drop-shadow-2xl ml-[10px] text-[30px] font-aktura cursor-default select-none text-center leading-[30px] "
           >
             FAHAD <br /> IQBAL

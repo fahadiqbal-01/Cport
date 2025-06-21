@@ -8,7 +8,7 @@ import {
   RouterProvider,
   Routes,
 } from "react-router-dom";
-import HomeMain from "./subPages/HomeMain";
+import Home from "./Pages/Home";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -16,7 +16,7 @@ function App() {
   const router = createBrowserRouter(
     createRoutesFromElements(
       <Route path="/" element={<RootLayout />}>
-        <Route index element={<HomeMain />} />
+        <Route index element={<Home />} />
         <Route path="/Explore" element={<Explore />} />
       </Route>
     )

@@ -17,8 +17,8 @@ const LeftSlide = () => {
 
   return (
     <motion.div
-      initial={{ opacity: 0}}
-      whileInView={{ opacity: 100}}
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 100, y: 0 }}
       transition={{
         delay: 0.3,
         duration: 0.3,
@@ -40,7 +40,7 @@ const LeftSlide = () => {
           <SiGnuicecat className=" mx-auto text-[60px] pb-0 fill-black pointer-events-auto w-fit " />
         </div>
 
-        <h2 className=" font-cabinet text-[28px] font-medium text-center ">
+        <h2 className=" font-cabinet text-[38px] font-medium text-center ">
           Step into my digital home
         </h2>
         <div></div>

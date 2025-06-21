@@ -20,7 +20,7 @@ const HomeMain = () => {
   }, [isInView]);
 
   return (
-    <section className=" h-[2000px] ">
+    <section>
       <Container className=" grid grid-cols-3 pb-[60px] ">
         <div className=" relative">
           <Star
@@ -30,7 +30,7 @@ const HomeMain = () => {
           />
         </div>
 
-        <div className=" z-50 mt-[110px] ">
+        <div className=" z-50 mt-[160px] ">
 
 
           <motion.h2
@@ -86,10 +86,6 @@ const HomeMain = () => {
           />
         </div>
       </Container>
-
-      <div>
-        <LeftSlide />
-      </div>
     </section>
   );
 };
