@@ -16,7 +16,8 @@ const WorkCart = ({
   innerfillOH,
   outerfillOH,
   otTextclass,
-  siteTitle
+  siteTitle,
+  WebLink
 }) => {
   return (
     <div
@@ -29,7 +30,7 @@ const WorkCart = ({
           className=" rounded-2xl group-hover:opacity-0 duration-200 ease-in "
         />
 
-        <a href="https://exclusive-io.netlify.app/" target="blank" className=" cursor-pointer select-none " >
+        <a href={WebLink} target="blank" className=" cursor-pointer select-none " >
           <div className=" scale-0 absolute left-[-900px] top-[120px] group-hover:left-[-310px] group-hover:top-[-380px] group-hover:scale-100 delay-75 duration-300 ease-in-out ">
             <StarNoAni
               innerFill={innerfillOH}

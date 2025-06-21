@@ -62,7 +62,7 @@ const LeftSlide = () => {
           style={slideStyle}
         >
           <img
-            className=" rounded-2xl grayscale-[100%] hover:grayscale-0 duration-300 ease-out "
+            className=" rounded-2xl duration-300 ease-out "
             src="/vintagecar.png"
           />
         </motion.div>
@@ -76,7 +76,7 @@ const LeftSlide = () => {
           style={slideStyle}
         >
           <img
-            className=" rounded-2xl grayscale-[100%] hover:grayscale-0 duration-300 ease-out "
+            className=" rounded-2xl duration-300 ease-out "
             src="/porsche.png"
             alt=""
           />
@@ -91,7 +91,7 @@ const LeftSlide = () => {
           style={slideStyle}
         >
           <img
-            className=" rounded-2xl grayscale-[100%] hover:grayscale-0 duration-300 ease-out "
+            className=" rounded-2xl duration-300 ease-out "
             src="/flyingwarrior.png"
           />
         </motion.div>
@@ -105,7 +105,7 @@ const LeftSlide = () => {
           style={slideStyle}
         >
           <img
-            className=" rounded-2xl grayscale-[100%] hover:grayscale-0 duration-300 ease-out "
+            className=" rounded-2xl duration-300 ease-out "
             src=""
           />
         </motion.div>
@@ -119,7 +119,7 @@ const LeftSlide = () => {
           style={slideStyle}
         >
           <img
-            className=" rounded-2xl grayscale-[100%] hover:grayscale-0 duration-300 ease-out "
+            className=" rounded-2xl duration-300 ease-out "
             src=""
           />
         </motion.div>
@@ -133,7 +133,7 @@ const LeftSlide = () => {
           style={slideStyle}
         >
           <img
-            className=" rounded-2xl grayscale-[100%] hover:grayscale-0 duration-300 ease-out "
+            className=" rounded-2xl duration-300 ease-out "
             src=""
           />
         </motion.div>
@@ -147,7 +147,7 @@ const LeftSlide = () => {
           style={slideStyle}
         >
           <img
-            className=" rounded-2xl grayscale-[100%] hover:grayscale-0 duration-300 ease-out "
+            className=" rounded-2xl duration-300 ease-out "
             src=""
           />
         </motion.div>
@@ -161,7 +161,7 @@ const LeftSlide = () => {
           style={slideStyle}
         >
           <img
-            className=" rounded-2xl grayscale-[100%] hover:grayscale-0 duration-300 ease-out "
+            className=" rounded-2xl duration-300 ease-out "
             src=""
           />
         </motion.div>

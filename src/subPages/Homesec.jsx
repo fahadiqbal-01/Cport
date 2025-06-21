@@ -26,8 +26,9 @@ const Homesec = () => {
             siteTitle="Exclusive"
           />
           <WorkCart
+          WebLink="https://fahadiqbal-01.github.io/hanock/"
             src="/hancok.png"
-            className=" mt-[50px] scale-x-[-1] "
+            className=" mt-[80px] scale-x-[-1] "
             pTExt="Shopping site where you can find everything. 
                 Shop fasion, tech, home essentials and more - fast, easy and
                 affordable.  (On Going)"
