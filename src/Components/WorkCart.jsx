@@ -1,6 +1,6 @@
 import React from "react";
 import { MdOutlineKeyboardDoubleArrowRight } from "react-icons/md";
-import StarNoAni from "./starNoAni";
+import StarNoAni from "./StarNoAni";
 import * as motion from "motion/react-client";
 import { easeOut } from "motion";
 import StarSec from "./StarSec";
