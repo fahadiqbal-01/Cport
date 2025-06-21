@@ -52,7 +52,6 @@ const LeftSlide = () => {
         pauseOnHover={false}
         loop={0} // 0 = infinite loop
       >
-        
         <motion.div
           initial={{ scale: 0.9 }}
           whileHover={{ scale: 1 }}
@@ -83,8 +82,8 @@ const LeftSlide = () => {
           />
         </motion.div>
         <motion.div
-          initial={{ scale: 0.9 }}
-          whileHover={{ scale: 1 }}
+          initial={{ scale: 0.96 }}
+          whileHover={{ scale: 1.06 }}
           transition={{
             duration: 0.3,
             ease: easeOut,
@@ -93,7 +92,21 @@ const LeftSlide = () => {
         >
           <img
             className=" rounded-2xl grayscale-[100%] hover:grayscale-0 duration-300 ease-out "
-            src="/Maverick.png"
+            src="/flyingwarrior.png"
+          />
+        </motion.div>
+        <motion.div
+          initial={{ scale: 0.96 }}
+          whileHover={{ scale: 1.06 }}
+          transition={{
+            duration: 0.3,
+            ease: easeOut,
+          }}
+          style={slideStyle}
+        >
+          <img
+            className=" rounded-2xl grayscale-[100%] hover:grayscale-0 duration-300 ease-out "
+            src=""
           />
         </motion.div>
         <motion.div
@@ -107,21 +120,7 @@ const LeftSlide = () => {
         >
           <img
             className=" rounded-2xl grayscale-[100%] hover:grayscale-0 duration-300 ease-out "
-            src="/MoreAmore.png"
-          />
-        </motion.div>
-        <motion.div
-          initial={{ scale: 1.2 }}
-          whileHover={{ scale: 1.3 }}
-          transition={{
-            duration: 0.3,
-            ease: easeOut,
-          }}
-          style={slideStyle}
-        >
-          <img
-            className=" rounded-2xl grayscale-[100%] hover:grayscale-0 duration-300 ease-out "
-            src="/redhood.png"
+            src=""
           />
         </motion.div>
         <motion.div
@@ -173,7 +172,7 @@ const LeftSlide = () => {
 
 const slideStyle = {
   maxWidth: "300px",
-  margin: "0 20px ",
+  margin: "0 10px ",
   background: "transparent",
   color: "white",
   textAlignY: "start",

@@ -7,7 +7,6 @@ import Chat from "../Components/Chat";
 import { _round } from "gsap/gsap-core";
 import { useAnimation, useInView } from "motion/react";
 import LeftSlide from "../Components/LeftSlide";
-import Homeimg from "../Components/Homeimg";
 
 const HomeMain = () => {
   const ref = useRef(null);
@@ -31,8 +30,8 @@ const HomeMain = () => {
           />
         </div>
 
-        <div className=" z-50 ">
-          <Homeimg />
+        <div className=" z-50 mt-[110px] ">
+
 
           <motion.h2
             ref={ref}

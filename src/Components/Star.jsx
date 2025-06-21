@@ -9,7 +9,6 @@ const Star = ({ className, innerFill, outerFill }) => {
   const isInView = useInView(ref, { once: true });
   const mainControls = useAnimation();
 
-
   useEffect(() => {
     if (isInView) {
       mainControls.start("visible");
@@ -24,15 +23,15 @@ const Star = ({ className, innerFill, outerFill }) => {
         <motion.svg
           ref={ref}
           variants={{
-            hidden: { scale: 0, rotate: 0 },
-            visible: { scale: 1, rotate: 360 },
+            hidden: { rotate: 0 },
+            visible: { rotate: 360 },
           }}
           initial="hidden"
           animate={mainControls}
+          whileHover={{ rotate: 150 }}
           viewport={{ once: true }}
           style={{ willChange: "transform" }}
           transition={{
-            delay: 0.5,
             duration: 1,
             ease: easeOut,
           }}
