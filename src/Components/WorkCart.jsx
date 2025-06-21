@@ -26,11 +26,11 @@ const WorkCart = ({
         <img
           src={`${src}`}
           alt=""
-          className=" rounded-2xl group-hover:opacity-0  "
+          className=" rounded-2xl group-hover:opacity-0 duration-200 ease-in "
         />
 
-        <a href="https://exclusive-io.netlify.app/" target="blank">
-          <div className=" scale-0 absolute left-[-900px] top-[120px] group-hover:left-[-310px] group-hover:top-[-380px] group-hover:scale-100 duration-300 ease-out ">
+        <a href="https://exclusive-io.netlify.app/" target="blank" className=" cursor-pointer select-none " >
+          <div className=" scale-0 absolute left-[-900px] top-[120px] group-hover:left-[-310px] group-hover:top-[-380px] group-hover:scale-100 delay-75 duration-300 ease-in-out ">
             <StarNoAni
               innerFill={innerfillOH}
               outerFill={outerfillOH}
@@ -40,13 +40,14 @@ const WorkCart = ({
               initial={{ opacity: 0, y: 10 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
-                duration: 0.3,
+                delay:0.2,
+                duration: 0.2,
                 ease: easeOut,
               }}
               className=" absolute left-[50%] translate-x-[-50%] top-[40%] translate-y-[-40%] "
             >
               <p
-                className={` text-[24px] font-cabinet text-white select-none mt-[100px] mb-[40px] w-[400px] ${pTextClass}`}
+                className={` text-[28px] font-cabinet text-white select-none mt-[100px] mb-[40px] w-[400px] ${pTextClass}`}
               >
                 {pTExt}
               </p>

@@ -28,11 +28,11 @@ const Star = ({ className, innerFill, outerFill }) => {
           }}
           initial="hidden"
           animate={mainControls}
-          whileHover={{ rotate: 150 }}
+          whileHover={{ rotate: 180 }}
           viewport={{ once: true }}
           style={{ willChange: "transform" }}
           transition={{
-            duration: 1,
+            duration: 0.5,
             ease: easeOut,
           }}
           className=" p-0 m-0"

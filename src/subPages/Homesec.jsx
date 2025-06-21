@@ -17,9 +17,9 @@ const Homesec = () => {
             pTExt=" Shopping site where you can find everything.
                 Shop fasion, tech, home essentials and more - fast, easy and
                 affordable.  (On Going)"
-            InnerFill="red"
-            OuterFill="yellow"
-            StarBG="bg-[#0001fe]"
+            InnerFill="white"
+            OuterFill="#fe8eca"
+            StarBG="bg-[#000000]"
             innerfillOH="black"
             outerfillOH="black"
             otTextclass="text-white"
@@ -33,10 +33,10 @@ const Homesec = () => {
                 affordable.  (On Going)"
             pTextClass=" scale-x-[-1] !text-black "
             InnerFill="white"
-            OuterFill="blue"
-            StarBG="bg-[#fe8eca]"
-            innerfillOH="yellow"
-            outerfillOH="yellow"
+            OuterFill="#black"
+            StarBG="bg-[#fe3d5f]"
+            innerfillOH="#e37041"
+            outerfillOH="#e37041"
             otTextclass="text-black scale-x-[-1] "
             siteTitle="Hancok"
           />
