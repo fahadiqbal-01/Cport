@@ -31,8 +31,7 @@ const Star = ({ className, innerFill, outerFill }) => {
           viewport={{ once: true }}
           style={{ willChange: "transform" }}
           transition={{
-            duration: 0.5,
-            duration:1,
+            duration: 1,
             ease: easeOut,
           }}
           className=" p-0 m-0"

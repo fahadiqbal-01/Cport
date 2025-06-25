@@ -48,7 +48,7 @@ const WorkCart = ({
               className=" absolute left-[50%] translate-x-[-50%] top-[40%] translate-y-[-40%] "
             >
               <p
-                className={` text-[28px] font-cabinet text-white select-none mt-[100px] mb-[40px] w-[400px] ${pTextClass}`}
+                className={` text-[23px] font-cabinet text-white select-none mt-[100px] mb-[40px] w-[400px] ${pTextClass}`}
               >
                 {pTExt}
               </p>

@@ -25,7 +25,7 @@ const HomeMain = () => {
         <div className=" relative">
           <Star
             className=" absolute top-0 right-0 "
-            innerFill="#fafcf8"
+            innerFill="#f7f5f0"
             outerFill="lightblue"
           />
         </div>
@@ -81,7 +81,7 @@ const HomeMain = () => {
         <div className=" relative">
           <Star
             className=" absolute top-0 left-0 "
-            innerFill="#fafcf8"
+            innerFill="#f7f5f0"
             outerFill="#91040c"
           />
         </div>
