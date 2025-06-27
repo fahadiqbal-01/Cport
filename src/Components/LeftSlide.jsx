@@ -19,18 +19,22 @@ const LeftSlide = () => {
     <motion.div
       initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 100, y: 0 }}
+      viewport={{ once: true }}
       transition={{
-        delay: 0.3,
         duration: 0.3,
         ease: easeOut,
       }}
       className="mt-[110px] "
     >
       <motion.div
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 100 }}
+        ref={ref}
+        variants={{
+          hidden: { opacity: 0 },
+          visible: { opacity: 100 },
+        }}
+        initial="hidden"
+        animate={mainControls}
         transition={{
-          delay: 0.3,
           duration: 0.4,
           ease: easeOut,
         }}
