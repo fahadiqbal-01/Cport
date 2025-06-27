@@ -5,14 +5,14 @@ import React, { useEffect, useRef } from "react";
 
 const StarSec = ({ className, innerFill, outerFill }) => {
   return (
-    <div className={`w-[700px] pointer-events-none select-none ${className} `}>
+    <div className={`w-[700px] cursor-pointer ${className} `}>
       <motion.svg
-        initial={{ rotate: 0 }}
-        whileHover={{ rotate: 360 }}
-        viewport={{ once: true }}
+        initial={{ opacity: 0, rotate: 0 }}
+        whileInView={{ opacity: 100, rotate: 360 }}
+        whileHover={{ scale: 0.9 }}
         style={{ willChange: "transform" }}
         transition={{
-          duration: 0.5,
+          duration: 1,
           ease: easeOut,
         }}
         className=" p-0 m-0"

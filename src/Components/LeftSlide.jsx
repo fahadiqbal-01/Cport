@@ -5,36 +5,22 @@ import { useEffect, useRef } from "react";
 import { SiGnuicecat } from "react-icons/si";
 
 const LeftSlide = () => {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
-  const mainControls = useAnimation();
-
-  useEffect(() => {
-    if (isInView) {
-      mainControls.start("visible");
-    }
-  }, [isInView]);
-
   return (
     <motion.div
-      initial={{ opacity: 0, y: 30 }}
+      initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 100, y: 0 }}
-      viewport={{ once: true }}
       transition={{
+        delay: 0.3,
         duration: 0.3,
         ease: easeOut,
       }}
       className="mt-[110px] "
     >
       <motion.div
-        ref={ref}
-        variants={{
-          hidden: { opacity: 0 },
-          visible: { opacity: 100 },
-        }}
-        initial="hidden"
-        animate={mainControls}
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 100 }}
         transition={{
+          delay: 0.3,
           duration: 0.4,
           ease: easeOut,
         }}
