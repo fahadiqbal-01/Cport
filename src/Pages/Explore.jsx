@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import Gallery from "../Components/Gallery";
 
 const Explore = () => {
   return (
-    <div>Explore</div>
-  )
-}
+    <>
+      <Gallery />
+    </>
+  );
+};
 
-export default Explore
+export default Explore;

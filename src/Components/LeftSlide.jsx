@@ -62,7 +62,7 @@ const LeftSlide = () => {
           style={slideStyle}
         >
           <img
-            className=" rounded-2xl duration-300 ease-out "
+            className=" rounded-2xl duration-300 ease-out  "
             src="/vintagecar.png"
           />
         </motion.div>
@@ -96,8 +96,8 @@ const LeftSlide = () => {
           />
         </motion.div>
         <motion.div
-          initial={{ scale: 0.96 }}
-          whileHover={{ scale: 1.06 }}
+          initial={{ scale: 0.9 }}
+          whileHover={{ scale: 1 }}
           transition={{
             duration: 0.3,
             ease: easeOut,
@@ -106,7 +106,7 @@ const LeftSlide = () => {
         >
           <img
             className=" rounded-2xl duration-300 ease-out "
-            src=""
+            src="aventador.png"
           />
         </motion.div>
         <motion.div
@@ -120,7 +120,7 @@ const LeftSlide = () => {
         >
           <img
             className=" rounded-2xl duration-300 ease-out "
-            src=""
+            src="defpunk.png"
           />
         </motion.div>
         <motion.div
@@ -134,35 +134,7 @@ const LeftSlide = () => {
         >
           <img
             className=" rounded-2xl duration-300 ease-out "
-            src=""
-          />
-        </motion.div>
-        <motion.div
-          initial={{ scale: 0.9 }}
-          whileHover={{ scale: 1 }}
-          transition={{
-            duration: 0.3,
-            ease: easeOut,
-          }}
-          style={slideStyle}
-        >
-          <img
-            className=" rounded-2xl duration-300 ease-out "
-            src=""
-          />
-        </motion.div>
-        <motion.div
-          initial={{ scale: 0.9 }}
-          whileHover={{ scale: 1 }}
-          transition={{
-            duration: 0.3,
-            ease: easeOut,
-          }}
-          style={slideStyle}
-        >
-          <img
-            className=" rounded-2xl duration-300 ease-out "
-            src=""
+            src="knight.png"
           />
         </motion.div>
       </Marquee>
