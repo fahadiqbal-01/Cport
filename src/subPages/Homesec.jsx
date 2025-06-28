@@ -3,6 +3,7 @@ import ContainerSec from "../Components/ContainerSec";
 import * as motion from "motion/react-client";
 import WorkCart from "../Components/WorkCart";
 import { easeOut } from "motion";
+import Dream from "../Components/Dream";
 
 const Homesec = () => {
   return (
@@ -82,6 +83,7 @@ const Homesec = () => {
               siteTitle="PavanMG"
             />
           </motion.div>
+          <Dream />
         </ContainerSec>
       </section>
     </>
