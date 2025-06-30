@@ -9,7 +9,6 @@ const StarSec = ({ className, innerFill, outerFill }) => {
       <motion.svg
         initial={{ opacity: 0, rotate: 0 }}
         whileInView={{ opacity: 100, rotate: 360 }}
-        whileHover={{ scale: 0.9 }}
         style={{ willChange: "transform" }}
         transition={{
           duration: 1,

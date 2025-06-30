@@ -9,6 +9,7 @@ import {
   Routes,
 } from "react-router-dom";
 import Home from "./Pages/Home";
+import "./App.css";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -22,8 +23,39 @@ function App() {
     )
   );
 
+  const [mousePosition, setMousePosition] = useState({
+    x: 0,
+    y: 0,
+  });
+
+  useEffect(() => {
+    const mouseMove = (e) => {
+      setMousePosition({
+        x: e.clientX,
+        y: e.clientY,
+      });
+      console.log(`X: ${e.clientX} | Y: ${e.clientY}`);
+    };
+    window.addEventListener("mousemove", mouseMove);
+    return () => {
+      window.removeEventListener("mousemove", mouseMove);
+    };
+  }, []);
+
   return (
     <>
+      <div
+        style={{
+          left: mousePosition.x - 14,
+          top: mousePosition.y - 14,
+          position: "fixed",
+          zIndex: 9999,
+          pointerEvents: "none",
+        }}
+        className="h-[28px] w-[28px] rounded-full bg-black cursor fixed left-0 top-0 z-50 "
+      >
+        <img src="/racoon.gif" alt="cursorGif" className=" rounded-full" />
+      </div>
       <RouterProvider router={router} />
     </>
   );

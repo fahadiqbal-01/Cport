@@ -7,6 +7,7 @@ import Chat from "../Components/Chat";
 import { _round } from "gsap/gsap-core";
 import { useAnimation, useInView } from "motion/react";
 import LeftSlide from "../Components/LeftSlide";
+import { HashLink } from "react-router-hash-link";
 
 const HomeMain = () => {
   const ref = useRef(null);
@@ -30,9 +31,7 @@ const HomeMain = () => {
           />
         </div>
 
-        <div className=" z-50 mt-[160px] ">
-
-
+        <div className=" z-50 mt-[110px] ">
           <motion.h2
             ref={ref}
             variants={{
@@ -46,6 +45,7 @@ const HomeMain = () => {
           >
             Hi, I'm Fahad
           </motion.h2>
+
           <motion.h1
             ref={ref}
             variants={{
@@ -55,7 +55,7 @@ const HomeMain = () => {
             initial="hidden"
             animate={mainControls}
             transition={{ delay: 0.5, duration: 1.4, ease: easeInOut }}
-            className=" text-[75px] font-cabinet text-center text-black leading-[65px] mt-[30px] w-fit "
+            className=" text-[90px] font-cabinet text-center text-black leading-[75px] mt-[25px] w-fit "
           >
             Creative mind you can trust for clarity, style, and purpose
           </motion.h1>

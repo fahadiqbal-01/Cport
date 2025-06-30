@@ -4,6 +4,7 @@ import * as motion from "motion/react-client";
 import WorkCart from "../Components/WorkCart";
 import { easeOut } from "motion";
 import Dream from "../Components/Dream";
+import MySelf from "../Components/MySelf";
 
 const Homesec = () => {
   return (
@@ -84,6 +85,7 @@ const Homesec = () => {
             />
           </motion.div>
           <Dream />
+          <MySelf />
         </ContainerSec>
       </section>
     </>

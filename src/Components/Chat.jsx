@@ -18,23 +18,22 @@ const Chat = () => {
     <>
       <a
         href="mailto:c.port.w@icloud.com"
-        className=" flex justify-center mt-[60px] select-none "
+        className=" flex justify-center mt-[50px] select-none "
       >
         <motion.button
           ref={ref}
           variants={{
-            hidden: { opacity: 0 },
-            visible: { opacity: 100 },
+            hidden: { opacity: 0, y: 50 },
+            visible: { opacity: 100, y: 0 },
           }}
           initial={`hidden`}
           animate={mainControls}
           transition={{ delay: 0.5, duration: 1.4, ease: easeInOut }}
           className=" group cursor-pointer overflow-hidden z-50 text-[20px] text-yellow-500 font-GeneralSans bg-black px-[100px] py-[10px] border-4 border-black 
-         rounded-2xl hover:text-transparent hover:scale-[1.2] hover:border-yellow-500 hover:bg-transparent after:content-[''] after:h-[80px] after:w-[200px] after:bg-yellow-500 after:border-0 after:rounded-[500px]
+         rounded-2xl hover:text-black hover:scale-[1.2] hover:border-yellow-500 hover:bg-transparent after:content-[''] after:h-[80px] after:w-[200px] after:bg-yellow-500 after:border-0 after:rounded-[500px]
          after:absolute after:bottom-[-100px] after:left-[50%] after:translate-x-[-50%] after:-z-50 after:duration-500 after:ease-out hover:after:bottom-[-40px] duration-300 ease-out relative "
         >
           Chat with me
-          <h2 className=" scale-0 text-red-500 absolute top-[-50%] translate-y-[-50%] duration-300 ease-out group-hover:scale-100 group-hover:top-[50%] group-hover:text-black" >Chat with me</h2>
         </motion.button>
       </a>
     </>
