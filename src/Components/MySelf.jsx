@@ -39,7 +39,7 @@ const MySelf = () => {
             />
             <h6 className=" text-[18px] font-GeneralSans ">Instagram</h6>
           </a>
-          <a href="" className=" flex items-center gap-[10px] group ">
+          <a href="https://twitter.com/intent/tweet?text=Hey%20_fahad_01_%2C%20just%20checked%20out%20your%20portfolio%20site!" className=" flex items-center gap-[10px] group ">
             <img
               src="/icons/twitter.png"
               alt="insta_icon"
