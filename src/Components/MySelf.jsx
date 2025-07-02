@@ -48,7 +48,7 @@ const MySelf = () => {
             <h6 className=" text-[18px] font-GeneralSans ">Twitter</h6>
           </a>
           <a
-            href="https://wa.me/8801234567890?text=Hello%20Fahad%2C%20I%20came%20from%20your%20website!"
+            href="https://wa.me/8801748996699?text=Hello%20Fahad%2C%20I%20came%20from%20your%20website!"
             target="blank"
             className=" flex items-center gap-[10px] group "
           >
