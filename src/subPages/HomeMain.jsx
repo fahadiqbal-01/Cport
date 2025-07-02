@@ -55,7 +55,7 @@ const HomeMain = () => {
             initial="hidden"
             animate={mainControls}
             transition={{ delay: 0.5, duration: 1.4, ease: easeInOut }}
-            className=" text-[90px] font-cabinet text-center text-black leading-[75px] mt-[25px] w-fit "
+            className=" text-[70px] font-cabinet text-center text-black leading-[75px] mt-[25px] w-fit "
           >
             Creative mind you can trust for clarity, style, and purpose
           </motion.h1>

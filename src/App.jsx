@@ -46,15 +46,15 @@ function App() {
     <>
       <div
         style={{
-          left: mousePosition.x - 14,
-          top: mousePosition.y - 14,
+          left: mousePosition.x - 10,
+          top: mousePosition.y - 10,
           position: "fixed",
           zIndex: 9999,
           pointerEvents: "none",
         }}
-        className="h-[28px] w-[28px] rounded-full bg-black cursor fixed left-0 top-0 z-50 "
+        className="h-[20px] w-[20px] rounded-full bg-black opacity-[70%] cursor fixed left-0 top-0 z-50 "
       >
-        <img src="/racoon.gif" alt="cursorGif" className=" rounded-full" />
+     
       </div>
       <RouterProvider router={router} />
     </>
