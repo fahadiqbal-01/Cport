@@ -50,6 +50,7 @@ const Homesec = () => {
               WebLink="https://fahadiqbal-01.github.io/hanock/"
               src="/hancok.png"
               className=" mt-[80px] scale-x-[-1] "
+              imgclassName=" scale-x-[-1]  "
               pTExt="Hanock is a sleek gaming platform showcasing live matches,
              popular games, and gear, built to engage the esports community."
               pTextClass=" !text-black scale-x-[-1] "
@@ -82,6 +83,29 @@ const Homesec = () => {
               outerfillOH="#12adf0"
               otTextclass="text-black "
               siteTitle="PavanMG"
+            />
+          </motion.div>
+
+            <motion.div
+            initial={{ opacity: 0, x: 150 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5, ease: easeOut }}
+          >
+            <WorkCart
+              WebLink="https://pavanmg.netlify.app/"
+              src="/notepad.gif"
+              className=" mt-[80px] scale-x-[-1] "
+              imgclassName=" scale-x-[-1]"
+              pTExt="Pavan MG’s portfolio is a modern, minimal site showcasing his projects,
+             creativity, and passion for building engaging digital experiences."
+              pTextClass=" !text-black scale-x-[-1] "
+              InnerFill="white"
+              OuterFill="#0149ad"
+              StarBG="bg-black"
+              innerfillOH="#fdc244"
+              outerfillOH="#fdc244"
+              otTextclass="text-black scale-x-[-1] "
+              siteTitle="Todo-Tasks"
             />
           </motion.div>
           <Dream />

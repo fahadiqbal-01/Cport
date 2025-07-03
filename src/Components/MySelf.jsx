@@ -2,10 +2,18 @@ import React from "react";
 import ContainerSec from "./ContainerSec";
 import * as motion from "motion/react-client";
 import { easeOut } from "motion";
+import Dream from "./Dream";
 
 const MySelf = () => {
   return (
-    <section id="About" className="h-[1000px] ">
+    <motion.section
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 1.4, ease: easeOut }}
+      viewport={{ once: true }}
+      id="About"
+      className=""
+    >
       <ContainerSec>
         <h2 className=" text-[38px] font-cabinet text-center mt-[160px] mx-auto pt-[20px] ">
           Not just building websites — shaping experiences.
@@ -14,9 +22,9 @@ const MySelf = () => {
           <img
             src="/redhood.png"
             alt="myIMG"
-            className=" w-[350px] rounded-2xl "
+            className=" w-[350px] rounded-2xl hover:drop-shadow-2xl hover:shadow-2xl duration-300 ease-out "
           />
-          <p className=" text-[26px] font-GeneralSans ">
+          <p className=" text-[26px] font-GeneralSans  ">
             I’m Fahad Iqbal — a Web & UX/UI Developer, as well as a visual
             creator. I build clean, user-friendly websites and design graphics
             that connect — from posters and banners to refined photo edits. My
@@ -25,21 +33,27 @@ const MySelf = () => {
           </p>
         </div>
 
-        <p className=" text-[26px] font-GeneralSans mr-[25px]  ">
-          You bring the vision — I’ll bring it to life with care, clarity, and a
-          commitment to getting every detail right."
-        </p>
-
-        <div className=" flex justify-evenly items-center gap-[20px] mt-[30px] px-[50px] py-[20px] border-4 border-white rounded-2xl ">
+        <motion.div
+          initial={{ y: 50 }}
+          whileInView={{ y: 0 }}
+          transition={{ duration: 0.5, ease: easeOut }}
+          viewport={{ once: true }}
+          className=" flex justify-evenly items-center gap-[20px] mt-[30px] px-[50px] py-[20px] bg-transparent border-4 
+        border-white rounded-2xl select-none hover:drop-shadow-2xl hover:shadow-2xl hover:bg-transparent hover:border-transparent duration-300 ease-out "
+        >
           <a href="" className=" flex items-center gap-[10px] group ">
             <img
               src="/icons/instagram.png"
-              alt="insta_icon"
+              alt="instagram_icon"
               className=" w-[32px] "
             />
             <h6 className=" text-[18px] font-GeneralSans ">Instagram</h6>
           </a>
-          <a href="https://twitter.com/messages/compose?recipient_id=_fahad_01_'" className=" flex items-center gap-[10px] group ">
+          <a
+            href="https://twitter.com/_fahad_01_"
+            target="blank"
+            className=" flex items-center gap-[10px] group "
+          >
             <img
               src="/icons/twitter.png"
               alt="insta_icon"
@@ -59,9 +73,9 @@ const MySelf = () => {
             />
             <h6 className=" text-[18px] font-GeneralSans ">WhatsApp</h6>
           </a>
-        </div>
+        </motion.div>
       </ContainerSec>
-    </section>
+    </motion.section>
   );
 };
 

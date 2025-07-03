@@ -18,7 +18,7 @@ const NavBar = () => {
 
   return (
     <>
-      <nav className=" pl-[5px] pt-[20px] pb-[10px] ">
+      <nav className=" pl-[5px] pt-[20px] pb-[10px]  ">
         <ul className=" flex gap-[20px] items-center justify-center p-0 m-0  ">
           <Link to="/">
             <motion.li

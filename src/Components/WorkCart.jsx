@@ -17,7 +17,8 @@ const WorkCart = ({
   outerfillOH,
   otTextclass,
   siteTitle,
-  WebLink
+  WebLink,
+  imgclassName
 }) => {
   return (
     <div
@@ -27,7 +28,7 @@ const WorkCart = ({
         <img
           src={`${src}`}
           alt=""
-          className=" rounded-2xl group-hover:opacity-0 duration-200 ease-in "
+          className={`  rounded-2xl group-hover:opacity-0 duration-200 ease-in h-[300px] ${imgclassName} `}
         />
 
         <a href={WebLink} target="blank" className=" cursor-pointer select-none " >

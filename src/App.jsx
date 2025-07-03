@@ -23,28 +23,28 @@ function App() {
     )
   );
 
-  const [mousePosition, setMousePosition] = useState({
-    x: 0,
-    y: 0,
-  });
+  // const [mousePosition, setMousePosition] = useState({
+  //   x: 0,
+  //   y: 0,
+  // });
 
-  useEffect(() => {
-    const mouseMove = (e) => {
-      setMousePosition({
-        x: e.clientX,
-        y: e.clientY,
-      });
-      console.log(`X: ${e.clientX} | Y: ${e.clientY}`);
-    };
-    window.addEventListener("mousemove", mouseMove);
-    return () => {
-      window.removeEventListener("mousemove", mouseMove);
-    };
-  }, []);
+  // useEffect(() => {
+  //   const mouseMove = (e) => {
+  //     setMousePosition({
+  //       x: e.clientX,
+  //       y: e.clientY,
+  //     });
+  //     console.log(`X: ${e.clientX} | Y: ${e.clientY}`);
+  //   };
+  //   window.addEventListener("mousemove", mouseMove);
+  //   return () => {
+  //     window.removeEventListener("mousemove", mouseMove);
+  //   };
+  // }, []);
 
   return (
     <>
-      <div
+      {/* <div
         style={{
           left: mousePosition.x - 10,
           top: mousePosition.y - 10,
@@ -55,7 +55,7 @@ function App() {
         className="h-[20px] w-[20px] rounded-full bg-black opacity-[70%] cursor fixed left-0 top-0 z-50 "
       >
      
-      </div>
+      </div> */}
       <RouterProvider router={router} />
     </>
   );
