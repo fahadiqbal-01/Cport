@@ -22,7 +22,7 @@ const HomeMain = () => {
 
   return (
     <section>
-      <Container className=" grid grid-cols-3 pb-[60px] ">
+      <Container className=" grid grid-cols-3 pb-[70px] ">
         <div className=" relative">
           <Star
             className=" absolute top-0 right-0 "
@@ -41,7 +41,7 @@ const HomeMain = () => {
             initial="hidden"
             animate={mainControls}
             transition={{ delay: 0.5, duration: 1.4, ease: easeInOut }}
-            className=" font-GeneralSans text-black text-[16px] text-center mt-[10px] "
+            className=" font-GeneralSans text-black text-[16px] text-center mt-[10px] selection:text-white selection:bg-black "
           >
             Hi, I'm Fahad
           </motion.h2>
@@ -55,7 +55,7 @@ const HomeMain = () => {
             initial="hidden"
             animate={mainControls}
             transition={{ delay: 0.5, duration: 1.4, ease: easeInOut }}
-            className=" text-[70px] font-cabinet text-center text-black leading-[75px] mt-[25px] w-fit "
+            className=" text-[70px] font-cabinet text-center text-black leading-[75px] mt-[25px] w-fit selection:text-white selection:bg-black "
           >
             Creative mind you can trust for clarity, style, and purpose
           </motion.h1>
@@ -68,7 +68,7 @@ const HomeMain = () => {
             initial="hidden"
             animate={mainControls}
             transition={{ delay: 0.5, duration: 1.4, ease: easeInOut }}
-            className=" text-center font-GeneralSans text-[16px] text-black leading-7 mt-[25px] w-fit "
+            className=" text-center font-GeneralSans text-[16px] text-black leading-7 mt-[25px] w-fit selection:text-white selection:bg-black "
           >
             A collection of work shaped by creativity and thoughtful details,
             fueled by a genuine passion for turning ideas into clear, engaging
@@ -82,7 +82,7 @@ const HomeMain = () => {
           <Star
             className=" absolute top-0 left-0 "
             innerFill="#f7f5f0"
-            outerFill="#91040c"
+            outerFill="#822b28"
           />
         </div>
       </Container>

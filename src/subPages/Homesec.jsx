@@ -15,10 +15,34 @@ const Homesec = () => {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 1, ease: easeOut }}
-            className=" text-[38px] font-cabinet text-center mb-[60px] "
+            className=" text-[38px] font-cabinet text-center mb-[60px] selection:text-white selection:bg-black "
           >
             Tiny fraction of my work...
           </motion.h2>
+
+          <motion.div
+            initial={{ opacity: 0, x: -150 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5, ease: easeOut }}
+          >
+            <WorkCart
+              WebLink="https://www.mrcfly.com/"
+              src="/mrcfly.png"
+              className=" mt-[80px] scale-x-[-1] "
+              imgclassName=" scale-x-[-1]  "
+              pTExt="MRCFLY.com is a visa agency platform offering personalized application assistance and a 
+              client portal to monitor visa status, document submissions, and approvals."
+              pTextClass=" !text-black scale-x-[-1] "
+              InnerFill="white"
+              OuterFill="#822b28"
+              StarBG="bg-black"
+              innerfillOH="#cfbda2"
+              outerfillOH="#cfbda2"
+              otTextclass="text-black scale-x-[-1] "
+              siteTitle="MRCFLY"
+            />
+          </motion.div>
+
           <motion.div
             initial={{ opacity: 0, x: 150 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -27,7 +51,7 @@ const Homesec = () => {
             <WorkCart
               WebLink="https://exclusive-io.netlify.app/"
               src="/exclusive.png"
-              className=""
+              className="mt-[80px] "
               pTExt=" Shopping site where you can find everything.
                 Shop fasion, tech, home essentials and more - fast, easy and
                 affordable.  (On Going)"
@@ -38,6 +62,51 @@ const Homesec = () => {
               outerfillOH="black"
               otTextclass="text-white"
               siteTitle="Exclusive"
+            />
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, x: 150 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5, ease: easeOut }}
+          >
+            <WorkCart
+              WebLink="https://pavanmg.netlify.app/"
+              src="/notepad.gif"
+              className=" mt-[80px] scale-x-[-1] "
+              imgclassName=" scale-x-[-1]"
+              pTExt="Pavan MG’s portfolio is a modern, minimal site showcasing his projects,
+             creativity, and passion for building engaging digital experiences."
+              pTextClass=" !text-black scale-x-[-1] "
+              InnerFill="white"
+              OuterFill="#0149ad"
+              StarBG="bg-black"
+              innerfillOH="#fdc244"
+              outerfillOH="#fdc244"
+              otTextclass="text-black scale-x-[-1] "
+              siteTitle="Todo-Tasks"
+            />
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, x: 150 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5, ease: easeOut }}
+          >
+            <WorkCart
+              WebLink="https://pavanmg.netlify.app/"
+              src="/pavanmg.png"
+              className=" mt-[80px]  "
+              pTExt="Pavan MG’s portfolio is a modern, minimal site showcasing his projects,
+             creativity, and passion for building engaging digital experiences."
+              pTextClass=" !text-black "
+              InnerFill="white"
+              OuterFill="#b31284"
+              StarBG="bg-black"
+              innerfillOH="#12adf0"
+              outerfillOH="#12adf0"
+              otTextclass="text-black "
+              siteTitle="PavanMG"
             />
           </motion.div>
 
@@ -64,50 +133,6 @@ const Homesec = () => {
             />
           </motion.div>
 
-          <motion.div
-            initial={{ opacity: 0, x: 150 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5, ease: easeOut }}
-          >
-            <WorkCart
-              WebLink="https://pavanmg.netlify.app/"
-              src="/pavanmg.png"
-              className=" mt-[80px]  "
-              pTExt="Pavan MG’s portfolio is a modern, minimal site showcasing his projects,
-             creativity, and passion for building engaging digital experiences."
-              pTextClass=" !text-black "
-              InnerFill="white"
-              OuterFill="#b31284"
-              StarBG="bg-black"
-              innerfillOH="#12adf0"
-              outerfillOH="#12adf0"
-              otTextclass="text-black "
-              siteTitle="PavanMG"
-            />
-          </motion.div>
-
-            <motion.div
-            initial={{ opacity: 0, x: 150 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5, ease: easeOut }}
-          >
-            <WorkCart
-              WebLink="https://pavanmg.netlify.app/"
-              src="/notepad.gif"
-              className=" mt-[80px] scale-x-[-1] "
-              imgclassName=" scale-x-[-1]"
-              pTExt="Pavan MG’s portfolio is a modern, minimal site showcasing his projects,
-             creativity, and passion for building engaging digital experiences."
-              pTextClass=" !text-black scale-x-[-1] "
-              InnerFill="white"
-              OuterFill="#0149ad"
-              StarBG="bg-black"
-              innerfillOH="#fdc244"
-              outerfillOH="#fdc244"
-              otTextclass="text-black scale-x-[-1] "
-              siteTitle="Todo-Tasks"
-            />
-          </motion.div>
           <Dream />
           <MySelf />
         </ContainerSec>

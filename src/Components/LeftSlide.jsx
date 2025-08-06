@@ -30,7 +30,7 @@ const LeftSlide = () => {
           <SiGnuicecat className=" mx-auto text-[60px] pb-0 fill-black pointer-events-auto w-fit " />
         </div>
 
-        <h2 className=" font-cabinet text-[38px] font-medium text-center ">
+        <h2 className=" font-cabinet text-[38px] font-medium text-center selection:bg-black selection:text-white ">
           Step into my digital home
         </h2>
         <div></div>

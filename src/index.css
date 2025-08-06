@@ -4,6 +4,7 @@
   --color-Licorice: #23140c;
   --color-Khaki: #d0ba98;
   --color-DarkRed: #91040c;
+  --color-blood: #822b28;
   --font-aktura: "Aktura", "sans-serif";
   --font-rosaline: "Rosaline", "sans-serif";
   --font-styro: "Styro", "sans-serif";
@@ -81,4 +82,3 @@ body {
   background: #f7f4f1;
   overflow-x: hidden;
 }
-

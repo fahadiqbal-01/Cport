@@ -7,7 +7,7 @@ const Dream = () => {
     <>
       <section>
         <ContainerSec className=" relative pb-[150px] ">
-          <h2 className=" text-[38px] font-cabinet text-center mt-[160px] w-[80%] mx-auto overflow-hidden ">
+          <h2 className=" text-[38px] font-cabinet text-center mt-[160px] w-[80%] mx-auto overflow-hidden selection:text-white selection:bg-black ">
             You dream it, I design it — let your vision come to life.
           </h2>
           <div className=" absolute left-[50%] translate-x-[-50%] top-[-80px] rotate-[-90deg] select-none pointer-events-none ">
@@ -19,6 +19,18 @@ const Dream = () => {
             >
               <img
                 src="pavanmg.png"
+                alt=""
+                className=" grayscale-50 rounded-2xl "
+              />
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{duration:0.5,  ease: "easeOut" }}
+              className=" w-[200px] rotate-50 border-[5px] rounded-3xl border-[#ffffff] "
+            >
+              <img
+                src="mrcfly.png"
                 alt=""
                 className=" grayscale-50 rounded-2xl "
               />

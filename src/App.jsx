@@ -10,6 +10,7 @@ import {
 } from "react-router-dom";
 import Home from "./Pages/Home";
 import "./App.css";
+import Message from "./Components/Message";
 
 function App() {
   const [count, setCount] = useState(0);

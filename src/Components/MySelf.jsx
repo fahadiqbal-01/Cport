@@ -15,16 +15,16 @@ const MySelf = () => {
       className=""
     >
       <ContainerSec>
-        <h2 className=" text-[38px] font-cabinet text-center mt-[160px] mx-auto pt-[20px] ">
+        <h2 className=" text-[38px] font-cabinet text-center mt-[160px] mx-auto pt-[20px] selection:text-white selection:bg-black ">
           Not just building websites — shaping experiences.
         </h2>
         <div className=" my-[30px] grid grid-cols-2 items-center">
           <img
             src="/redhood.png"
             alt="myIMG"
-            className=" w-[350px] rounded-2xl hover:drop-shadow-2xl hover:shadow-2xl duration-300 ease-out "
+            className=" w-[350px] rounded-2xl hover:drop-shadow-2xl hover:shadow-2xl duration-300 ease-out select-none "
           />
-          <p className=" text-[26px] font-GeneralSans  ">
+          <p className=" text-[26px] font-GeneralSans selection:text-white selection:bg-black  ">
             I’m Fahad Iqbal — a Web & UX/UI Developer, as well as a visual
             creator. I build clean, user-friendly websites and design graphics
             that connect — from posters and banners to refined photo edits. My
@@ -38,10 +38,13 @@ const MySelf = () => {
           whileInView={{ y: 0 }}
           transition={{ duration: 0.5, ease: easeOut }}
           viewport={{ once: true }}
-          className=" flex justify-evenly items-center gap-[20px] mt-[30px] px-[50px] py-[20px] bg-transparent border-4 
-        border-white rounded-2xl select-none hover:drop-shadow-2xl hover:shadow-2xl hover:bg-transparent hover:border-transparent duration-300 ease-out "
+          className=" flex justify-evenly items-center gap-[20px] mt-[30px] px-[50px] py-[20px] bg-transparent border-4 border-white rounded-2xl drop-shadow-xl
+           hover:drop-shadow-2xl hover:shadow-2xl duration-300 ease-out select-none "
         >
-          <a href="" className=" flex items-center gap-[10px] group ">
+          <a
+            href="https://www.instagram.com/theclonestamp/"
+            className=" border-4 border-transparent rounded-2xl flex items-center gap-[10px]  "
+          >
             <img
               src="/icons/instagram.png"
               alt="instagram_icon"
@@ -52,7 +55,7 @@ const MySelf = () => {
           <a
             href="https://twitter.com/_fahad_01_"
             target="blank"
-            className=" flex items-center gap-[10px] group "
+            className=" border-4 border-transparent rounded-2xl flex items-center gap-[10px]  "
           >
             <img
               src="/icons/twitter.png"
@@ -64,7 +67,7 @@ const MySelf = () => {
           <a
             href="https://wa.me/8801748996699?text=Hello%20Fahad%2C%20I%20came%20from%20your%20website!"
             target="blank"
-            className=" flex items-center gap-[10px] group "
+            className=" border-4 border-transparent rounded-2xl flex items-center gap-[10px]  "
           >
             <img
               src="/icons/whatsapp.png"
