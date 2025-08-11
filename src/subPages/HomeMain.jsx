@@ -41,7 +41,7 @@ const HomeMain = () => {
             initial="hidden"
             animate={mainControls}
             transition={{ delay: 0.5, duration: 0.7, ease: easeOut }}
-            className=" font-GeneralSans text-black xl:text-[16px] lg:text-[16px] md:text-[16px] text-[12px] text-center mt-[10px] selection:text-white selection:bg-black "
+            className=" font-GeneralSans text-black xl:text-[16px] lg:text-[16px] text-[16px] text-center mt-[10px] selection:text-white selection:bg-black "
           >
             Hi, I'm Fahad
           </motion.h2>
