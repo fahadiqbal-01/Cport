@@ -73,7 +73,7 @@ const HomeMain = () => {
             transition={{ delay: 0.5, duration: 0.7, ease: easeOut }}
             className=" text-center font-GeneralSans xl:text-[16px] lg:text-[16px] text-[16px] text-black 
             xl:leading-7 lg:leading-6 md:leading-5 leading-4 
-            xl:mt-[25px] lg:mt-[25px] md:mt-[25px] sm:mt-[18px] mt-[12px] 
+            xl:mt-[25px] lg:mt-[25px] md:mt-[25px] mt-[18px] 
             xl:w-fit lg:w-[70%] md:w-[80%] w-full mx-auto selection:text-white selection:bg-black "
           >
             A collection of work shaped by creativity and thoughtful details,
