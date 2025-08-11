@@ -40,7 +40,7 @@ const HomeMain = () => {
             }}
             initial="hidden"
             animate={mainControls}
-            transition={{ delay: 0.5, duration: 1.4, ease: easeInOut }}
+            transition={{ delay: 0.5, duration: 0.7, ease: easeOut }}
             className=" font-GeneralSans text-black text-[16px] text-center mt-[10px] selection:text-white selection:bg-black "
           >
             Hi, I'm Fahad
@@ -54,7 +54,7 @@ const HomeMain = () => {
             }}
             initial="hidden"
             animate={mainControls}
-            transition={{ delay: 0.5, duration: 1.4, ease: easeInOut }}
+            transition={{ delay: 0.5, duration: 1, ease: easeOut }}
             className=" text-[70px] font-cabinet text-center text-black leading-[75px] mt-[25px] w-fit selection:text-white selection:bg-black "
           >
             Creative mind you can trust for clarity, style, and purpose
@@ -67,7 +67,7 @@ const HomeMain = () => {
             }}
             initial="hidden"
             animate={mainControls}
-            transition={{ delay: 0.5, duration: 1.4, ease: easeInOut }}
+            transition={{ delay: 0.5, duration: 0.7, ease: easeOut }}
             className=" text-center font-GeneralSans text-[16px] text-black leading-7 mt-[25px] w-fit selection:text-white selection:bg-black "
           >
             A collection of work shaped by creativity and thoughtful details,

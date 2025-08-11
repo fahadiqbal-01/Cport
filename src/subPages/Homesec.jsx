@@ -34,7 +34,7 @@ const Homesec = () => {
               client portal to monitor visa status, document submissions, and approvals."
               pTextClass=" !text-black scale-x-[-1] "
               InnerFill="white"
-              OuterFill="#822b28"
+              OuterFill="#cfbda2"
               StarBG="bg-black"
               innerfillOH="#cfbda2"
               outerfillOH="#cfbda2"
@@ -55,12 +55,13 @@ const Homesec = () => {
               pTExt=" Shopping site where you can find everything.
                 Shop fasion, tech, home essentials and more - fast, easy and
                 affordable.  (On Going)"
+              pTextClass=" !text-black "
               InnerFill="white"
               OuterFill="#fe8eca"
               StarBG="bg-[#000000]"
-              innerfillOH="black"
-              outerfillOH="black"
-              otTextclass="text-white"
+              innerfillOH="#fe8eca"
+              outerfillOH="#fe8eca"
+              otTextclass="text-black"
               siteTitle="Exclusive"
             />
           </motion.div>
@@ -71,20 +72,20 @@ const Homesec = () => {
             transition={{ duration: 0.5, ease: easeOut }}
           >
             <WorkCart
-              WebLink="https://pavanmg.netlify.app/"
+              WebLink="https://notepadlist.vercel.app/"
               src="/notepad.gif"
               className=" mt-[80px] scale-x-[-1] "
               imgclassName=" scale-x-[-1]"
-              pTExt="Pavan MG’s portfolio is a modern, minimal site showcasing his projects,
-             creativity, and passion for building engaging digital experiences."
-              pTextClass=" !text-black scale-x-[-1] "
+              pTExt="A sleek React.js & Tailwind CSS notepad app enabling users to effortlessly add, 
+              edit, and delete notes for efficient organization."
+              pTextClass=" scale-x-[-1] text-white "
               InnerFill="white"
               OuterFill="#0149ad"
               StarBG="bg-black"
-              innerfillOH="#fdc244"
-              outerfillOH="#fdc244"
-              otTextclass="text-black scale-x-[-1] "
-              siteTitle="Todo-Tasks"
+              innerfillOH="#0149ad"
+              outerfillOH="#0149ad"
+              otTextclass="text-white scale-x-[-1] "
+              siteTitle="Todo List"
             />
           </motion.div>
 
@@ -101,7 +102,7 @@ const Homesec = () => {
              creativity, and passion for building engaging digital experiences."
               pTextClass=" !text-black "
               InnerFill="white"
-              OuterFill="#b31284"
+              OuterFill="#12adf0"
               StarBG="bg-black"
               innerfillOH="#12adf0"
               outerfillOH="#12adf0"
@@ -126,8 +127,8 @@ const Homesec = () => {
               InnerFill="white"
               OuterFill="#e37041"
               StarBG="bg-black"
-              innerfillOH="#fe3d5f"
-              outerfillOH="#fe3d5f"
+              innerfillOH="#e37041"
+              outerfillOH="#e37041"
               otTextclass="text-black scale-x-[-1] "
               siteTitle="Hancok"
             />
