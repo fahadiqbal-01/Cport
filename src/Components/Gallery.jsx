@@ -106,7 +106,7 @@ const Gallery = () => {
         </div>
       </motion.div>
 
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 px-[50px] pt-[50px] ">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 xl:px-[50px] lg:px-[50px] md:px-[50px] px-[20px] pt-[50px] pt-[50px] ">
         <div className="grid gap-4">
           <div>
             <img

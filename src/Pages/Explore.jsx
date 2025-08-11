@@ -11,7 +11,7 @@ const Explore = () => {
 
   useEffect(() => {
     setIsLoading(true);
-    const timer = setTimeout(() => setIsLoading(false), 1800);
+    const timer = setTimeout(() => setIsLoading(false), 1600);
     return () => clearTimeout(timer);
   }, [location]);
 

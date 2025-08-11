@@ -31,7 +31,7 @@ const HomeMain = () => {
           />
         </div>
 
-        <div className=" z-50 xl:pt-[110px] lg:pt-[80px] md:pt-[70px] pt-[60px] mx-auto xl:px-0 px-[26px] ">
+        <div className=" z-50 xl:pt-[110px] lg:pt-[80px] md:pt-[70px] pt-[60px] mx-auto xl:px-0 px-[20px] ">
           <motion.h2
             ref={ref}
             variants={{
@@ -55,10 +55,10 @@ const HomeMain = () => {
             initial="hidden"
             animate={mainControls}
             transition={{ delay: 0.5, duration: 1, ease: easeOut }}
-            className=" xl:text-[70px] lg:text-[60px] md:text-[50px] sm:text-[40px] text-[30px] font-cabinet text-center text-black 
-            xl:leading-[75px] lg:leading-[60px] md:leading-[50px] sm:leading-[40px] leading-[30px]
+            className=" xl:text-[70px] lg:text-[60px] md:text-[50px] text-[50px] font-cabinet text-center text-black 
+            xl:leading-[75px] lg:leading-[60px] md:leading-[50px] leading-[40px] 
              xl:mt-[25px] lg:mt-[25px] md:mt-[25px] sm:mt-[18px] mt-[12px] 
-             xl:w-fit lg:w-[70%] w-[70%] mx-auto selection:text-white selection:bg-black "
+             xl:w-fit lg:w-[70%] md:w-[80%] w-full mx-auto selection:text-white selection:bg-black "
           >
             Creative mind you can trust for clarity, style, and purpose
           </motion.h1>
@@ -71,10 +71,10 @@ const HomeMain = () => {
             initial="hidden"
             animate={mainControls}
             transition={{ delay: 0.5, duration: 0.7, ease: easeOut }}
-            className=" text-center font-GeneralSans xl:text-[16px] lg:text-[16px] md:text-[16px] sm:text-[14px] text-[12px] text-black 
+            className=" text-center font-GeneralSans xl:text-[16px] lg:text-[16px] text-[16px] text-black 
             xl:leading-7 lg:leading-6 md:leading-5 leading-4 
             xl:mt-[25px] lg:mt-[25px] md:mt-[25px] sm:mt-[18px] mt-[12px] 
-            xl:w-fit lg:w-[70%] md:w-[60%] sm:w-[70%] mx-auto selection:text-white selection:bg-black "
+            xl:w-fit lg:w-[70%] md:w-[80%] w-full mx-auto selection:text-white selection:bg-black "
           >
             A collection of work shaped by creativity and thoughtful details,
             fueled by a genuine passion for turning ideas into clear, engaging

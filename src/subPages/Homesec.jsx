@@ -9,13 +9,14 @@ import MySelf from "../Components/MySelf";
 const Homesec = () => {
   return (
     <>
-      <section className=" pb-[100px] mt-[160px] ">
+      <section className=" pb-[100px] xl:mt-[160px] lg:mt-[130px] md:mt-[100px] sm:mt-[70px] mt-[40px] ">
         <ContainerSec>
           <motion.h2
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 1, ease: easeOut }}
-            className=" text-[38px] font-cabinet text-center mb-[60px] selection:text-white selection:bg-black "
+            className=" xl:text-[38px] lg:text-[36px] md:text-[32px] text-[28px]
+             font-cabinet text-center xl:mb-[60px] lg:mb-[50px] md:mb-[40px] mb-[20px] selection:text-white selection:bg-black "
           >
             Tiny fraction of my work...
           </motion.h2>
@@ -28,10 +29,9 @@ const Homesec = () => {
             <WorkCart
               WebLink="https://www.mrcfly.com/"
               src="/mrcfly.png"
-              className=" mt-[80px] scale-x-[-1] "
+              className="  scale-x-[-1] "
               imgclassName=" scale-x-[-1]  "
-              pTExt="MRCFLY.com is a visa agency platform offering personalized application assistance and a 
-              client portal to monitor visa status, document submissions, and approvals."
+              pTExt="MRCFLY.com is a visa agency providing personalized application help and a portal to track visa status, documents, and approvals."
               pTextClass=" !text-black scale-x-[-1] "
               InnerFill="white"
               OuterFill="#cfbda2"
@@ -51,7 +51,6 @@ const Homesec = () => {
             <WorkCart
               WebLink="https://exclusive-io.netlify.app/"
               src="/exclusive.png"
-              className="mt-[80px] "
               pTExt=" Shopping site where you can find everything.
                 Shop fasion, tech, home essentials and more - fast, easy and
                 affordable.  (On Going)"
@@ -74,7 +73,7 @@ const Homesec = () => {
             <WorkCart
               WebLink="https://notepadlist.vercel.app/"
               src="/notepad.gif"
-              className=" mt-[80px] scale-x-[-1] "
+              className="  scale-x-[-1] "
               imgclassName=" scale-x-[-1]"
               pTExt="A sleek React.js & Tailwind CSS notepad app enabling users to effortlessly add, 
               edit, and delete notes for efficient organization."
@@ -97,7 +96,6 @@ const Homesec = () => {
             <WorkCart
               WebLink="https://pavanmg.netlify.app/"
               src="/pavanmg.png"
-              className=" mt-[80px]  "
               pTExt="Pavan MG’s portfolio is a modern, minimal site showcasing his projects,
              creativity, and passion for building engaging digital experiences."
               pTextClass=" !text-black "
@@ -119,7 +117,7 @@ const Homesec = () => {
             <WorkCart
               WebLink="https://fahadiqbal-01.github.io/hanock/"
               src="/hancok.png"
-              className=" mt-[80px] scale-x-[-1] "
+              className="  scale-x-[-1] "
               imgclassName=" scale-x-[-1]  "
               pTExt="Hanock is a sleek gaming platform showcasing live matches,
              popular games, and gear, built to engage the esports community."

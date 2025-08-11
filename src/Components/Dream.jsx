@@ -6,7 +6,7 @@ const Dream = () => {
   return (
     <>
       <section>
-        <ContainerSec className=" relative pb-[150px] ">
+        <ContainerSec className=" xl:block lg:block md:block hidden  relative pb-[150px] ">
           <h2 className=" text-[38px] font-cabinet text-center mt-[160px] w-[80%] mx-auto overflow-hidden selection:text-white selection:bg-black ">
             You dream it, I design it — let your vision come to life.
           </h2>
@@ -14,7 +14,7 @@ const Dream = () => {
             <motion.div
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
-              transition={{duration:0.5,  ease: "easeOut" }}
+              transition={{ duration: 0.5, ease: "easeOut" }}
               className=" w-[200px] rotate-50 border-[5px] rounded-3xl border-[#ffffff] "
             >
               <img
@@ -26,7 +26,7 @@ const Dream = () => {
             <motion.div
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
-              transition={{duration:0.5,  ease: "easeOut" }}
+              transition={{ duration: 0.5, ease: "easeOut" }}
               className=" w-[200px] rotate-50 border-[5px] rounded-3xl border-[#ffffff] "
             >
               <img
@@ -37,8 +37,8 @@ const Dream = () => {
             </motion.div>
             <motion.div
               initial={{ x: -100, y: -100 }}
-              whileInView={{ x: 0, y: 0}}
-              transition={{duration:0.4, ease: "easeOut" }}
+              whileInView={{ x: 0, y: 0 }}
+              transition={{ duration: 0.4, ease: "easeOut" }}
               className=" w-[200px] rotate-50 border-[5px] rounded-3xl border-[#ffffff] "
             >
               <img
@@ -49,8 +49,8 @@ const Dream = () => {
             </motion.div>
             <motion.div
               initial={{ x: -200, y: -200 }}
-              whileInView={{ x: 0, y: 0}}
-              transition={{duration:0.4,  ease: "easeOut" }}
+              whileInView={{ x: 0, y: 0 }}
+              transition={{ duration: 0.4, ease: "easeOut" }}
               className=" w-[200px] rotate-50 border-[5px] rounded-3xl border-[#ffffff] "
             >
               <img
@@ -61,8 +61,8 @@ const Dream = () => {
             </motion.div>
             <motion.div
               initial={{ x: -300, y: -300 }}
-              whileInView={{ x: 0, y: 0}}
-              transition={{duration:0.4,  ease: "easeOut" }}
+              whileInView={{ x: 0, y: 0 }}
+              transition={{ duration: 0.4, ease: "easeOut" }}
               className=" w-[200px] rotate-50 border-[5px] rounded-3xl border-[#ffffff] "
             >
               <img
@@ -73,8 +73,8 @@ const Dream = () => {
             </motion.div>
             <motion.div
               initial={{ x: -400, y: -400 }}
-              whileInView={{ x: 0, y: 0}}
-              transition={{duration:0.4,  ease: "easeOut" }}
+              whileInView={{ x: 0, y: 0 }}
+              transition={{ duration: 0.4, ease: "easeOut" }}
               className=" w-[200px] rotate-50 border-[5px] rounded-3xl border-[#ffffff] "
             >
               <img
@@ -85,8 +85,8 @@ const Dream = () => {
             </motion.div>
             <motion.div
               initial={{ x: -500, y: -500 }}
-              whileInView={{ x: 0, y: 0}}
-              transition={{duration:0.4,  ease: "easeOut" }}
+              whileInView={{ x: 0, y: 0 }}
+              transition={{ duration: 0.4, ease: "easeOut" }}
               className=" w-[200px] rotate-50 border-[5px] rounded-3xl border-[#ffffff] "
             >
               <img

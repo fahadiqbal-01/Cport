@@ -30,7 +30,7 @@ const LeftSlide = () => {
           <SiGnuicecat className=" mx-auto xl:text-[60px] lg:text-[60px] md:text-[50px] sm:text-[40px] text-[30px] fill-black pointer-events-none " />
         </div>
 
-        <h2 className=" font-cabinet xl:text-[38px] lg:text-[36px] md:text-[32px] sm:text-[28px] text-[24px] font-medium text-center selection:bg-black selection:text-white ">
+        <h2 className=" font-cabinet xl:text-[38px] lg:text-[36px] md:text-[32px] text-[28px] font-medium text-center selection:bg-black selection:text-white ">
           Step into my digital home
         </h2>
       </motion.div>

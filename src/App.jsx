@@ -11,16 +11,21 @@ import {
 import Home from "./Pages/Home";
 import "./App.css";
 import Message from "./Components/Message";
+import { NotFound } from "./Pages/NotFound";
 
 function App() {
   const [count, setCount] = useState(0);
 
   const router = createBrowserRouter(
     createRoutesFromElements(
-      <Route path="/" element={<RootLayout />}>
-        <Route index element={<Home />} />
-        <Route path="/Explore" element={<Explore />} />
-      </Route>
+      <>
+        {" "}
+        <Route path="/" element={<RootLayout />}>
+          <Route index element={<Home />} />
+          <Route path="/Explore" element={<Explore />} />
+        </Route>
+        <Route path="*" element={<NotFound />} />
+      </>
     )
   );
 

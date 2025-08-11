@@ -20,7 +20,7 @@ const NavBar = () => {
     <>
       <nav className=" pt-[20px] pb-[10px] w-full ">
         <ul className=" flex gap-[20px] items-center justify-center p-0 m-0 mx-auto ">
-          <Link to="/">
+          <Link to="/explore">
             <motion.li
               ref={ref}
               variants={{
@@ -38,24 +38,27 @@ const NavBar = () => {
               after:content-[''] after:h-[30px] after:w-[3px] after:bg-yellow-500 after:absolute after:left-0 after:bottom-[-3px] after:duration-300
                after:ease-out after:-z-50 hover:after:w-[100%]  relative"
             >
-              Home
+              Explore
             </motion.li>
           </Link>
 
-          <motion.li
-            ref={ref}
-            variants={{
-              hidden: { opacity: 0 },
-              visible: { opacity: 100 },
-            }}
-            initial="hidden"
-            animate={mainControls}
-            transition={{ delay: 0.5, duration: 1.4, ease: easeInOut }}
-            className=" inline-block drop-shadow-2xl ml-[10px] text-[30px] font-aktura cursor-default select-none text-center leading-[30px] "
-          >
-            FAHAD <br /> IQBAL
-          </motion.li>
-          <Link to="/explore">
+          <Link to="/" >
+            <motion.li
+              ref={ref}
+              variants={{
+                hidden: { opacity: 0 },
+                visible: { opacity: 100 },
+              }}
+              initial="hidden"
+              animate={mainControls}
+              transition={{ delay: 0.5, duration: 1.4, ease: easeInOut }}
+              className=" inline-block drop-shadow-2xl ml-[10px] text-[30px] font-aktura cursor-default select-none text-center leading-[30px] "
+            >
+              FAHAD <br /> IQBAL
+            </motion.li>
+          </Link>
+
+          <Link to="/contact">
             <motion.li
               ref={ref}
               variants={{
@@ -73,7 +76,7 @@ const NavBar = () => {
               after:content-[''] after:h-[30px] after:w-[3px] after:bg-yellow-500 after:absolute after:right-0 after:bottom-[-3px] after:duration-300
                after:ease-out after:-z-50 hover:after:w-[100%]  relative"
             >
-              Explore
+              Contact
             </motion.li>
           </Link>
         </ul>
