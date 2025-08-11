@@ -7,7 +7,7 @@ const Gallery = () => {
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        transition={{ duration: 0.5, ease: "easeOut" }}
+        transition={{ duration: 0.7, ease: "easeOut" }}
         viewport={{ once: true }}
         className="grid grid-cols-2 md:grid-cols-4 gap-4 px-[50px] pt-[50px] select-none "
       >

@@ -18,7 +18,7 @@ const Star = ({ className, innerFill, outerFill }) => {
   return (
     <>
       <div
-        className={`w-[700px] pointer-events-none select-none ${className} `}
+        className={`xl:w-[600px] pointer-events-none select-none ${className} `}
       >
         <motion.svg
           ref={ref}
@@ -31,7 +31,7 @@ const Star = ({ className, innerFill, outerFill }) => {
           viewport={{ once: true }}
           style={{ willChange: "transform" }}
           transition={{
-            duration: 1,
+            duration: 1.5,
             ease: easeOut,
           }}
           className=" p-0 m-0"

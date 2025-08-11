@@ -7,22 +7,22 @@ import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 
 const Home = () => {
   const location = useLocation();
-  const [isLoading, setIsLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(true); // start true
 
   useEffect(() => {
-    setIsLoading(true);
-    const timer = setTimeout(() => setIsLoading(false), 1500);
+    setIsLoading(true); // show loader immediately on route change
+    const timer = setTimeout(() => setIsLoading(false), 3000);
     return () => clearTimeout(timer);
   }, [location]);
 
   return (
     <>
       {isLoading ? (
-        <div className=" h-[100vh] w-full ">
-          <DotLottieReact src="json/amongus.lottie" loop autoplay />
+        <div className="h-[100vh] w-full">
+          <DotLottieReact src="json/hello.lottie" loop autoplay />
         </div>
       ) : (
-        <section>
+        <section className="overflow-x-hidden">
           <HomeMain />
           <LeftSlide />
           <Homesec />

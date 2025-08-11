@@ -14,26 +14,25 @@ const LeftSlide = () => {
         duration: 0.3,
         ease: easeOut,
       }}
-      className="mt-[110px] "
+      className=" xl:mt-[110px] lg:mt-[90px] md:mt-[70px] sm:mt-[50px] mt-[30px] select-none "
     >
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 100 }}
         transition={{
           delay: 0.3,
-          duration: 0.4,
+          duration: 0.5,
           ease: easeOut,
         }}
         className=" mb-[20px] "
       >
-        <div className=" p-0 m-0 pointer-events-none ">
-          <SiGnuicecat className=" mx-auto text-[60px] pb-0 fill-black pointer-events-auto w-fit " />
+        <div className=" pointer-events-none ">
+          <SiGnuicecat className=" mx-auto xl:text-[60px] lg:text-[60px] md:text-[50px] sm:text-[40px] text-[30px] fill-black pointer-events-none " />
         </div>
 
-        <h2 className=" font-cabinet text-[38px] font-medium text-center selection:bg-black selection:text-white ">
+        <h2 className=" font-cabinet xl:text-[38px] lg:text-[36px] md:text-[32px] sm:text-[28px] text-[24px] font-medium text-center selection:bg-black selection:text-white ">
           Step into my digital home
         </h2>
-        <div></div>
       </motion.div>
 
       <Marquee
@@ -52,7 +51,7 @@ const LeftSlide = () => {
           style={slideStyle}
         >
           <img
-            className=" rounded-2xl duration-300 ease-out  "
+            className=" rounded-2xl duration-300 ease-out "
             src="/vintagecar.png"
           />
         </motion.div>
