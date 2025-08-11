@@ -2,23 +2,30 @@ import React, { useEffect, useState } from "react";
 import HomeMain from "../subPages/HomeMain";
 import LeftSlide from "../Components/LeftSlide";
 import Homesec from "../subPages/Homesec";
-import { useLocation } from "react-router-dom";
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 
 const Home = () => {
-  const location = useLocation();
-  const [isLoading, setIsLoading] = useState(true); // start true
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    setIsLoading(true); // show loader immediately on route change
-    const timer = setTimeout(() => setIsLoading(false), 3000);
-    return () => clearTimeout(timer);
-  }, [location]);
+    // Check if loader was already shown in this browser
+    const alreadyShown = sessionStorage.getItem("hasShownLoader");
+
+    if (alreadyShown) {
+      // Skip loader next time
+      setIsLoading(false);
+    } else {
+      // First time visit: show loader for 3s
+      sessionStorage.setItem("hasShownLoader", "true");
+      const timer = setTimeout(() => setIsLoading(false), 3000);
+      return () => clearTimeout(timer);
+    }
+  }, []);
 
   return (
     <>
       {isLoading ? (
-        <div className="h-[100vh] w-full">
+        <div className="h-[100vh] w-full flex justify-center items-center">
           <DotLottieReact src="json/hello.lottie" loop autoplay />
         </div>
       ) : (
