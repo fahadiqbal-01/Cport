@@ -9,7 +9,7 @@ const Gallery = () => {
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.7, ease: "easeOut" }}
         viewport={{ once: true }}
-        className="grid grid-cols-2 md:grid-cols-4 gap-4 px-[50px] pt-[50px] select-none "
+        className="grid grid-cols-2 md:grid-cols-4 gap-4 xl:px-[50px] lg:px-[50px] md:px-[50px] px-[20px] pt-[50px] select-none "
       >
         <div className="grid gap-4">
           <div>
