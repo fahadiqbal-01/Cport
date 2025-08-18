@@ -42,12 +42,13 @@ const MySelf = () => {
           whileInView={{ y: 0 }}
           transition={{ duration: 0.5, ease: easeOut }}
           viewport={{ once: true }}
-          className=" flex justify-evenly items-center gap-[20px] mt-[30px] xl:px-[160px] lg:px-[160px] md:px-[150px] px-[20px] py-[20px] 
+          className=" flex justify-evenly items-center gap-[28px] mt-[30px] xl:px-[160px] lg:px-[160px] md:px-[150px] px-[20px] py-[20px] 
           bg-transparent border-4 border-white rounded-2xl drop-shadow-xl w-fit mx-auto
            hover:drop-shadow-2xl hover:shadow-2xl duration-300 ease-out select-none "
         >
-          <a
+          {/* <a
             href="https://www.instagram.com/theclonestamp/"
+            target="_blank"
             className=" border-4 border-transparent rounded-2xl flex items-center gap-[10px]  "
           >
             <img
@@ -56,8 +57,8 @@ const MySelf = () => {
               className=" w-[32px] "
             />
             <h6 className=" text-[18px] font-GeneralSans xl:block lg:block md:block hidden ">Instagram</h6>
-          </a>
-          <a
+          </a> */}
+          {/* <a
             href="https://twitter.com/_fahad_01_"
             target="blank"
             className=" border-4 border-transparent rounded-2xl flex items-center gap-[10px]  "
@@ -68,7 +69,7 @@ const MySelf = () => {
               className=" w-[32px] "
             />
             <h6 className=" text-[18px] font-GeneralSans xl:block lg:block md:block hidden ">Twitter</h6>
-          </a>
+          </a> */}
           <a
             href="https://wa.me/8801748996699?text=Hello%20Fahad%2C%20I%20came%20from%20your%20website!"
             target="blank"

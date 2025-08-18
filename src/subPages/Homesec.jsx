@@ -29,17 +29,39 @@ const Homesec = () => {
             <WorkCart
               WebLink="https://www.mrcfly.com/"
               src="/mrcfly.png"
-              className="  scale-x-[-1] "
-              imgclassName=" scale-x-[-1]  "
+              className=""
+              imgclassName=" "
               pTExt="MRCFLY.com is a visa agency providing personalized application help and a portal to track visa status, documents, and approvals."
-              pTextClass=" !text-black scale-x-[-1] "
+              pTextClass=" !text-black"
               InnerFill="white"
               OuterFill="#cfbda2"
               StarBG="bg-black"
               innerfillOH="#cfbda2"
               outerfillOH="#cfbda2"
-              otTextclass="text-black scale-x-[-1] "
+              otTextclass="text-black"
               siteTitle="MRCFLY"
+            />
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, x: -150 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5, ease: easeOut }}
+          >
+            <WorkCart
+              WebLink="https://fahad-iqbal.netlify.app/"
+              src="/myportfolioweb.png"
+              className="  scale-x-[-1] "
+              imgclassName=" scale-x-[-1]  "
+              pTExt="Fahad Iqbal’s portfolio showcases his front-end development skills, React projects, responsive designs, and creative video editing, with contact links included."
+              pTextClass=" !text-white scale-x-[-1] "
+              InnerFill="white"
+              OuterFill="#275344"
+              StarBG="bg-black"
+              innerfillOH="#275344"
+              outerfillOH="#275344"
+              otTextclass="text-white scale-x-[-1] "
+              siteTitle="Portfolio"
             />
           </motion.div>
 

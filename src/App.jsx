@@ -10,8 +10,8 @@ import {
 } from "react-router-dom";
 import Home from "./Pages/Home";
 import "./App.css";
-import Message from "./Components/Message";
 import { NotFound } from "./Pages/NotFound";
+import { Contact } from "./Pages/Contact";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -23,6 +23,7 @@ function App() {
         <Route path="/" element={<RootLayout />}>
           <Route index element={<Home />} />
           <Route path="/Explore" element={<Explore />} />
+          <Route path="/Contact" element={<Contact />} />
         </Route>
         <Route path="*" element={<NotFound />} />
       </>
