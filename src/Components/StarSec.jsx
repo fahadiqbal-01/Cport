@@ -8,6 +8,7 @@ const StarSec = ({ className, innerFill, outerFill }) => {
     <div className={`w-[700px] cursor-pointer ${className} `}>
       <motion.svg
         initial={{ opacity: 0, rotate: 0 }}
+        whileHover={{rotate: 15}}
         whileInView={{ opacity: 100, rotate: 360 }}
         style={{ willChange: "transform" }}
         transition={{
@@ -15,25 +16,16 @@ const StarSec = ({ className, innerFill, outerFill }) => {
           ease: easeOut,
         }}
         className=" p-0 m-0"
-        viewBox="0 0 200 200"
+        viewBox="0 0 512 512"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <g fill={outerFill} className=" pointer-events-auto ">
+        <g fill={outerFill} className="pointer-events-auto">
           <path
-            className=" "
-            d="M100,50 
-             C115,30 135,30 140,50 
-             C165,50 170,75 155,90 
-             C175,105 165,130 145,125 
-             C150,150 120,160 100,145 
-             C80,160 50,150 55,125 
-             C35,130 25,105 45,90 
-             C30,75 35,50 60,50 
-             C65,30 85,30 100,50
-             Z"
+            d="M256 120c20 0 36 16 36 36v60l53-30c17-10 38-4 48 13s4 38-13 48l-53 30 53 
+            30c17 10 23 31 13 48s-31 23-48 13l-53-30v60c0 20-16 36-36 36s-36-16-36-36v-60l-53 
+            30c-17 10-38 4-48-13s-4-38 13-48l53-30-53-30c-17-10-23-31-13-48s31-23 48-13l53 30v-60c0-20 16-36 36-36z"
           />
         </g>
-        <circle cx="100" cy="100" r="20" fill={innerFill} />
       </motion.svg>
     </div>
   );

@@ -3,6 +3,7 @@ import HomeMain from "../subPages/HomeMain";
 import LeftSlide from "../Components/LeftSlide";
 import Homesec from "../subPages/Homesec";
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
+import { ContactMSG } from "../Components/ContactMSG";
 
 const Home = () => {
   const [isLoading, setIsLoading] = useState(true);

@@ -11,7 +11,8 @@ import {
 import Home from "./Pages/Home";
 import "./App.css";
 import { NotFound } from "./Pages/NotFound";
-import { Contact } from "./Pages/Contact";
+import { About } from "./Pages/About";
+import { ContactMSG } from "./Components/ContactMSG";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -23,7 +24,8 @@ function App() {
         <Route path="/" element={<RootLayout />}>
           <Route index element={<Home />} />
           <Route path="/Explore" element={<Explore />} />
-          <Route path="/Contact" element={<Contact />} />
+          <Route path="/About" element={<About />} />
+          <Route path="/ContactMSG" element={<ContactMSG />} />
         </Route>
         <Route path="*" element={<NotFound />} />
       </>

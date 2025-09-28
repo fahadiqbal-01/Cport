@@ -3,11 +3,9 @@ import Star from "../Components/Star";
 import Container from "../Components/Container";
 import * as motion from "motion/react-client";
 import { delay, easeIn, easeInOut, easeOut, scale } from "motion";
-import Chat from "../Components/Chat";
 import { _round } from "gsap/gsap-core";
 import { useAnimation, useInView } from "motion/react";
-import LeftSlide from "../Components/LeftSlide";
-import { HashLink } from "react-router-hash-link";
+import { SendMSG } from "../Components/SendMSG";
 
 const HomeMain = () => {
   const ref = useRef(null);
@@ -26,8 +24,7 @@ const HomeMain = () => {
         <div className=" relative xl:block hidden ">
           <Star
             className=" absolute top-0 right-0 "
-            innerFill="#f7f5f0"
-            outerFill="lightblue"
+            outerFill="#d0ba98"
           />
         </div>
 
@@ -40,7 +37,7 @@ const HomeMain = () => {
             }}
             initial="hidden"
             animate={mainControls}
-            transition={{ delay: 0.5, duration: 0.7, ease: easeOut }}
+            transition={{ delay: 0.5, duration: 0.7, ease: easeInOut }}
             className=" font-GeneralSans text-black xl:text-[16px] lg:text-[16px] text-[16px] text-center mt-[10px] selection:text-white selection:bg-black "
           >
             Hi, I'm Fahad
@@ -54,7 +51,7 @@ const HomeMain = () => {
             }}
             initial="hidden"
             animate={mainControls}
-            transition={{ delay: 0.5, duration: 1, ease: easeOut }}
+            transition={{ delay: 0.5, duration: 1, ease: easeInOut }}
             className=" xl:text-[70px] lg:text-[60px] md:text-[50px] text-[50px] font-cabinet text-center text-black 
             xl:leading-[75px] lg:leading-[60px] md:leading-[50px] leading-[40px] 
              xl:mt-[25px] lg:mt-[25px] md:mt-[25px] sm:mt-[18px] mt-[12px] 
@@ -70,7 +67,7 @@ const HomeMain = () => {
             }}
             initial="hidden"
             animate={mainControls}
-            transition={{ delay: 0.5, duration: 0.7, ease: easeOut }}
+            transition={{ delay: 0.5, duration: 0.7, ease: easeInOut }}
             className=" text-center font-GeneralSans xl:text-[16px] lg:text-[16px] text-[16px] text-black 
             xl:leading-7 lg:leading-6 md:leading-5 leading-4 
             xl:mt-[25px] lg:mt-[25px] md:mt-[25px] mt-[18px] 
@@ -80,15 +77,13 @@ const HomeMain = () => {
             fueled by a genuine passion for turning ideas into clear, engaging
             visual experiences that inspire and connect.
           </motion.p>
-
-          <Chat />
+          <SendMSG />
         </div>
 
         <div className=" relative xl:block hidden ">
           <Star
             className=" absolute top-0 left-0 "
-            innerFill="#f7f5f0"
-            outerFill="#822b28"
+            outerFill="#d0ba98"
           />
         </div>
       </Container>

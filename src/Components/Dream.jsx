@@ -14,7 +14,13 @@ const Dream = () => {
             <motion.div
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
-              transition={{ duration: 0.5, ease: "easeOut" }}
+              transition={{
+                duration: 0.5,
+                ease: "easeOut",
+                type: "spring",
+                stiffness: 100,
+              }}
+              viewport={{ amount: 0.4 }}
               className=" w-[200px] rotate-50 border-[5px] rounded-3xl border-[#ffffff] "
             >
               <img
@@ -26,7 +32,13 @@ const Dream = () => {
             <motion.div
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
-              transition={{ duration: 0.5, ease: "easeOut" }}
+              transition={{
+                duration: 0.5,
+                ease: "easeOut",
+                type: "spring",
+                stiffness: 100,
+              }}
+              viewport={{ amount: 0.4 }}
               className=" w-[200px] rotate-50 border-[5px] rounded-3xl border-[#ffffff] "
             >
               <img
@@ -38,7 +50,13 @@ const Dream = () => {
             <motion.div
               initial={{ x: -100, y: -100 }}
               whileInView={{ x: 0, y: 0 }}
-              transition={{ duration: 0.4, ease: "easeOut" }}
+              transition={{
+                duration: 0.4,
+                ease: "easeOut",
+                type: "spring",
+                stiffness: 100,
+              }}
+              viewport={{ amount: 0.4 }}
               className=" w-[200px] rotate-50 border-[5px] rounded-3xl border-[#ffffff] "
             >
               <img
@@ -50,7 +68,13 @@ const Dream = () => {
             <motion.div
               initial={{ x: -200, y: -200 }}
               whileInView={{ x: 0, y: 0 }}
-              transition={{ duration: 0.4, ease: "easeOut" }}
+              transition={{
+                duration: 0.4,
+                ease: "easeOut",
+                type: "spring",
+                stiffness: 100,
+              }}
+              viewport={{ amount: 0.4 }}
               className=" w-[200px] rotate-50 border-[5px] rounded-3xl border-[#ffffff] "
             >
               <img
@@ -62,7 +86,13 @@ const Dream = () => {
             <motion.div
               initial={{ x: -300, y: -300 }}
               whileInView={{ x: 0, y: 0 }}
-              transition={{ duration: 0.4, ease: "easeOut" }}
+              transition={{
+                duration: 0.4,
+                ease: "easeOut",
+                type: "spring",
+                stiffness: 100,
+              }}
+              viewport={{ amount: 0.4 }}
               className=" w-[200px] rotate-50 border-[5px] rounded-3xl border-[#ffffff] "
             >
               <img
@@ -74,7 +104,13 @@ const Dream = () => {
             <motion.div
               initial={{ x: -400, y: -400 }}
               whileInView={{ x: 0, y: 0 }}
-              transition={{ duration: 0.4, ease: "easeOut" }}
+              transition={{
+                duration: 0.4,
+                ease: "easeOut",
+                type: "spring",
+                stiffness: 100,
+              }}
+              viewport={{ amount: 0.4 }}
               className=" w-[200px] rotate-50 border-[5px] rounded-3xl border-[#ffffff] "
             >
               <img
@@ -86,7 +122,13 @@ const Dream = () => {
             <motion.div
               initial={{ x: -500, y: -500 }}
               whileInView={{ x: 0, y: 0 }}
-              transition={{ duration: 0.4, ease: "easeOut" }}
+              transition={{
+                duration: 0.4,
+                ease: "easeOut",
+                type: "spring",
+                stiffness: 100,
+              }}
+              viewport={{ amount: 0.4 }}
               className=" w-[200px] rotate-50 border-[5px] rounded-3xl border-[#ffffff] "
             >
               <img

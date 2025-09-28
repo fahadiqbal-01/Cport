@@ -5,6 +5,7 @@ import WorkCart from "../Components/WorkCart";
 import { easeOut } from "motion";
 import Dream from "../Components/Dream";
 import MySelf from "../Components/MySelf";
+import { ContactMSG } from "../Components/ContactMSG";
 
 const Homesec = () => {
   return (
@@ -22,9 +23,10 @@ const Homesec = () => {
           </motion.h2>
 
           <motion.div
-            initial={{ opacity: 0, x: -150 }}
+            initial={{ opacity: 0, x: 150 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5, ease: easeOut }}
+            viewport={{ amount: 0.4 }}
           >
             <WorkCart
               WebLink="https://www.mrcfly.com/"
@@ -33,7 +35,6 @@ const Homesec = () => {
               imgclassName=" "
               pTExt="MRCFLY.com is a visa agency providing personalized application help and a portal to track visa status, documents, and approvals."
               pTextClass=" !text-black"
-              InnerFill="white"
               OuterFill="#cfbda2"
               StarBG="bg-black"
               innerfillOH="#cfbda2"
@@ -47,15 +48,15 @@ const Homesec = () => {
             initial={{ opacity: 0, x: -150 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5, ease: easeOut }}
+            viewport={{ amount: 0.4 }}
           >
             <WorkCart
               WebLink="https://fahad-iqbal.netlify.app/"
               src="/myportfolioweb.png"
-              className="  scale-x-[-1] "
+              className=" scale-x-[-1] "
               imgclassName=" scale-x-[-1]  "
-              pTExt="Fahad Iqbal’s portfolio showcases his front-end development skills, React projects, responsive designs, and creative video editing, with contact links included."
+              pTExt="Fahad Iqbal’s portfolio showcases his development skills, React projects, responsive designs, and creative video editing, with contact links included."
               pTextClass=" !text-white scale-x-[-1] "
-              InnerFill="white"
               OuterFill="#275344"
               StarBG="bg-black"
               innerfillOH="#275344"
@@ -69,6 +70,7 @@ const Homesec = () => {
             initial={{ opacity: 0, x: 150 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5, ease: easeOut }}
+            viewport={{ amount: 0.4 }}
           >
             <WorkCart
               WebLink="https://exclusive-io.netlify.app/"
@@ -77,7 +79,6 @@ const Homesec = () => {
                 Shop fasion, tech, home essentials and more - fast, easy and
                 affordable.  (On Going)"
               pTextClass=" !text-black "
-              InnerFill="white"
               OuterFill="#fe8eca"
               StarBG="bg-[#000000]"
               innerfillOH="#fe8eca"
@@ -88,9 +89,10 @@ const Homesec = () => {
           </motion.div>
 
           <motion.div
-            initial={{ opacity: 0, x: 150 }}
+            initial={{ opacity: 0, x: -150 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5, ease: easeOut }}
+            viewport={{ amount: 0.4 }}
           >
             <WorkCart
               WebLink="https://notepadlist.vercel.app/"
@@ -100,7 +102,6 @@ const Homesec = () => {
               pTExt="A sleek React.js & Tailwind CSS notepad app enabling users to effortlessly add, 
               edit, and delete notes for efficient organization."
               pTextClass=" scale-x-[-1] text-white "
-              InnerFill="white"
               OuterFill="#0149ad"
               StarBG="bg-black"
               innerfillOH="#0149ad"
@@ -114,6 +115,7 @@ const Homesec = () => {
             initial={{ opacity: 0, x: 150 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5, ease: easeOut }}
+            viewport={{ amount: 0.4 }}
           >
             <WorkCart
               WebLink="https://pavanmg.netlify.app/"
@@ -121,7 +123,6 @@ const Homesec = () => {
               pTExt="Pavan MG’s portfolio is a modern, minimal site showcasing his projects,
              creativity, and passion for building engaging digital experiences."
               pTextClass=" !text-black "
-              InnerFill="white"
               OuterFill="#12adf0"
               StarBG="bg-black"
               innerfillOH="#12adf0"
@@ -135,6 +136,7 @@ const Homesec = () => {
             initial={{ opacity: 0, x: -150 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5, ease: easeOut }}
+            viewport={{ amount: 0.4 }}
           >
             <WorkCart
               WebLink="https://fahadiqbal-01.github.io/hanock/"
@@ -144,7 +146,6 @@ const Homesec = () => {
               pTExt="Hanock is a sleek gaming platform showcasing live matches,
              popular games, and gear, built to engage the esports community."
               pTextClass=" !text-black scale-x-[-1] "
-              InnerFill="white"
               OuterFill="#e37041"
               StarBG="bg-black"
               innerfillOH="#e37041"

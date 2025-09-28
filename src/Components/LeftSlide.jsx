@@ -11,10 +11,12 @@ const LeftSlide = () => {
       whileInView={{ opacity: 100, y: 0 }}
       transition={{
         delay: 0.3,
-        duration: 0.3,
+        duration: 0.7,
         ease: easeOut,
+        type: "spring",
+        stiffness: 100,
       }}
-      className=" xl:mt-[110px] lg:mt-[90px] md:mt-[70px] sm:mt-[50px] mt-[30px] select-none "
+      className=" xl:mt-[110px] lg:mt-[90px] md:mt-[70px] sm:mt-[50px] mt-[30px] "
     >
       <motion.div
         initial={{ opacity: 0 }}
@@ -26,11 +28,11 @@ const LeftSlide = () => {
         }}
         className=" mb-[20px] "
       >
-        <div className=" pointer-events-none ">
-          <SiGnuicecat className=" mx-auto xl:text-[60px] lg:text-[60px] md:text-[50px] sm:text-[40px] text-[30px] fill-black pointer-events-none " />
+        <div className=" ">
+          <SiGnuicecat className=" mx-auto xl:text-[60px] lg:text-[60px] md:text-[50px] sm:text-[40px] text-[30px] fill-black" />
         </div>
 
-        <h2 className=" font-cabinet xl:text-[38px] lg:text-[36px] md:text-[32px] text-[28px] font-medium text-center selection:bg-black selection:text-white ">
+        <h2 className=" font-cabinet xl:text-[38px] lg:text-[36px] md:text-[32px] text-[28px] font-medium text-center select-auto selection:bg-black selection:text-white ">
           Step into my digital home
         </h2>
       </motion.div>
@@ -40,6 +42,7 @@ const LeftSlide = () => {
         speed={50}
         pauseOnHover={false}
         loop={0} // 0 = infinite loop
+        className=" select-none "
       >
         <motion.div
           initial={{ scale: 0.9 }}
@@ -51,7 +54,7 @@ const LeftSlide = () => {
           style={slideStyle}
         >
           <img
-            className=" rounded-2xl duration-300 ease-out "
+            className=" rounded-2xl duration-300 ease-out  "
             src="/vintagecar.png"
           />
         </motion.div>

@@ -32,6 +32,8 @@ const NavBar = () => {
               transition={{
                 delay: 0.5,
                 duration: 1,
+                type: "spring",
+                stiffness: 50,
                 ease: easeOut,
               }}
               className=" drop-shadow-2xl px-[10px] font-thin text-[16px] text-black cursor-pointer select-none font-GeneralSans z-50 
@@ -42,7 +44,7 @@ const NavBar = () => {
             </motion.li>
           </Link>
 
-          <Link to="/" >
+          <Link to="/" className=" z-50 ">
             <motion.li
               ref={ref}
               variants={{
@@ -52,13 +54,13 @@ const NavBar = () => {
               initial="hidden"
               animate={mainControls}
               transition={{ delay: 0.5, duration: 1.4, ease: easeInOut }}
-              className=" inline-block drop-shadow-2xl ml-[10px] text-[30px] font-aktura cursor-pointer select-none text-center leading-[30px] "
+              className=" inline-block drop-shadow-2xl ml-[10px] text-[30px] font-aktura cursor-pointer select-none text-center leading-[30px] z-50 "
             >
               FAHAD <br /> IQBAL
             </motion.li>
           </Link>
 
-          <Link to="/contact">
+          <Link to="/about">
             <motion.li
               ref={ref}
               variants={{
@@ -70,13 +72,15 @@ const NavBar = () => {
               transition={{
                 delay: 0.5,
                 duration: 1,
+                type: "spring",
+                stiffness: 50,
                 ease: easeOut,
               }}
               className=" drop-shadow-2xl px-[10px] font-thin text-[16px] text-black cursor-pointer select-none font-GeneralSans z-50
               after:content-[''] after:h-[30px] after:w-[3px] after:bg-yellow-500 after:absolute after:right-0 after:bottom-[-3px] after:duration-300
                after:ease-out after:-z-50 hover:after:w-[100%] relative"
             >
-              Contact
+              About Me
             </motion.li>
           </Link>
         </ul>
