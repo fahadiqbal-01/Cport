@@ -23,15 +23,20 @@ const Footer = () => {
         >
           <button
             onClick={handleToogle}
-            className=" bg-[#363636] px-[12px] xl:py-[20px] lg:py-[20px] md:py-[20px] py-[15px] rounded-full text-white font-GeneralSans text-[20px] xl:w-[250px] lg:w-[250px] md:w-[250px] w-[150px] xl:h-[80px] lg:h-[80px] md:h-[80px] h-[10px]
+            className=" bg-[#363636] px-[12px] xl:py-[20px] lg:py-[20px] md:py-[20px] py-[20px] rounded-full text-white font-GeneralSans text-[20px] xl:w-[250px] lg:w-[250px] md:w-[250px] w-[150px] xl:h-[80px] lg:h-[80px] md:h-[80px] h-[10px]
           flex justify-between items-center mt-[80px] cursor-pointer overflow-hidden group relative"
           >
-            <div className=" xl:p-2 lg:p-2 md:p-2 p-[2px] bg-black rounded-full mr-[20px] group-hover:pl-[178px] duration-300 ease-in-out
-            xl:ml-0 lg:ml-0 md:ml-0 ml-[-4px] ">
+            <div
+              className={` xl:p-2 lg:p-2 md:p-2 p-[4px] bg-black rounded-full mr-[20px] group-hover:pl-[178px] duration-300 ease-in-out
+               ${toggle ? "xl:pl-[178px] lg:pl-[178px] md:pl-[178px] pl-[115px] xl:ml-0 lg:ml-0 md:ml-0 ml-[-4px] " : ""}`}
+            >
               <MdKeyboardDoubleArrowRight className=" xl:text-[40px] lg:text-[40px] md:text-[40px] text-[15px] text-white " />
             </div>
-            <span className=" xl:text-[20px] lg:text-[20px] md:text-[20px] text-[10px] absolute right-[30px] top-[50%] translate-y-[-50%] 
-            group-hover:right-[-150px] group-hover:text-transparent duration-300 ease-out ">
+            <span
+              className={` xl:text-[20px] lg:text-[20px] md:text-[20px] text-[10px] absolute right-[30px] top-[50%] translate-y-[-50%] 
+            group-hover:right-[-150px] group-hover:text-transparent duration-300 ease-out
+             ${toggle ? "right-[-150px] text-transparent" : ""}`}
+            >
               Hire Me Now!
             </span>
           </button>
@@ -121,14 +126,14 @@ const Footer = () => {
           </p>
         </div>
 
-        <div className=" xl:ml-0 lg:ml-0 md:ml-0 ml-[10px] " >
+        <div className=" xl:ml-0 lg:ml-0 md:ml-0 ml-[10px] ">
           <h1 className=" font-GeneralSans text-[24px] font-white ">Email</h1>
           <p className=" mt-[8px] text-white/70 ">
             fahad.iqbal.im.47@icloud.com
           </p>
           <p className=" mt-[8px] text-white/70 ">fahadddd.im@gmail.com</p>
         </div>
-        <div className=" xl:ml-0 lg:ml-0 md:ml-0 ml-[10px] " >
+        <div className=" xl:ml-0 lg:ml-0 md:ml-0 ml-[10px] ">
           <h1 className=" font-GeneralSans text-[24px] font-white ">Contact</h1>
           <p className=" mt-[8px] text-white/70 ">+880 1748 996699</p>
           <p className=" mt-[8px] text-white/70 ">+880 1601 859894</p>
