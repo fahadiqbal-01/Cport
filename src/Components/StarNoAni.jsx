@@ -2,7 +2,7 @@ import React from "react";
 
 const StarNoAni = ({ className, innerFill, outerFill }) => {
   return (
-    <div className={`w-[700px] pointer-events-none select-none ${className} `}>
+    <div className={`w-[700px] pointer-events-none select-none  ${className} `}>
       <svg
         className=" p-0 m-0"
         viewBox="0 0 200 200"
