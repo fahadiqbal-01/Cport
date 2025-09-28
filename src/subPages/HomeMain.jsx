@@ -24,7 +24,7 @@ const HomeMain = () => {
         <div className=" relative xl:block hidden ">
           <Star
             className=" absolute top-0 right-0 "
-            outerFill="#d0ba98"
+            outerFill="#000000"
           />
         </div>
 
@@ -83,7 +83,7 @@ const HomeMain = () => {
         <div className=" relative xl:block hidden ">
           <Star
             className=" absolute top-0 left-0 "
-            outerFill="#d0ba98"
+            outerFill="#000000"
           />
         </div>
       </Container>

@@ -54,7 +54,7 @@ const LeftSlide = () => {
           style={slideStyle}
         >
           <img
-            className=" rounded-2xl duration-300 ease-out  "
+            className=" rounded-2xl duration-300 ease-out xl:w-auto lg:w-auto md:w-[200px] w-[100px]  "
             src="/vintagecar.png"
           />
         </motion.div>
@@ -68,7 +68,7 @@ const LeftSlide = () => {
           style={slideStyle}
         >
           <img
-            className=" rounded-2xl duration-300 ease-out "
+            className=" rounded-2xl duration-300 ease-out xl:w-auto lg:w-auto md:w-[200px] w-[100px] "
             src="/porsche.png"
             alt=""
           />
@@ -83,7 +83,7 @@ const LeftSlide = () => {
           style={slideStyle}
         >
           <img
-            className=" rounded-2xl duration-300 ease-out "
+            className=" rounded-2xl duration-300 ease-out xl:w-auto lg:w-auto md:w-[200px] w-[100px] "
             src="/flyingwarrior.png"
           />
         </motion.div>
@@ -97,7 +97,7 @@ const LeftSlide = () => {
           style={slideStyle}
         >
           <img
-            className=" rounded-2xl duration-300 ease-out "
+            className=" rounded-2xl duration-300 ease-out xl:w-auto lg:w-auto md:w-[200px] w-[100px] "
             src="aventador.png"
           />
         </motion.div>
@@ -111,7 +111,7 @@ const LeftSlide = () => {
           style={slideStyle}
         >
           <img
-            className=" rounded-2xl duration-300 ease-out "
+            className=" rounded-2xl duration-300 ease-out xl:w-auto lg:w-auto md:w-[200px] w-[100px] "
             src="defpunk.png"
           />
         </motion.div>
@@ -125,7 +125,7 @@ const LeftSlide = () => {
           style={slideStyle}
         >
           <img
-            className=" rounded-2xl duration-300 ease-out "
+            className=" rounded-2xl duration-300 ease-out xl:w-auto lg:w-auto md:w-[200px] w-[100px] "
             src="knight.png"
           />
         </motion.div>

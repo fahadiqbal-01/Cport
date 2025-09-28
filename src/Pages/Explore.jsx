@@ -44,7 +44,7 @@ const Explore = () => {
                     duration: 0.7,
                     ease: easeOut,
                   }}
-                  className="text-[50px] font-cabinet text-center text-black leading-[75px] selection:text-white selection:bg-black"
+                  className="xl:text-[50px] lg:text-[50px] text-[40px] font-cabinet text-center text-black leading-[75px] selection:text-white selection:bg-black"
                 >
                   Explore My Work
                 </motion.h1>

@@ -42,45 +42,60 @@ export const AboutProfile = () => {
       </Container>
       <LeftSlideSec />
       <Container>
-        <div className=" selection:bg-black selection:text-white" >
-          <h1 className=" font-GeneralSans text-[50px] pt-[50px] ">
-            Education_
-          </h1>
-          <div className=" flex justify-between items-center mt-[20px] ">
-            <div>
-              <h1 className=" font-GeneralSans text-[18px] ">
-                Secondary School Certificate (SSC)
-              </h1>
-              <h2>Udayan Seconday School</h2>
-            </div>
-
-            <div>
-              <h1 className=" font-GeneralSans text-[18px] ">
-                Higher School Certificate (HSC)
-              </h1>
-              <h2>Govt. Syed Hatem Ali College</h2>
-            </div>
-
-            <div  >
-              <h1 className=" font-GeneralSans text-[18px] ">
-                Diploma in Computer Engineering (currenly studying)
-              </h1>
-              <h2> Barishal Polytechnic Institute </h2>
-            </div>
-          </div>
-        </div>
-
-        <div className=" selection:bg-black selection:text-white" >
-          <h1 className=" font-GeneralSans text-[50px] pt-[50px] ">
-            Experience_
-          </h1>
-          <div className=" mt-[20px]">
-            <h1 className=" font-GeneralSans text-[18px] ">
-              EDGE Trainig Program
+        <motion.div
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 100, y: 0 }}
+          transition={{
+            duration: 1.2,
+            ease: easeInOut,
+            type: "spring",
+            stiffness: 70,
+          }}
+          viewport={{ once: true, amount: 0.4 }}
+        >
+          <div className=" selection:bg-black selection:text-white xl:px-0 lg:px-0 px-4 ">
+            <h1 className=" font-GeneralSans xl:text-[50px] lg:text-[50px] md:text-[50px] text-[30px] xl:pt-[50px] lg:pt-[50px] md:pt-[50px] pt-[20px] xl:pb-0 lg:pb-0 md:pb-0 pb-[20px] ">
+              Education_
             </h1>
-            <h2>Web Development Trainee (Sep 2024 - Mar 2025)</h2>
+            <div
+              className=" flex xl:flex-row lg:flex-row md:flex-row flex-col justify-between xl:items-center lg:items-center md:items-start items-start
+          xl:gap-0 lg:gap-0 md:gap-0 gap-[10px] t-[20px] "
+            >
+              <div>
+                <h1 className=" font-GeneralSans text-[18px] ">
+                  Secondary School Certificate (SSC)
+                </h1>
+                <h2>Udayan Seconday School</h2>
+              </div>
+
+              <div>
+                <h1 className=" font-GeneralSans text-[18px] ">
+                  Higher School Certificate (HSC)
+                </h1>
+                <h2>Govt. Syed Hatem Ali College</h2>
+              </div>
+
+              <div>
+                <h1 className=" font-GeneralSans text-[18px] ">
+                  Diploma in Computer Engineering (currenly studying)
+                </h1>
+                <h2> Barishal Polytechnic Institute </h2>
+              </div>
+            </div>
           </div>
-        </div>
+
+          <div className=" selection:bg-black selection:text-white xl:px-0 lg:px-0 px-4 ">
+            <h1 className=" font-GeneralSans xl:text-[50px] lg:text-[50px] md:text-[50px] text-[30px] pt-[50px] ">
+              Experience_
+            </h1>
+            <div className=" mt-[20px]">
+              <h1 className=" font-GeneralSans text-[18px] ">
+                EDGE Trainig Program
+              </h1>
+              <h2>Web Development Trainee (Sep 2024 - Mar 2025)</h2>
+            </div>
+          </div>
+        </motion.div>
       </Container>
     </section>
   );

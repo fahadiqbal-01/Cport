@@ -23,8 +23,8 @@ const Star = ({ className, innerFill, outerFill }) => {
         <motion.svg
           ref={ref}
           variants={{
-            hidden: { rotate: 0 },
-            visible: { rotate: 360 },
+            hidden: { rotate: 0, scale: 0.5 },
+            visible: { rotate: 360, scale: 1},
           }}
           initial="hidden"
           animate={mainControls}
@@ -33,6 +33,8 @@ const Star = ({ className, innerFill, outerFill }) => {
           transition={{
             duration: 1.5,
             ease: easeOut,
+            type: "spring",
+            stiffness: 30,
           }}
           className="p-0 m-0"
           viewBox="0 0 550 550"

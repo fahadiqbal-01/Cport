@@ -29,7 +29,7 @@ const LeftSlideSec = () => {
           style={slideStyle}
         >
           <div className=" py-[25px] px-[60px] bg-black/10 rounded-lg">
-            <FaReact className=" text-[80px] text-[#53c1de] " />
+            <FaReact className=" xl:text-[80px] lg:text-[60px] md:text-[50px] text-[30px] text-[#53c1de] " />
           </div>
         </motion.div>
         <motion.div
@@ -42,7 +42,7 @@ const LeftSlideSec = () => {
           style={slideStyle}
         >
           <div className=" py-[25px] px-[60px] bg-black/10 rounded-lg">
-            <RiTailwindCssFill className=" text-[80px] text-[#01adc1] " />
+            <RiTailwindCssFill className=" xl:text-[80px] lg:text-[60px] md:text-[50px] text-[30px] text-[#01adc1] " />
           </div>
         </motion.div>
         <motion.div
@@ -55,7 +55,7 @@ const LeftSlideSec = () => {
           style={slideStyle}
         >
           <div className=" py-[25px] px-[60px] bg-black/10 rounded-lg">
-            <SiRedux className=" text-[80px] text-[#000000] " />
+            <SiRedux className=" xl:text-[75px] lg:text-[55px] md:text-[45px] text-[25px] text-[#000000] " />
           </div>
         </motion.div>
         <motion.div
@@ -68,7 +68,7 @@ const LeftSlideSec = () => {
           style={slideStyle}
         >
           <div className=" py-[25px] px-[60px] bg-black/10 rounded-lg">
-            <FaHtml5 className=" text-[80px] text-[#e75000] " />
+            <FaHtml5 className=" xl:text-[80px] lg:text-[60px] md:text-[50px] text-[30px] text-[#e75000] " />
           </div>
         </motion.div>
         <motion.div
@@ -81,7 +81,7 @@ const LeftSlideSec = () => {
           style={slideStyle}
         >
           <div className=" py-[25px] px-[60px] bg-black/10 rounded-lg">
-            <FaCss3Alt className=" text-[80px] text-[#0377bc] " />
+            <FaCss3Alt className=" xl:text-[80px] lg:text-[60px] md:text-[50px] text-[30px] text-[#0377bc] " />
           </div>
         </motion.div>
         <motion.div
@@ -94,7 +94,7 @@ const LeftSlideSec = () => {
           style={slideStyle}
         >
           <div className=" py-[25px] px-[60px] bg-black/10 rounded-lg">
-            <FaJs className=" text-[80px] text-[#fed601] " />
+            <FaJs className=" xl:text-[80px] lg:text-[60px] md:text-[50px] text-[30px] text-[#fed601] " />
           </div>
         </motion.div>
         <motion.div
@@ -107,7 +107,7 @@ const LeftSlideSec = () => {
           style={slideStyle}
         >
           <div className=" py-[25px] px-[60px] bg-black/10 rounded-lg">
-            <TbApi className=" text-[80px] text-[#000000] " />
+            <TbApi className=" xl:text-[80px] lg:text-[60px] md:text-[50px] text-[30px] text-[#000000] " />
           </div>
         </motion.div>
         <motion.div
@@ -120,7 +120,7 @@ const LeftSlideSec = () => {
           style={slideStyle}
         >
           <div className=" py-[25px] px-[60px] bg-black/10 rounded-lg">
-            <RiNextjsFill className=" text-[80px] text-[#000000] " />
+            <RiNextjsFill className=" xl:text-[80px] lg:text-[60px] md:text-[50px] text-[30px] text-[#000000] " />
           </div>
         </motion.div>
         <motion.div
@@ -133,7 +133,7 @@ const LeftSlideSec = () => {
           style={slideStyle}
         >
           <div className=" py-[25px] px-[60px] bg-black/10 rounded-lg">
-            <FaGitAlt className=" text-[80px] text-[#f4501f] " />
+            <FaGitAlt className=" xl:text-[80px] lg:text-[60px] md:text-[50px] text-[30px] text-[#f4501f] " />
           </div>
         </motion.div>
          <motion.div
@@ -146,7 +146,7 @@ const LeftSlideSec = () => {
           style={slideStyle}
         >
           <div className=" py-[25px] px-[60px] bg-black/10 rounded-lg">
-            <img src="firebase.png" className=" w-[65px] " />
+            <img src="firebase.png" className=" xl:w-[65px] lg:w-[50px] md:w-[40px] w-[25px] " />
           </div>
         </motion.div>
       </Marquee>

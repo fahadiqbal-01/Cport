@@ -13,7 +13,7 @@ const Footer = () => {
   return (
     <footer className=" mt-[120px] p-6 selection:bg-white selection:text-black bg-black text-white relative ">
       <div className=" flex justify-between items-start mb-[50px] ">
-        <h1 className=" font-GeneralSans xl:text-[140px] lg:text-[120px] md:text-[100px] text-[40px] xl:leading-normal lg:leading-[130px] md:leading-[100px] leading-[50px] ">
+        <h1 className=" font-GeneralSans xl:text-[140px] lg:text-[120px] md:text-[100px] text-[45px] xl:leading-normal lg:leading-[130px] md:leading-[100px] leading-[60px] ">
           Let's Connect <br /> There
         </h1>
 
@@ -24,18 +24,18 @@ const Footer = () => {
           <button
             onClick={handleToogle}
             className=" bg-[#363636] px-[12px] xl:py-[20px] lg:py-[20px] md:py-[20px] py-[20px] rounded-full text-white font-GeneralSans text-[20px] xl:w-[250px] lg:w-[250px] md:w-[250px] w-[150px] xl:h-[80px] lg:h-[80px] md:h-[80px] h-[10px]
-          flex justify-between items-center mt-[80px] cursor-pointer overflow-hidden group relative"
+          flex justify-between items-center mt-[80px] cursor-pointer overflow-hidden group relative "
           >
             <div
               className={` xl:p-2 lg:p-2 md:p-2 p-[4px] bg-black rounded-full mr-[20px] group-hover:pl-[178px] duration-300 ease-in-out
-               ${toggle ? "xl:pl-[178px] lg:pl-[178px] md:pl-[178px] pl-[115px] xl:ml-0 lg:ml-0 md:ml-0 ml-[-4px] " : ""}`}
+               ${toggle ? "xl:pl-[178px] lg:pl-[178px] md:pl-[178px] pl-[115px]  " : "xl:pl-[-178px] lg:pl-[-178px] md:pl-[-178px] pl-[-115px]"} xl:ml-0 lg:ml-0 md:ml-0 ml-[-4px]`}
             >
               <MdKeyboardDoubleArrowRight className=" xl:text-[40px] lg:text-[40px] md:text-[40px] text-[15px] text-white " />
             </div>
             <span
               className={` xl:text-[20px] lg:text-[20px] md:text-[20px] text-[10px] absolute right-[30px] top-[50%] translate-y-[-50%] 
-            group-hover:right-[-150px] group-hover:text-transparent duration-300 ease-out
-             ${toggle ? "right-[-150px] text-transparent" : ""}`}
+            group-hover:right-[-150px] group-hover:text-transparent duration-200 ease-out
+             ${toggle ? " right-[-250px] text-transparent" : ""}`}
             >
               Hire Me Now!
             </span>
