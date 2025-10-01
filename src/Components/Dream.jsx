@@ -11,16 +11,7 @@ const Dream = () => {
             You dream it, I design it — let your vision come to life.
           </h2>
           <div className=" absolute left-[50%] translate-x-[-50%] top-[-80px] rotate-[-90deg] select-none pointer-events-none ">
-            <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{
-                duration: 0.5,
-                ease: "easeOut",
-                type: "spring",
-                stiffness: 100,
-              }}
-              viewport={{ amount: 0.4 }}
+            <div
               className=" w-[200px] rotate-50 border-[5px] rounded-3xl border-[#ffffff] "
             >
               <img
@@ -28,17 +19,8 @@ const Dream = () => {
                 alt=""
                 className=" grayscale-50 rounded-2xl "
               />
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{
-                duration: 0.5,
-                ease: "easeOut",
-                type: "spring",
-                stiffness: 100,
-              }}
-              viewport={{ amount: 0.4 }}
+            </div>
+            <div
               className=" w-[200px] rotate-50 border-[5px] rounded-3xl border-[#ffffff] "
             >
               <img
@@ -46,17 +28,8 @@ const Dream = () => {
                 alt=""
                 className=" grayscale-50 rounded-2xl "
               />
-            </motion.div>
-            <motion.div
-              initial={{ x: -100, y: -100 }}
-              whileInView={{ x: 0, y: 0 }}
-              transition={{
-                duration: 0.4,
-                ease: "easeOut",
-                type: "spring",
-                stiffness: 100,
-              }}
-              viewport={{ amount: 0.4 }}
+            </div>
+            <div
               className=" w-[200px] rotate-50 border-[5px] rounded-3xl border-[#ffffff] "
             >
               <img
@@ -64,17 +37,8 @@ const Dream = () => {
                 alt=""
                 className=" grayscale-50 rounded-2xl "
               />
-            </motion.div>
-            <motion.div
-              initial={{ x: -200, y: -200 }}
-              whileInView={{ x: 0, y: 0 }}
-              transition={{
-                duration: 0.4,
-                ease: "easeOut",
-                type: "spring",
-                stiffness: 100,
-              }}
-              viewport={{ amount: 0.4 }}
+            </div>
+            <div
               className=" w-[200px] rotate-50 border-[5px] rounded-3xl border-[#ffffff] "
             >
               <img
@@ -82,17 +46,8 @@ const Dream = () => {
                 alt=""
                 className=" grayscale-50 rounded-2xl "
               />
-            </motion.div>
-            <motion.div
-              initial={{ x: -300, y: -300 }}
-              whileInView={{ x: 0, y: 0 }}
-              transition={{
-                duration: 0.4,
-                ease: "easeOut",
-                type: "spring",
-                stiffness: 100,
-              }}
-              viewport={{ amount: 0.4 }}
+            </div>
+            <div
               className=" w-[200px] rotate-50 border-[5px] rounded-3xl border-[#ffffff] "
             >
               <img
@@ -100,17 +55,8 @@ const Dream = () => {
                 alt=""
                 className=" grayscale-50 rounded-2xl "
               />
-            </motion.div>
-            <motion.div
-              initial={{ x: -400, y: -400 }}
-              whileInView={{ x: 0, y: 0 }}
-              transition={{
-                duration: 0.4,
-                ease: "easeOut",
-                type: "spring",
-                stiffness: 100,
-              }}
-              viewport={{ amount: 0.4 }}
+            </div>
+            <div
               className=" w-[200px] rotate-50 border-[5px] rounded-3xl border-[#ffffff] "
             >
               <img
@@ -118,17 +64,8 @@ const Dream = () => {
                 alt=""
                 className=" grayscale-50 rounded-2xl "
               />
-            </motion.div>
-            <motion.div
-              initial={{ x: -500, y: -500 }}
-              whileInView={{ x: 0, y: 0 }}
-              transition={{
-                duration: 0.4,
-                ease: "easeOut",
-                type: "spring",
-                stiffness: 100,
-              }}
-              viewport={{ amount: 0.4 }}
+            </div>
+            <div
               className=" w-[200px] rotate-50 border-[5px] rounded-3xl border-[#ffffff] "
             >
               <img
@@ -136,7 +73,7 @@ const Dream = () => {
                 alt=""
                 className=" grayscale-50 rounded-2xl "
               />
-            </motion.div>
+            </div>
           </div>
         </ContainerSec>
       </section>

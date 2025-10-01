@@ -1,160 +1,49 @@
 import React from "react";
 import ContainerSec from "../Components/ContainerSec";
 import * as motion from "motion/react-client";
-import WorkCart from "../Components/WorkCart";
 import { easeOut } from "motion";
 import Dream from "../Components/Dream";
 import MySelf from "../Components/MySelf";
-import { ContactMSG } from "../Components/ContactMSG";
 
 const Homesec = () => {
+  const [expandedIndex, setExpandedIndex] = React.useState(null);
+
+  const handleExpand = (idx) => {
+    setExpandedIndex(idx);
+    if (expandedIndex === idx) {
+      setExpandedIndex(null);
+    } else {
+      setExpandedIndex(idx);
+    }
+  };
+
   return (
     <>
-      <section className=" pb-[100px] xl:mt-[160px] lg:mt-[130px] md:mt-[100px] sm:mt-[70px] mt-[40px] ">
+      <section className="pb-[100px] xl:mt-[160px] lg:mt-[130px] md:mt-[100px] sm:mt-[70px] mt-[40px]">
         <ContainerSec>
           <motion.h2
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 1, ease: easeOut }}
-            className=" xl:text-[38px] lg:text-[36px] md:text-[32px] text-[28px]
-             font-cabinet text-center xl:mb-[60px] lg:mb-[50px] md:mb-[40px] mb-[20px] selection:text-white selection:bg-black "
+            className="xl:text-[38px] lg:text-[36px] md:text-[32px] text-[28px]
+             font-cabinet text-center xl:mb-[60px] lg:mb-[50px] md:mb-[40px] mb-[20px] selection:text-white selection:bg-black"
           >
             Tiny fraction of my work...
           </motion.h2>
-
-          <motion.div
-            initial={{ opacity: 0, x: 150 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5, ease: easeOut }}
-            viewport={{ amount: 0.4 }}
-          >
-            <WorkCart
-              WebLink="https://www.mrcfly.com/"
-              src="image/mrcfly.png"
-              className=""
-              imgclassName=" "
-              pTExt="MRCFLY.com is a visa agency providing personalized application help and a portal to track visa status, documents, and approvals."
-              pTextClass=" !text-black"
-              OuterFill="#cfbda2"
-              StarBG="bg-black"
-              innerfillOH="#cfbda2"
-              outerfillOH="#cfbda2"
-              otTextclass="text-black"
-              siteTitle="MRCFLY"
-            />
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, x: -150 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5, ease: easeOut }}
-            viewport={{ amount: 0.4 }}
-          >
-            <WorkCart
-              WebLink="https://fahad-iqbal.netlify.app/"
-              src="image/myportfolioweb.png"
-              className=" scale-x-[-1] "
-              imgclassName=" scale-x-[-1]  "
-              pTExt="Fahad Iqbal’s portfolio showcases his development skills, React projects, responsive designs, and creative video editing, with contact links included."
-              pTextClass=" !text-white scale-x-[-1] "
-              OuterFill="#275344"
-              StarBG="bg-black"
-              innerfillOH="#275344"
-              outerfillOH="#275344"
-              otTextclass="text-white scale-x-[-1] "
-              siteTitle="Portfolio"
-            />
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, x: 150 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5, ease: easeOut }}
-            viewport={{ amount: 0.4 }}
-          >
-            <WorkCart
-              WebLink="https://exclusive-io.netlify.app/"
-              src="image/exclusive.png"
-              pTExt=" Shopping site where you can find everything.
-                Shop fasion, tech, home essentials and more - fast, easy and
-                affordable.  (On Going)"
-              pTextClass=" !text-black "
-              OuterFill="#fe8eca"
-              StarBG="bg-[#000000]"
-              innerfillOH="#fe8eca"
-              outerfillOH="#fe8eca"
-              otTextclass="text-black"
-              siteTitle="Exclusive"
-            />
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, x: -150 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5, ease: easeOut }}
-            viewport={{ amount: 0.4 }}
-          >
-            <WorkCart
-              WebLink="https://notepadlist.vercel.app/"
-              src="image/notepad.gif"
-              className="  scale-x-[-1] "
-              imgclassName=" scale-x-[-1]"
-              pTExt="A sleek React.js & Tailwind CSS notepad app enabling users to effortlessly add, 
-              edit, and delete notes for efficient organization."
-              pTextClass=" scale-x-[-1] text-white "
-              OuterFill="#0149ad"
-              StarBG="bg-black"
-              innerfillOH="#0149ad"
-              outerfillOH="#0149ad"
-              otTextclass="text-white scale-x-[-1] "
-              siteTitle="Todo List"
-            />
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, x: 150 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5, ease: easeOut }}
-            viewport={{ amount: 0.4 }}
-          >
-            <WorkCart
-              WebLink="https://pavanmg.netlify.app/"
-              src="image/pavanmg.png"
-              pTExt="Pavan MG’s portfolio is a modern, minimal site showcasing his projects,
-             creativity, and passion for building engaging digital experiences."
-              pTextClass=" !text-black "
-              OuterFill="#12adf0"
-              StarBG="bg-black"
-              innerfillOH="#12adf0"
-              outerfillOH="#12adf0"
-              otTextclass="text-black "
-              siteTitle="PavanMG"
-            />
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, x: -150 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5, ease: easeOut }}
-            viewport={{ amount: 0.4 }}
-          >
-            <WorkCart
-              WebLink="https://fahadiqbal-01.github.io/hanock/"
-              src="image/hancok.png"
-              className="  scale-x-[-1] "
-              imgclassName=" scale-x-[-1]  "
-              pTExt="Hanock is a sleek gaming platform showcasing live matches,
-             popular games, and gear, built to engage the esports community."
-              pTextClass=" !text-black scale-x-[-1] "
-              OuterFill="#e37041"
-              StarBG="bg-black"
-              innerfillOH="#e37041"
-              outerfillOH="#e37041"
-              otTextclass="text-black scale-x-[-1] "
-              siteTitle="Hancok"
-            />
-          </motion.div>
-
+          <div className="flex justify-center items-center gap-[10px] Expand-list xl:px-0 lg:px-0 md:px-[40px] px-[20px] ">
+            {[0, 1, 2, 3, 4, 5].map((idx) => (
+              <div
+                key={idx}
+                onClick={() => handleExpand(idx)}
+                className={`transition-all duration-300 ease-in-out cursor-pointer rounded-xl bg-black
+                  ${
+                    expandedIndex === idx
+                      ? "xl:w-[900px] lg:w-[500px] md:w-[400px] w-[70vw] xl:h-[450px] lg:h-[400px] md:h-[350px] h-[180px]"
+                      : "xl:w-[150px] lg:w-[120px] md:w-[90px] w-[12vw] xl:h-[450px] lg:h-[400px] md:h-[350px] h-[180px] opacity-70"
+                  }`}
+              ></div>
+            ))}
+          </div>
           <Dream />
           <MySelf />
         </ContainerSec>

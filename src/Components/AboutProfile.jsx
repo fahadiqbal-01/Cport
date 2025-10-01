@@ -26,7 +26,7 @@ export const AboutProfile = () => {
             <img
               src="image/f3.PNG"
               alt=""
-              className=" xl:w-[250px] lg:w-[200px] md:w-[150px] w-[100px] rounded-xl xl:ml-auto lg:ml-auto md:ml-auto ml-0 select-none "
+              className=" xl:w-[250px] w-[200px] rounded-xl xl:ml-auto lg:ml-auto md:ml-auto ml-0 select-none "
             />
             <div
               className=" w-[250px] xl:ml-auto lg:ml-auto md:ml-auto ml-0 xl:text-[16px] lg:text-[16px] md:text-[14px]
