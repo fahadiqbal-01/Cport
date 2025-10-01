@@ -70,7 +70,7 @@ export const ContactMSG = () => {
               placeholder="Your Name"
               onChange={(e) => setForm({ ...form, name: e.target.value })}
               type="text"
-              className=" outline-4 outline-black rounded-xl mx-[20px] w-full h-[50px] p-[16px] focus:outline-yellow-500
+              className=" outline-4 outline-black rounded-xl mx-[20px] w-full h-[50px] p-[16px] focus:outline-[#d50201]
             font-GeneralSans placeholder:font-GeneralSans text-[16px] placeholder:text-[16px] text-gray-500
             selection:text-white selection:bg-black "
             />
@@ -79,7 +79,7 @@ export const ContactMSG = () => {
               placeholder="Your Email"
               onChange={(e) => setForm({ ...form, mail: e.target.value })}
               type="text"
-              className=" outline-4 outline-black rounded-xl mx-[20px] w-full h-[50px] p-[16px] focus:outline-yellow-500
+              className=" outline-4 outline-black rounded-xl mx-[20px] w-full h-[50px] p-[16px] focus:outline-[#d50201]
             font-GeneralSans placeholder:font-GeneralSans text-[16px] placeholder:text-[16px] text-gray-500
              selection:text-white selection:bg-black"
             />
@@ -88,7 +88,7 @@ export const ContactMSG = () => {
               placeholder="Your Message"
               onChange={(e) => setForm({ ...form, message: e.target.value })}
               type="text"
-              className=" outline-4 outline-black rounded-xl mx-[20px] w-full h-[150px] p-[16px] focus:outline-yellow-500
+              className=" outline-4 outline-black rounded-xl mx-[20px] w-full h-[150px] p-[16px] focus:outline-[#d50201]
             font-GeneralSans placeholder:font-GeneralSans text-[16px] placeholder:text-[16px] text-gray-500
              selection:text-white selection:bg-black"
             />
@@ -112,8 +112,8 @@ export const ContactMSG = () => {
           <div className=" flex justify-center items-center ">
             <button
               onClick={handleSubmit}
-              className=" mt-[30px] cursor-pointer overflow-hidden z-50 xl:text-[20px] lg:text-20px md:text-[20px] sm:text-[20px] text-[16px] text-yellow-500 font-GeneralSans bg-black xl:px-[100px] lg:px-[100px] md:px-[100px] sm:px-[80px] px-[60px] py-[10px] border-4 border-black 
-         rounded-2xl hover:shadow-2xl hover:drop-shadow-2xl hover:text-black hover:scale-[1.2] hover:border-yellow-500 hover:bg-transparent after:content-[''] after:h-[80px] after:w-[200px] after:bg-yellow-500 after:border-0 after:rounded-[500px]
+              className=" mt-[30px] cursor-pointer overflow-hidden z-50 xl:text-[20px] lg:text-20px md:text-[20px] sm:text-[20px] text-[16px] text-[#d50201] font-GeneralSans bg-black xl:px-[100px] lg:px-[100px] md:px-[100px] sm:px-[80px] px-[60px] py-[10px] border-4 border-black 
+         rounded-2xl hover:shadow-2xl hover:drop-shadow-2xl hover:text-black hover:scale-[1.2] hover:border-black hover:bg-transparent after:content-[''] after:h-[80px] after:w-[200px] after:bg-[#d50201] after:border-0 after:rounded-[500px]
          after:absolute after:bottom-[-100px] after:left-[50%] after:translate-x-[-50%] after:-z-50 after:duration-500 after:ease-out hover:after:bottom-[-40px] duration-300 ease-out relative "
             >
               Submit
