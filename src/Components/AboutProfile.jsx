@@ -24,7 +24,7 @@ export const AboutProfile = () => {
           </div>
           <div className=" pt-[50px] xl:col-span-1 lg:col-span-1 md:col-span-1 col-span-2 xl:block lg:block md:block flex flex-col items-center ">
             <img
-              src="image/redghost.png"
+              src="image/f1.PNG"
               alt=""
               className=" xl:w-[250px] lg:w-[200px] md:w-[150px] w-[100px] rounded-xl xl:ml-auto lg:ml-auto md:ml-auto ml-0 select-none "
             />

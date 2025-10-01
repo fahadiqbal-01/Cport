@@ -24,7 +24,7 @@ const HomeMain = () => {
         <div className=" relative xl:block hidden ">
           <Star
             className=" absolute top-0 right-0 "
-            outerFill="#f0b100"
+            outerFill="#f0b001"
           />
         </div>
 
@@ -40,7 +40,7 @@ const HomeMain = () => {
             transition={{ delay: 0.5, duration: 0.7, ease: easeInOut }}
             className=" font-GeneralSans text-black xl:text-[16px] lg:text-[16px] text-[16px] text-center mt-[10px] selection:text-white selection:bg-black "
           >
-            Hi, I'm Fahad
+            Hi, I'm Fahad IQbal
           </motion.h2>
 
           <motion.h1
@@ -83,7 +83,7 @@ const HomeMain = () => {
         <div className=" relative xl:block hidden ">
           <Star
             className=" absolute top-0 left-0 "
-            outerFill="#f0b100"
+            outerFill="#f0b001"
           />
         </div>
       </Container>

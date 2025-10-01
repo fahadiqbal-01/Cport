@@ -146,7 +146,7 @@ const LeftSlideSec = () => {
           style={slideStyle}
         >
           <div className=" py-[25px] px-[60px] bg-black/10 rounded-lg">
-            <img src="firebase.png" className=" xl:w-[65px] lg:w-[50px] md:w-[40px] w-[25px] " />
+            <img src="icons/firebase.png" className=" xl:w-[65px] lg:w-[50px] md:w-[40px] w-[25px] " />
           </div>
         </motion.div>
       </Marquee>
