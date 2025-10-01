@@ -1,8 +1,6 @@
 import React from "react";
-import { GiStarFormation } from "react-icons/gi";
 import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 import { Link } from "react-router-dom";
-import { HireMe } from "./HireMe";
 
 const Footer = () => {
   let [toggle, setToggle] = React.useState(false);
