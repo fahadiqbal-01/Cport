@@ -15,7 +15,7 @@ const Gallery = () => {
           <div>
             <img
               className="h-auto max-w-full rounded-lg z-50 hover:scale-[0.95] hover:z-auto duration-300 ease-out  "
-              src="Maverick.png"
+              src="image/Maverick.png"
               alt=""
             />
           </div>
@@ -23,37 +23,14 @@ const Gallery = () => {
           <div>
             <img
               className="h-auto max-w-full rounded-lg z-50 hover:scale-[0.95] hover:z-auto duration-300 ease-out  "
-              src="redhood.png"
+              src="image/redhood.png"
               alt=""
             />
           </div>
           <div>
             <img
               className="h-auto max-w-full rounded-lg z-50 hover:scale-[0.95] hover:z-auto duration-300 ease-out  "
-              src="vintageknight.png"
-              alt=""
-            />
-          </div>
-        </div>
-        <div className="grid gap-4">
-          <div>
-            <img
-              className="h-auto max-w-full rounded-lg z-50 hover:scale-[0.95] hover:z-auto duration-300 ease-out  "
-              src="/Tscott.png"
-              alt=""
-            />
-          </div>
-          <div>
-            <img
-              className="h-auto max-w-full rounded-lg z-50 hover:scale-[0.95] hover:z-auto duration-300 ease-out  "
-              src="vintagecar.png"
-              alt=""
-            />
-          </div>
-          <div>
-            <img
-              className="h-auto max-w-full rounded-lg z-50 hover:scale-[0.95] hover:z-auto duration-300 ease-out  "
-              src="YUAN.png"
+              src="image/vintageknight.png"
               alt=""
             />
           </div>
@@ -62,21 +39,21 @@ const Gallery = () => {
           <div>
             <img
               className="h-auto max-w-full rounded-lg z-50 hover:scale-[0.95] hover:z-auto duration-300 ease-out  "
-              src="Phantom.png"
+              src="image/Tscott.png"
               alt=""
             />
           </div>
           <div>
             <img
               className="h-auto max-w-full rounded-lg z-50 hover:scale-[0.95] hover:z-auto duration-300 ease-out  "
-              src="painteye.png"
+              src="image/vintagecar.png"
               alt=""
             />
           </div>
           <div>
             <img
               className="h-auto max-w-full rounded-lg z-50 hover:scale-[0.95] hover:z-auto duration-300 ease-out  "
-              src="flyingwarrior.png"
+              src="image/YUAN.png"
               alt=""
             />
           </div>
@@ -85,21 +62,44 @@ const Gallery = () => {
           <div>
             <img
               className="h-auto max-w-full rounded-lg z-50 hover:scale-[0.95] hover:z-auto duration-300 ease-out  "
-              src="MoreAmore.png"
+              src="image/Phantom.png"
               alt=""
             />
           </div>
           <div>
             <img
               className="h-auto max-w-full rounded-lg z-50 hover:scale-[0.95] hover:z-auto duration-300 ease-out  "
-              src="porsche.png"
+              src="image/painteye.png"
               alt=""
             />
           </div>
           <div>
             <img
               className="h-auto max-w-full rounded-lg z-50 hover:scale-[0.95] hover:z-auto duration-300 ease-out  "
-              src="Marlboro.png"
+              src="image/flyingwarrior.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <div className="grid gap-4">
+          <div>
+            <img
+              className="h-auto max-w-full rounded-lg z-50 hover:scale-[0.95] hover:z-auto duration-300 ease-out  "
+              src="image/MoreAmore.png"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              className="h-auto max-w-full rounded-lg z-50 hover:scale-[0.95] hover:z-auto duration-300 ease-out  "
+              src="image/porsche.png"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              className="h-auto max-w-full rounded-lg z-50 hover:scale-[0.95] hover:z-auto duration-300 ease-out  "
+              src="image/Marlboro.png"
               alt=""
             />
           </div>
@@ -111,7 +111,7 @@ const Gallery = () => {
           <div>
             <img
               className="h-auto max-w-full rounded-lg z-50 hover:scale-[0.95] hover:z-auto duration-300 ease-out  "
-              src="aventador.png"
+              src="image/aventador.png"
               alt=""
             />
           </div>
@@ -119,37 +119,14 @@ const Gallery = () => {
           <div>
             <img
               className="h-auto max-w-full rounded-lg z-50 hover:scale-[0.95] hover:z-auto duration-300 ease-out  "
-              src="eyes.png"
+              src="image/eyes.png"
               alt=""
             />
           </div>
           <div>
             <img
               className="h-auto max-w-full rounded-lg z-50 hover:scale-[0.95] hover:z-auto duration-300 ease-out  "
-              src="redghost.png"
-              alt=""
-            />
-          </div>
-        </div>
-        <div className="grid gap-4">
-          <div>
-            <img
-              className="h-auto max-w-full rounded-lg z-50 hover:scale-[0.95] hover:z-auto duration-300 ease-out  "
-              src="brokensoul.png"
-              alt=""
-            />
-          </div>
-          <div>
-            <img
-              className="h-auto max-w-full rounded-lg z-50 hover:scale-[0.95] hover:z-auto duration-300 ease-out  "
-              src="crown.png"
-              alt=""
-            />
-          </div>
-          <div>
-            <img
-              className="h-auto max-w-full rounded-lg z-50 hover:scale-[0.95] hover:z-auto duration-300 ease-out  "
-              src="SicoMode.png"
+              src="image/redghost.png"
               alt=""
             />
           </div>
@@ -158,21 +135,21 @@ const Gallery = () => {
           <div>
             <img
               className="h-auto max-w-full rounded-lg z-50 hover:scale-[0.95] hover:z-auto duration-300 ease-out  "
-              src="Avaia.png"
+              src="image/brokensoul.png"
               alt=""
             />
           </div>
           <div>
             <img
               className="h-auto max-w-full rounded-lg z-50 hover:scale-[0.95] hover:z-auto duration-300 ease-out  "
-              src="catwomen.png"
+              src="image/crown.png"
               alt=""
             />
           </div>
           <div>
             <img
               className="h-auto max-w-full rounded-lg z-50 hover:scale-[0.95] hover:z-auto duration-300 ease-out  "
-              src="fear.png"
+              src="image/SicoMode.png"
               alt=""
             />
           </div>
@@ -181,21 +158,44 @@ const Gallery = () => {
           <div>
             <img
               className="h-auto max-w-full rounded-lg z-50 hover:scale-[0.95] hover:z-auto duration-300 ease-out  "
-              src="airporsche.png"
+              src="image/Avaia.png"
               alt=""
             />
           </div>
           <div>
             <img
               className="h-auto max-w-full rounded-lg z-50 hover:scale-[0.95] hover:z-auto duration-300 ease-out  "
-              src="redghost.png"
+              src="image/catwomen.png"
               alt=""
             />
           </div>
           <div>
             <img
               className="h-auto max-w-full rounded-lg z-50 hover:scale-[0.95] hover:z-auto duration-300 ease-out  "
-              src="crown.png"
+              src="image/fear.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <div className="grid gap-4">
+          <div>
+            <img
+              className="h-auto max-w-full rounded-lg z-50 hover:scale-[0.95] hover:z-auto duration-300 ease-out  "
+              src="image/airporsche.png"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              className="h-auto max-w-full rounded-lg z-50 hover:scale-[0.95] hover:z-auto duration-300 ease-out  "
+              src="image/redghost.png"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              className="h-auto max-w-full rounded-lg z-50 hover:scale-[0.95] hover:z-auto duration-300 ease-out  "
+              src="image/crown.png"
               alt=""
             />
           </div>

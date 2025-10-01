@@ -55,7 +55,7 @@ const LeftSlide = () => {
         >
           <img
             className=" rounded-2xl duration-300 ease-out xl:w-auto lg:w-auto md:w-[200px] w-[100px]  "
-            src="/vintagecar.png"
+            src="image/vintagecar.png"
           />
         </motion.div>
         <motion.div
@@ -69,7 +69,7 @@ const LeftSlide = () => {
         >
           <img
             className=" rounded-2xl duration-300 ease-out xl:w-auto lg:w-auto md:w-[200px] w-[100px] "
-            src="/porsche.png"
+            src="image/porsche.png"
             alt=""
           />
         </motion.div>
@@ -84,7 +84,7 @@ const LeftSlide = () => {
         >
           <img
             className=" rounded-2xl duration-300 ease-out xl:w-auto lg:w-auto md:w-[200px] w-[100px] "
-            src="/flyingwarrior.png"
+            src="image/flyingwarrior.png"
           />
         </motion.div>
         <motion.div
@@ -98,7 +98,7 @@ const LeftSlide = () => {
         >
           <img
             className=" rounded-2xl duration-300 ease-out xl:w-auto lg:w-auto md:w-[200px] w-[100px] "
-            src="aventador.png"
+            src="image/aventador.png"
           />
         </motion.div>
         <motion.div
@@ -112,7 +112,7 @@ const LeftSlide = () => {
         >
           <img
             className=" rounded-2xl duration-300 ease-out xl:w-auto lg:w-auto md:w-[200px] w-[100px] "
-            src="defpunk.png"
+            src="image/defpunk.png"
           />
         </motion.div>
         <motion.div
@@ -126,7 +126,7 @@ const LeftSlide = () => {
         >
           <img
             className=" rounded-2xl duration-300 ease-out xl:w-auto lg:w-auto md:w-[200px] w-[100px] "
-            src="knight.png"
+            src="image/knight.png"
           />
         </motion.div>
       </Marquee>

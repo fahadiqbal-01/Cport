@@ -23,7 +23,7 @@ const MySelf = () => {
         </h2>
         <div className=" my-[30px] grid xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-2 grid-cols-1 items-center">
           <img
-            src="/redhood.png"
+            src="image/redhood.png"
             alt="myIMG"
             className=" w-[350px] rounded-2xl xl:drop-shadow-none lg:drop-shadow-none md:drop-shadow-none drop-shadow-xl
              xl:shadow-none lg:shadow-none md:shadow-none shadow-xl

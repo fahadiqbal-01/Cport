@@ -30,7 +30,7 @@ const Homesec = () => {
           >
             <WorkCart
               WebLink="https://www.mrcfly.com/"
-              src="/mrcfly.png"
+              src="image/mrcfly.png"
               className=""
               imgclassName=" "
               pTExt="MRCFLY.com is a visa agency providing personalized application help and a portal to track visa status, documents, and approvals."
@@ -52,7 +52,7 @@ const Homesec = () => {
           >
             <WorkCart
               WebLink="https://fahad-iqbal.netlify.app/"
-              src="/myportfolioweb.png"
+              src="image/myportfolioweb.png"
               className=" scale-x-[-1] "
               imgclassName=" scale-x-[-1]  "
               pTExt="Fahad Iqbal’s portfolio showcases his development skills, React projects, responsive designs, and creative video editing, with contact links included."
@@ -74,7 +74,7 @@ const Homesec = () => {
           >
             <WorkCart
               WebLink="https://exclusive-io.netlify.app/"
-              src="/exclusive.png"
+              src="image/exclusive.png"
               pTExt=" Shopping site where you can find everything.
                 Shop fasion, tech, home essentials and more - fast, easy and
                 affordable.  (On Going)"
@@ -96,7 +96,7 @@ const Homesec = () => {
           >
             <WorkCart
               WebLink="https://notepadlist.vercel.app/"
-              src="/notepad.gif"
+              src="image/notepad.gif"
               className="  scale-x-[-1] "
               imgclassName=" scale-x-[-1]"
               pTExt="A sleek React.js & Tailwind CSS notepad app enabling users to effortlessly add, 
@@ -119,7 +119,7 @@ const Homesec = () => {
           >
             <WorkCart
               WebLink="https://pavanmg.netlify.app/"
-              src="/pavanmg.png"
+              src="image/pavanmg.png"
               pTExt="Pavan MG’s portfolio is a modern, minimal site showcasing his projects,
              creativity, and passion for building engaging digital experiences."
               pTextClass=" !text-black "
@@ -140,7 +140,7 @@ const Homesec = () => {
           >
             <WorkCart
               WebLink="https://fahadiqbal-01.github.io/hanock/"
-              src="/hancok.png"
+              src="image/hancok.png"
               className="  scale-x-[-1] "
               imgclassName=" scale-x-[-1]  "
               pTExt="Hanock is a sleek gaming platform showcasing live matches,

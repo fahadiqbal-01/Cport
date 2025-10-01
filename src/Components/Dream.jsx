@@ -24,7 +24,7 @@ const Dream = () => {
               className=" w-[200px] rotate-50 border-[5px] rounded-3xl border-[#ffffff] "
             >
               <img
-                src="pavanmg.png"
+                src="image/pavanmg.png"
                 alt=""
                 className=" grayscale-50 rounded-2xl "
               />
@@ -42,7 +42,7 @@ const Dream = () => {
               className=" w-[200px] rotate-50 border-[5px] rounded-3xl border-[#ffffff] "
             >
               <img
-                src="mrcfly.png"
+                src="image/mrcfly.png"
                 alt=""
                 className=" grayscale-50 rounded-2xl "
               />
@@ -60,7 +60,7 @@ const Dream = () => {
               className=" w-[200px] rotate-50 border-[5px] rounded-3xl border-[#ffffff] "
             >
               <img
-                src="exclusive.png"
+                src="image/exclusive.png"
                 alt=""
                 className=" grayscale-50 rounded-2xl "
               />
@@ -78,7 +78,7 @@ const Dream = () => {
               className=" w-[200px] rotate-50 border-[5px] rounded-3xl border-[#ffffff] "
             >
               <img
-                src="hancok.png"
+                src="image/hancok.png"
                 alt=""
                 className=" grayscale-50 rounded-2xl "
               />
@@ -96,7 +96,7 @@ const Dream = () => {
               className=" w-[200px] rotate-50 border-[5px] rounded-3xl border-[#ffffff] "
             >
               <img
-                src="aeropage.png"
+                src="image/aeropage.png"
                 alt=""
                 className=" grayscale-50 rounded-2xl "
               />
@@ -114,7 +114,7 @@ const Dream = () => {
               className=" w-[200px] rotate-50 border-[5px] rounded-3xl border-[#ffffff] "
             >
               <img
-                src="omah.png"
+                src="image/omah.png"
                 alt=""
                 className=" grayscale-50 rounded-2xl "
               />
@@ -132,7 +132,7 @@ const Dream = () => {
               className=" w-[200px] rotate-50 border-[5px] rounded-3xl border-[#ffffff] "
             >
               <img
-                src="notepad.gif"
+                src="image/notepad.gif"
                 alt=""
                 className=" grayscale-50 rounded-2xl "
               />

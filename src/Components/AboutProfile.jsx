@@ -24,7 +24,7 @@ export const AboutProfile = () => {
           </div>
           <div className=" pt-[50px] xl:col-span-1 lg:col-span-1 md:col-span-1 col-span-2 xl:block lg:block md:block flex flex-col items-center ">
             <img
-              src="/redghost.png"
+              src="image/redghost.png"
               alt=""
               className=" xl:w-[250px] lg:w-[200px] md:w-[150px] w-[100px] rounded-xl xl:ml-auto lg:ml-auto md:ml-auto ml-0 select-none "
             />
@@ -54,12 +54,12 @@ export const AboutProfile = () => {
           viewport={{ once: true, amount: 0.4 }}
         >
           <div className=" selection:bg-black selection:text-white xl:px-0 lg:px-0 px-4 ">
-            <h1 className=" font-GeneralSans xl:text-[50px] lg:text-[50px] md:text-[50px] text-[30px] xl:pt-[50px] lg:pt-[50px] md:pt-[50px] pt-[20px] xl:pb-0 lg:pb-0 md:pb-0 pb-[20px] ">
+            <h1 className=" font-GeneralSans xl:text-[50px] lg:text-[50px] md:text-[50px] text-[30px] xl:pt-[50px] lg:pt-[50px] md:pt-[50px] pt-[20px]  ">
               Education_
             </h1>
             <div
               className=" flex xl:flex-row lg:flex-row md:flex-row flex-col justify-between xl:items-center lg:items-center md:items-start items-start
-          xl:gap-0 lg:gap-0 md:gap-0 gap-[10px] t-[20px] "
+          xl:gap-0 lg:gap-0 md:gap-0 gap-[10px] mt-[20px] "
             >
               <div>
                 <h1 className=" font-GeneralSans text-[18px] ">
