@@ -30,8 +30,7 @@ const NavBar = () => {
               initial={`hidden`}
               animate={mainControls}
               transition={{
-                delay: 0.5,
-                duration: 1,
+                duration: 0.7,
                 type: "spring",
                 stiffness: 50,
                 ease: easeOut,
@@ -70,8 +69,7 @@ const NavBar = () => {
               initial={`hidden`}
               animate={mainControls}
               transition={{
-                delay: 0.5,
-                duration: 1,
+                duration: 0.7,
                 type: "spring",
                 stiffness: 50,
                 ease: easeOut,
