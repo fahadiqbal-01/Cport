@@ -4,8 +4,8 @@ import { GiStarFormation } from "react-icons/gi";
 export const HireMe = ({ className }) => {
   return (
     <form
-      className={` ${className} flex flex-col justify-center items-start p-10 absolute right-[10px] bottom-0 bg-transparent rounded-xl scale-0 opacity-0 z-50 w-fit
-             group-hover:bg-Khaki group-hover:bottom-[-600px] group-hover:right-[200px] group-hover:scale-100 group-hover:opacity-100 delay-400 duration-300 ease-out`}
+      className={` ${className} flex flex-col justify-center items-start p-10 absolute right-[10px] top-0 bg-transparent rounded-xl scale-0 opacity-0 z-50 w-fit
+             group-hover:bg-Khaki group-hover:top-[-600px] group-hover:right-[00px] group-hover:scale-100 group-hover:opacity-100 delay-400 duration-300 ease-out`}
     >
       <div className=" mb-[50px] flex justify-center gap-[10px] scale-0 group-hover:scale-100 delay-500 duration-300 ease-out ">
         <p className=" inline-block drop-shadow-2xl text-[30px] text-black font-aktura select-none text-center leading-[25px] z-50  ">
