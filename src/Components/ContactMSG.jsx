@@ -76,6 +76,7 @@ export const ContactMSG = () => {
               initial={{ opacitya: 0, y: 100 }}
               whileInView={{ opacity: 100, y: 0 }}
               transition={{ duration: 0.4, ease: easeOut }}
+              viewport={{ once: true }}
               value={form.name}
               placeholder="Your Name"
               onChange={(e) => setForm({ ...form, name: e.target.value })}
@@ -88,6 +89,7 @@ export const ContactMSG = () => {
               initial={{ opacitya: 0, y: 100 }}
               whileInView={{ opacity: 100, y: 0 }}
               transition={{ duration: 0.6, ease: easeOut }}
+              viewport={{ once: true }}
               value={form.mail}
               placeholder="Your Email"
               onChange={(e) => setForm({ ...form, mail: e.target.value })}
@@ -100,6 +102,7 @@ export const ContactMSG = () => {
               initial={{ opacitya: 0, y: 100 }}
               whileInView={{ opacity: 100, y: 0 }}
               transition={{ duration: 0.8, ease: easeOut }}
+              viewport={{ once: true }}
               value={form.message}
               placeholder="Your Message"
               onChange={(e) => setForm({ ...form, message: e.target.value })}
@@ -127,9 +130,10 @@ export const ContactMSG = () => {
           </form>
           <div className=" flex justify-center items-center ">
             <motion.button
-              initial={{ opacitya: 0, y: 100 }}
-              whileInView={{ opacity: 100, y: 0 }}
-              transition={{ duration: 1, ease: easeOut }}
+              initial={{ opacitya: 0, scale: 0 }}
+              whileInView={{ opacity: 100, scale: 1 }}
+              transition={{ duration: 0.5, delay: 0.5, ease: easeOut }}
+              viewport={{ once: true }}
               onClick={handleSubmit}
               className=" mt-[30px] cursor-pointer overflow-hidden z-50 xl:text-[20px] lg:text-20px md:text-[20px] sm:text-[20px] text-[16px] text-[#d50201] font-GeneralSans bg-black xl:px-[100px] lg:px-[100px] md:px-[100px] sm:px-[80px] px-[60px] py-[10px] border-4 border-black 
          rounded-2xl hover:shadow-2xl hover:drop-shadow-2xl hover:text-[#ffffff] hover:scale-[1.2] hover:border-black hover:bg-transparent after:content-[''] after:h-[80px] after:w-[200px] after:bg-[#000000] after:border-0 after:rounded-[500px]
