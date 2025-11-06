@@ -24,7 +24,7 @@ const Star = ({ className, innerFill, outerFill }) => {
           ref={ref}
           variants={{
             hidden: { rotate: 0, scale: 0.5 },
-            visible: { rotate: 360, scale: 1},
+            visible: { rotate: 360, scale: 1 },
           }}
           initial="hidden"
           animate={mainControls}
@@ -32,7 +32,7 @@ const Star = ({ className, innerFill, outerFill }) => {
           style={{ willChange: "transform" }}
           transition={{
             duration: 1.5,
-            ease: easeOut,
+            ease: "easeOut",
             type: "spring",
             stiffness: 30,
           }}
@@ -41,9 +41,26 @@ const Star = ({ className, innerFill, outerFill }) => {
           xmlns="http://www.w3.org/2000/svg"
         >
           <g fill={outerFill} className="pointer-events-auto">
-            <path d="M256 120c20 0 36 16 36 36v60l53-30c17-10 38-4 48 13s4 38-13 48l-53 30 53 
-            30c17 10 23 31 13 48s-31 23-48 13l-53-30v60c0 20-16 36-36 36s-36-16-36-36v-60l-53 
-            30c-17 10-38 4-48-13s-4-38 13-48l53-30-53-30c-17-10-23-31-13-48s31-23 48-13l53 30v-60c0-20 16-36 36-36z" />
+            {/* Top petal (closer to center) */}
+            <ellipse cx="275" cy="160" rx="38" ry="70" />
+
+            {/* Right petal (closer, rotated +120°) */}
+            <ellipse
+              cx="275"
+              cy="160"
+              rx="38"
+              ry="70"
+              transform="rotate(120 275 275)"
+            />
+
+            {/* Left petal (closer, rotated -120°) */}
+            <ellipse
+              cx="275"
+              cy="160"
+              rx="38"
+              ry="70"
+              transform="rotate(-120 275 275)"
+            />
           </g>
         </motion.svg>
       </div>

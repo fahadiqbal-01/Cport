@@ -6,6 +6,7 @@ import { delay, easeIn, easeInOut, easeOut, scale } from "motion";
 import { _round } from "gsap/gsap-core";
 import { useAnimation, useInView } from "motion/react";
 import { SendMSG } from "../Components/SendMSG";
+import { useLocation } from "react-router-dom";
 
 const HomeMain = () => {
   const ref = useRef(null);
@@ -23,7 +24,7 @@ const HomeMain = () => {
       <Container className=" grid xl:grid-cols-3 grid-cols-1 xl:pb-[70px] lg:pb-[60px] md:pb-[50px] pb-[40px] ">
         <div className=" relative xl:block hidden ">
           <Star
-            className=" absolute top-0 right-0 "
+            className=" absolute top-0 right-0 mt-10 "
             outerFill="#91040c"
           />
         </div>
@@ -38,7 +39,7 @@ const HomeMain = () => {
             initial="hidden"
             animate={mainControls}
             transition={{ delay: 0.5, duration: 0.7, ease: easeInOut }}
-            className=" font-GeneralSans text-black xl:text-[16px] lg:text-[16px] text-[16px] text-center mt-[10px] selection:text-white selection:bg-black "
+            className=" font-GeneralSans text-[#91040c] xl:text-[16px] lg:text-[16px] text-[16px] text-center mt-[10px] selection:text-white selection:bg-black "
           >
             Hi, I'm Fahad IQbal
           </motion.h2>
@@ -81,10 +82,7 @@ const HomeMain = () => {
         </div>
 
         <div className=" relative xl:block hidden ">
-          <Star
-            className=" absolute top-0 left-0 "
-            outerFill="#91040c"
-          />
+          <Star className=" absolute top-0 left-0 mt-10 " outerFill="#91040c" />
         </div>
       </Container>
     </section>

@@ -16,6 +16,7 @@ const LeftSlide = () => {
         type: "spring",
         stiffness: 100,
       }}
+      viewport={{ once: true, amount: 0.3 }}
       className=" xl:mt-[110px] lg:mt-[90px] md:mt-[70px] sm:mt-[50px] mt-[30px] "
     >
       <motion.div

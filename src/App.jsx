@@ -13,6 +13,7 @@ import "./App.css";
 import { NotFound } from "./Pages/NotFound";
 import { About } from "./Pages/About";
 import { ContactMSG } from "./Components/ContactMSG";
+import HireMeNow from "./Components/HireMeNow";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -26,6 +27,7 @@ function App() {
           <Route path="/Explore" element={<Explore />} />
           <Route path="/About" element={<About />} />
           <Route path="/ContactMSG" element={<ContactMSG />} />
+          <Route path="/HIreMeNOw" element={<HireMeNow />} />
         </Route>
         <Route path="*" element={<NotFound />} />
       </>

@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { getDatabase, push, ref, set } from "firebase/database";
 import ContainerSec from "./ContainerSec";
-import { motion } from "motion/react";
+import { easeOut, motion } from "motion/react";
 
 export const ContactMSG = () => {
   const [showAlert, setShowAlert] = React.useState(false);
@@ -48,8 +48,12 @@ export const ContactMSG = () => {
     }
   };
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
+
   return (
-    <section className=" w-full h-screen pt-[60px] " >
+    <section className=" w-full h-screen pt-[60px] ">
       <motion.div
         key="loader"
         className=" inset-0 flex items-center justify-center mt-[60px] "
@@ -58,14 +62,20 @@ export const ContactMSG = () => {
         transition={{ duration: 0.5 }}
       >
         <ContainerSec>
-          <h2
+          <motion.h2
+            initial={{ opacitya: 0, y: 100 }}
+            whileInView={{ opacity: 100, y: 0 }}
+            transition={{ duration: 0.2, ease: easeOut }}
             className=" xl:text-[40px] lg:text-[35px] text-[30px] font-cabinet text-center text-black xl:leading-[75px] lg:leading-[60px] md:leading-[60px] sm:leading-[50px] leading-[50px]
          selection:text-white selection:bg-black mb-[38px] "
           >
             Got a Question? I’m Just a Message Away.
-          </h2>
+          </motion.h2>
           <form className=" flex flex-wrap justify-center items-center gap-[26px] ">
-            <input
+            <motion.input
+              initial={{ opacitya: 0, y: 100 }}
+              whileInView={{ opacity: 100, y: 0 }}
+              transition={{ duration: 0.4, ease: easeOut }}
               value={form.name}
               placeholder="Your Name"
               onChange={(e) => setForm({ ...form, name: e.target.value })}
@@ -74,7 +84,10 @@ export const ContactMSG = () => {
             font-GeneralSans placeholder:font-GeneralSans text-[16px] placeholder:text-[16px] text-gray-500
             selection:text-white selection:bg-black "
             />
-            <input
+            <motion.input
+              initial={{ opacitya: 0, y: 100 }}
+              whileInView={{ opacity: 100, y: 0 }}
+              transition={{ duration: 0.6, ease: easeOut }}
               value={form.mail}
               placeholder="Your Email"
               onChange={(e) => setForm({ ...form, mail: e.target.value })}
@@ -83,7 +96,10 @@ export const ContactMSG = () => {
             font-GeneralSans placeholder:font-GeneralSans text-[16px] placeholder:text-[16px] text-gray-500
              selection:text-white selection:bg-black"
             />
-            <textarea
+            <motion.textarea
+              initial={{ opacitya: 0, y: 100 }}
+              whileInView={{ opacity: 100, y: 0 }}
+              transition={{ duration: 0.8, ease: easeOut }}
               value={form.message}
               placeholder="Your Message"
               onChange={(e) => setForm({ ...form, message: e.target.value })}
@@ -110,14 +126,17 @@ export const ContactMSG = () => {
             )}
           </form>
           <div className=" flex justify-center items-center ">
-            <button
+            <motion.button
+              initial={{ opacitya: 0, y: 100 }}
+              whileInView={{ opacity: 100, y: 0 }}
+              transition={{ duration: 1, ease: easeOut }}
               onClick={handleSubmit}
               className=" mt-[30px] cursor-pointer overflow-hidden z-50 xl:text-[20px] lg:text-20px md:text-[20px] sm:text-[20px] text-[16px] text-[#d50201] font-GeneralSans bg-black xl:px-[100px] lg:px-[100px] md:px-[100px] sm:px-[80px] px-[60px] py-[10px] border-4 border-black 
-         rounded-2xl hover:shadow-2xl hover:drop-shadow-2xl hover:text-black hover:scale-[1.2] hover:border-black hover:bg-transparent after:content-[''] after:h-[80px] after:w-[200px] after:bg-[#d50201] after:border-0 after:rounded-[500px]
+         rounded-2xl hover:shadow-2xl hover:drop-shadow-2xl hover:text-[#ffffff] hover:scale-[1.2] hover:border-black hover:bg-transparent after:content-[''] after:h-[80px] after:w-[200px] after:bg-[#000000] after:border-0 after:rounded-[500px]
          after:absolute after:bottom-[-100px] after:left-[50%] after:translate-x-[-50%] after:-z-50 after:duration-500 after:ease-out hover:after:bottom-[-40px] duration-300 ease-out relative "
             >
               Submit
-            </button>
+            </motion.button>
           </div>
         </ContainerSec>
       </motion.div>

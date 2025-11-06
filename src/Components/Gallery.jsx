@@ -8,7 +8,7 @@ const Gallery = () => {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.7, ease: "easeOut" }}
-        viewport={{ once: true }}
+        viewport={{ once: true, amount: 0.3 }}
         className="grid grid-cols-2 md:grid-cols-4 gap-4 xl:px-[50px] lg:px-[50px] md:px-[50px] px-[20px] pt-[50px] select-none "
       >
         <div className="grid gap-4">
@@ -53,7 +53,7 @@ const Gallery = () => {
           <div>
             <img
               className="h-auto max-w-full rounded-lg z-50 hover:scale-[0.95] hover:z-auto duration-300 ease-out  "
-              src="image/YUAN.png"
+              src="image/aventador.png"
               alt=""
             />
           </div>
@@ -106,12 +106,12 @@ const Gallery = () => {
         </div>
       </motion.div>
 
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 xl:px-[50px] lg:px-[50px] md:px-[50px] px-[20px] pt-[50px] pt-[50px] ">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 xl:px-[50px] lg:px-[50px] md:px-[50px] px-[20px] pt-[50px] ">
         <div className="grid gap-4">
           <div>
             <img
               className="h-auto max-w-full rounded-lg z-50 hover:scale-[0.95] hover:z-auto duration-300 ease-out  "
-              src="image/aventador.png"
+              src="image/YUAN.png"
               alt=""
             />
           </div>
@@ -135,7 +135,7 @@ const Gallery = () => {
           <div>
             <img
               className="h-auto max-w-full rounded-lg z-50 hover:scale-[0.95] hover:z-auto duration-300 ease-out  "
-              src="image/brokensoul.png"
+              src="image/FEIN.png"
               alt=""
             />
           </div>
@@ -165,7 +165,7 @@ const Gallery = () => {
           <div>
             <img
               className="h-auto max-w-full rounded-lg z-50 hover:scale-[0.95] hover:z-auto duration-300 ease-out  "
-              src="image/catwomen.png"
+              src="image/knight.png"
               alt=""
             />
           </div>

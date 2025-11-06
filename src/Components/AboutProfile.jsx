@@ -30,9 +30,9 @@ export const AboutProfile = () => {
             />
             <div
               className=" w-[250px] xl:ml-auto lg:ml-auto md:ml-auto ml-0 xl:text-[16px] lg:text-[16px] md:text-[14px]
-            xl:mt-[200px] lg:mt-[130px] md:mt-[180px] mt-[50px] xl:text-left lg:text-right md:text-right text-center "
+            xl:mt-[180px] lg:mt-[110px] md:mt-[80px] mt-[50px] xl:text-left lg:text-right md:text-right text-center "
             >
-              <h1 className=" font-GeneralSans ">HI, I'm Fahad IQbal</h1>
+              <h1 className=" font-GeneralSans text-[#91040c] ">HI, I'm Fahad IQbal</h1>
               <p>Crafting Web, Design & Visuals</p>
               <p>Shaping Ideas Into Experiences</p>
               <p>Turning Silence Into Visual Stories</p>

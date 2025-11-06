@@ -9,14 +9,11 @@ const Home = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    // Check if loader was already shown in this browser
     const alreadyShown = sessionStorage.getItem("hasShownLoader");
 
     if (alreadyShown) {
-      // Skip loader next time
       setIsLoading(false);
     } else {
-      // First time visit: show loader for 3s
       sessionStorage.setItem("hasShownLoader", "true");
       const timer = setTimeout(() => setIsLoading(false), 3000);
       return () => clearTimeout(timer);

@@ -15,8 +15,8 @@ export const NotFound = () => {
       <p className=" xl:text-[38px] lg:text-[36px] md:text-[32px] text-[28px] font-GeneralSans flex flex-col justify-center items-center pt-[28px] ">
         Lost? <br />
         <span>
-          Return -{" "}
-          <Link to="/" className=" text-[#c51111] ">
+          Return -
+          <Link to="/" className=" text-[#c51111] ml-2 ">
             Home
           </Link>
         </span>

@@ -79,7 +79,8 @@ body {
   padding: 0;
   margin: 0;
   width: full;
-  background: #f7f4f1;
+  /* background: #f7f4f1; */
+  background: #ffffff;
   overflow-x: hidden;
   scroll-behavior: smooth;
   scrollbar-width: none;
