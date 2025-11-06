@@ -53,7 +53,7 @@ export const ContactMSG = () => {
   });
 
   return (
-    <section className=" w-full h-screen xl:pt-[60px] lg:pt-[60px] md:pt-[60px] pt-0 ">
+    <section className=" w-full h-screen xl:pt-[60px] lg:pt-[60px] md:pt-[60px] pt-[-20px] ">
       <motion.div
         key="loader"
         className=" inset-0 flex items-center justify-center mt-[60px] "
