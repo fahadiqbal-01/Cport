@@ -2,8 +2,11 @@ import React, { useEffect } from "react";
 import { GiStarFormation } from "react-icons/gi";
 import { getDatabase, push, ref, set } from "firebase/database";
 import { easeOut, motion } from "framer-motion";
+import Toastify from "toastify-js";
+import "toastify-js/src/toastify.css"; // <- required for animations & styles
 
 const HireMeNow = () => {
+  let [hired, setHIred] = React.useState(false);
   const [form, setForm] = React.useState({
     number: "",
     mail: "",
@@ -11,52 +14,61 @@ const HireMeNow = () => {
     targetDate: "",
     budget: "",
   });
-  const [showAlert, setShowAlert] = React.useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
     if (
-      !form.mail &&
-      !form.projectDetails &&
-      !form.targetDate &&
-      !form.budget
+      !form.projectDetails ||
+      !form.targetDate ||
+      !form.budget ||
+      !form.mail ||
+      !form.mail.includes("@") ||
+      !form.mail.includes(".com")
     ) {
-      alert("Please fill in all required fields.");
+      Toastify({
+        text: "Please fill in all required fields.",
+        duration: 2000,
+        newWindow: true,
+        close: false,
+        gravity: "bottom", // `top` or `bottom`
+        position: "right", // `left`, `center` or `right`
+        stopOnFocus: true, // Prevents dismissing of toast on hover
+        style: {
+          background: "#91040c", //  background
+          color: "#ffffff", //  text
+          fontFamily: "Gsans, sans-serif", // Custom font
+          fontSize: "18px", // Font size// Orange border
+          borderRadius: "8px", // Rounded corners
+        },
+        onClick: function () {}, // Callback after click
+      }).showToast();
       return;
-    }
-
-    if (!form.mail || !form.mail.includes("@")) {
-      alert("Please enter a valid email address.");
-      return;
-    }
-
-    try {
-      const db = getDatabase();
-      const newRef = push(ref(db, "clients"));
-      await set(newRef, {
-        number: form.number,
-        mailAddress: form.mail,
-        projectDetails: form.projectDetails,
-        targetDate: form.targetDate,
-        budget: form.budget,
-        createdAt: Date.now(),
-      });
-
-      setShowAlert(true);
-      setTimeout(() => setShowAlert(false), 3000);
-
-      setForm({
-        number: "",
-        mail: "",
-        projectDetails: "",
-        targetDate: "",
-        budget: "",
-      });
-      console.log("Client saved to Realtime DB");
-    } catch (err) {
-      console.error("Firebase write error:", err);
-      alert("Failed to send. Check console for details.");
+    } else {
+      try {
+        const db = getDatabase();
+        const newRef = push(ref(db, "clients"));
+        await set(newRef, {
+          number: form.number,
+          mailAddress: form.mail,
+          projectDetails: form.projectDetails,
+          targetDate: form.targetDate,
+          budget: form.budget,
+          createdAt: Date.now(),
+        });
+        setHIred(true);
+        setForm({
+          number: "",
+          mail: "",
+          projectDetails: "",
+          targetDate: "",
+          budget: "",
+        });
+        console.log("Client saved to Realtime DB");
+      } catch (err) {
+        console.error("Firebase write error:", err);
+        alert("Failed to send. Check console for details.");
+      }
     }
   };
 
@@ -66,7 +78,11 @@ const HireMeNow = () => {
 
   return (
     <>
-      <section className=" xl:pt-[130px] lg:pt-[130px] md:pt-[130px] pt-[30px] ">
+      <section
+        className={` ${
+          hired ? "hidden" : "block"
+        }  xl:pt-[130px] lg:pt-[130px] md:pt-[130px] pt-[30px]  `}
+      >
         <motion.h1
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 100 }}
@@ -76,8 +92,8 @@ const HireMeNow = () => {
           Let’s Build Something Amazing Together 🤝
         </motion.h1>
         <form
-          className=" flex xl:flex-row lg:flex-row md:flex-row flex-col justify-evenly xl:items-start lg:items-start md:items-start items-center
-         px-4 xl:mb-[300px] lg:mb-[200px] z-50 "
+          className={` flex xl:flex-row lg:flex-row md:flex-row flex-col justify-evenly xl:items-start lg:items-start md:items-start items-center
+         px-4 xl:mb-[300px] lg:mb-[200px] z-50 `}
         >
           <motion.div
             initial={{ opacity: 0, x: -150 }}
@@ -99,7 +115,9 @@ const HireMeNow = () => {
                 onChange={(e) =>
                   setForm({ ...form, projectDetails: e.target.value })
                 }
-                className=" xl:w-[500px] lg:w-[300px] md:w-[300px] h-[150px] outline-4 outline-black focus:outline-[#91040c] rounded-md p-2 selection:bg-black selection:text-white  "
+                placeholder="Briefly describe your project with any specific design requirements, timelines and goals you have in mind... "
+                className=" xl:w-[500px] lg:w-[300px] md:w-[300px] h-[150px] outline-4 outline-black focus:outline-[#91040c] rounded-md p-2 selection:bg-black selection:text-white 
+                placeholder:font-GeneralSans placeholder:text-gray-500 font-GeneralSans text-black "
                 required
               />
             </div>
@@ -111,7 +129,9 @@ const HireMeNow = () => {
                 type="email"
                 value={form.mail}
                 onChange={(e) => setForm({ ...form, mail: e.target.value })}
-                className=" xl:w-[500px] lg:w-[300px] md:w-[300px] h-[50px] outline-4 outline-black focus:outline-[#91040c] rounded-md p-2 selection:bg-black selection:text-white  "
+                placeholder="Your email address"
+                className=" xl:w-[500px] lg:w-[300px] md:w-[300px] h-[50px] outline-4 outline-black focus:outline-[#91040c] rounded-md p-2 selection:bg-black selection:text-white 
+                placeholder:font-GeneralSans placeholder:text-gray-500 font-GeneralSans text-black "
                 required
               />
             </div>
@@ -120,10 +140,12 @@ const HireMeNow = () => {
                 WhatsApp Number (optional)
               </label>
               <input
+                type="tel"
                 value={form.number}
                 onChange={(e) => setForm({ ...form, number: e.target.value })}
-                type="tel"
-                className=" xl:w-[500px] lg:w-[300px] md:w-[300px] h-[50px] outline-4 outline-black focus:outline-[#91040c] rounded-md p-2 selection:bg-black selection:text-white  "
+                placeholder="Your WhatsApp number"
+                className=" xl:w-[500px] lg:w-[300px] md:w-[300px] h-[50px] outline-4 outline-black focus:outline-[#91040c] rounded-md p-2 selection:bg-black selection:text-white 
+                placeholder:font-GeneralSans placeholder:text-gray-500 font-GeneralSans text-black "
               />
             </div>
           </motion.div>
@@ -143,12 +165,12 @@ const HireMeNow = () => {
                 Target Date
               </label>
               <input
+                type="date"
                 value={form.targetDate}
                 onChange={(e) =>
                   setForm({ ...form, targetDate: e.target.value })
                 }
-                type="date"
-                className=" xl:w-[500px] lg:w-[300px] md:w-[300px] h-[50px] outline-4 outline-black focus:outline-[#91040c] rounded-md p-2 selection:bg-black selection:text-white  "
+                className=" xl:w-[500px] lg:w-[300px] md:w-[300px] h-[50px] outline-4 outline-black focus:outline-[#91040c] rounded-md p-2 selection:bg-black selection:text-white "
                 required
               />
             </div>
@@ -157,10 +179,12 @@ const HireMeNow = () => {
                 Project Budget
               </label>
               <input
+                type="number"
                 value={form.budget}
                 onChange={(e) => setForm({ ...form, budget: e.target.value })}
-                type="number"
-                className=" xl:w-[500px] lg:w-[300px] md:w-[300px] h-[50px] outline-4 outline-black focus:outline-[#91040c] rounded-md p-2 selection:bg-black selection:text-white  "
+                placeholder="Your budget in USD"
+                className=" xl:w-[500px] lg:w-[300px] md:w-[300px] h-[50px] outline-4 outline-black focus:outline-[#91040c] rounded-md p-2 selection:bg-black selection:text-white 
+                placeholder:font-GeneralSans placeholder:text-gray-500 font-GeneralSans text-black "
                 required
                 min="0"
               />
@@ -173,10 +197,6 @@ const HireMeNow = () => {
             >
               Hire
             </button>
-
-            {showAlert && (
-              <div className="text-green-600 font-bold">Submitted!</div>
-            )}
 
             <div className="mb-[50px] flex justify-start items-center mt-4 gap-[10px] select-none ">
               <p className="inline-block drop-shadow-2xl text-[30px] text-black font-aktura select-none text-center leading-[25px] z-50">
@@ -194,6 +214,19 @@ const HireMeNow = () => {
           </motion.div>
         </form>
       </section>
+      <motion.p
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 100 }}
+        transition={{ duration: 1.2, ease: easeOut }}
+        className={` ${
+          hired ? "block" : "hidden"
+        } h-[80vh] w-[80%] mx-auto text-center font-GeneralSans xl:text-[38px] lg:text-[36px] md:text-[32px] text-[28px] flex justify-center items-center xl:mt-0 lg:mt-0 md:mt-0 mt-[100px] `}
+      >
+        Thanks for trusting me with your project! I’ll review your info and get
+        in touch soon to discuss the next steps. Your ideas matter, and I’m
+        excited to help bring them to life. You’ll receive a reply within 24
+        hours — keep an eye on your inbox!🚀
+      </motion.p>
     </>
   );
 };

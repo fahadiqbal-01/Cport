@@ -2,12 +2,10 @@ import React, { useEffect } from "react";
 import { getDatabase, push, ref, set } from "firebase/database";
 import ContainerSec from "./ContainerSec";
 import { easeOut, motion } from "motion/react";
+import Toastify from "toastify-js";
+import "toastify-js/src/toastify.css"; // <- required for animations & styles
 
 export const ContactMSG = () => {
-  const [showAlert, setShowAlert] = React.useState(false);
-  const [showAlertSec, setShowAlertSec] = React.useState(false);
-  const [showAlertThi, setShowAlertThi] = React.useState(false);
-
   const [form, setForm] = React.useState({
     name: "",
     mail: "",
@@ -17,16 +15,42 @@ export const ContactMSG = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!form.name || !form.mail || !form.message) {
-      setShowAlertSec(true);
-      setTimeout(() => {
-        setShowAlertSec(false);
-      }, 3000);
+      Toastify({
+        text: "Please fill in all required fields.",
+        duration: 2000,
+        newWindow: true,
+        close: false,
+        gravity: "bottom", // `top` or `bottom`
+        position: "right", // `left`, `center` or `right`
+        stopOnFocus: true, // Prevents dismissing of toast on hover
+        style: {
+          background: "#91040c", //  background
+          color: "#ffffff", //  text
+          fontFamily: "Gsans, sans-serif", // Custom font
+          fontSize: "18px", // Font size// Orange border
+          borderRadius: "8px", // Rounded corners
+        },
+        onClick: function () {}, // Callback after click
+      }).showToast();
       return;
     } else if (!form.mail.includes("@") || !form.mail.includes(".com")) {
-      setShowAlertThi(true);
-      setTimeout(() => {
-        setShowAlertThi(false);
-      }, 3000);
+      Toastify({
+        text: "Please enter a valid email address.",
+        duration: 2000,
+        newWindow: true,
+        close: false,
+        gravity: "bottom", // `top` or `bottom`
+        position: "right", // `left`, `center` or `right`
+        stopOnFocus: true, // Prevents dismissing of toast on hover
+        style: {
+          background: "#f53022", //  background
+          color: "#ffffff", //  text
+          fontFamily: "Gsans, sans-serif", // Custom font
+          fontSize: "18px", // Font size// Orange border
+          borderRadius: "8px", // Rounded corners
+        },
+        onClick: function () {}, // Callback after click
+      }).showToast();
       return;
     } else {
       const db = getDatabase();
@@ -35,10 +59,24 @@ export const ContactMSG = () => {
         mailAddress: form.mail,
         message: form.message,
       }).then(() => {
-        setShowAlert(true);
-        setTimeout(() => {
-          setShowAlert(false);
-        }, 3000);
+        Toastify({
+          text: "Message sent successfully!",
+          duration: 2000,
+          newWindow: true,
+          close: false,
+          gravity: "bottom", // `top` or `bottom`
+          position: "right", // `left`, `center` or `right`
+          stopOnFocus: true, // Prevents dismissing of toast on hover
+          style: {
+            background: "#205736", //  background
+            color: "#ffffff", //  text
+            fontFamily: "Gsans, sans-serif", // Custom font
+            fontSize: "18px", // Font size// Orange border
+            borderRadius: "8px", // Rounded corners
+          },
+          onClick: function () {}, // Callback after click
+        }).showToast();
+        return;
         setForm({
           name: "",
           mail: "",
@@ -111,28 +149,18 @@ export const ContactMSG = () => {
             font-GeneralSans placeholder:font-GeneralSans text-[16px] placeholder:text-[16px] text-gray-500
              selection:text-white selection:bg-black"
             />
-
-            {showAlert && (
-              <div className="text-green-500 text-center mt-4">
-                Message sent successfully!
-              </div>
-            )}
-            {showAlertSec && (
-              <div className="text-red-500 text-center mt-4">
-                Please fill all fields.
-              </div>
-            )}
-            {showAlertThi && (
-              <div className="text-red-500 text-center mt-4">
-                Please enter a valid email address.
-              </div>
-            )}
           </form>
           <div className=" flex justify-center items-center ">
             <motion.button
               initial={{ opacitya: 0, scale: 0 }}
               whileInView={{ opacity: 100, scale: 1 }}
-              transition={{ duration: 0.5, delay: 0.5, ease: easeOut }}
+              transition={{
+                duration: 0.5,
+                delay: 0.5,
+                ease: easeOut,
+                type: "spring",
+                stiffness: 150,
+              }}
               viewport={{ once: true }}
               onClick={handleSubmit}
               className=" mt-[30px] cursor-pointer overflow-hidden z-50 xl:text-[20px] lg:text-20px md:text-[20px] sm:text-[20px] text-[16px] text-[#d50201] font-GeneralSans bg-black xl:px-[100px] lg:px-[100px] md:px-[100px] sm:px-[80px] px-[60px] py-[10px] border-4 border-black 

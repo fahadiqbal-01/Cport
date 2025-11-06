@@ -101,3 +101,25 @@ input[type="number"]::-webkit-inner-spin-button {
 input[type="number"] {
   -moz-appearance: textfield;
 }
+
+input[type="date"] {
+  font-family: "GeneralSans", sans-serif;
+  color: gray;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(40%);
+  cursor: pointer;
+}
+
+/* optional placeholder effect */
+input[type="date"]:invalid::before {
+  content: attr(placeholder);
+  color: #888;
+  position: absolute;
+  margin-left: 10px;
+}
+input[type="date"]:valid::before {
+  content: "";
+}
+
