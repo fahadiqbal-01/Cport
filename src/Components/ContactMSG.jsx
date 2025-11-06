@@ -76,7 +76,6 @@ export const ContactMSG = () => {
           },
           onClick: function () {}, // Callback after click
         }).showToast();
-        return;
         setForm({
           name: "",
           mail: "",
