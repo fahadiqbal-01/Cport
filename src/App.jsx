@@ -14,6 +14,10 @@ import { NotFound } from "./Pages/NotFound";
 import { About } from "./Pages/About";
 import { ContactMSG } from "./Components/ContactMSG";
 import HireMeNow from "./Components/HireMeNow";
+import { ScrollSmoother, ScrollTrigger } from "gsap/all";
+import gsap from "gsap";
+
+gsap.registerPlugin(ScrollSmoother, ScrollTrigger);
 
 function App() {
   const [count, setCount] = useState(0);
@@ -21,7 +25,6 @@ function App() {
   const router = createBrowserRouter(
     createRoutesFromElements(
       <>
-        {" "}
         <Route path="/" element={<RootLayout />}>
           <Route index element={<Home />} />
           <Route path="/Explore" element={<Explore />} />
@@ -34,40 +37,28 @@ function App() {
     )
   );
 
-  // const [mousePosition, setMousePosition] = useState({
-  //   x: 0,
-  //   y: 0,
-  // });
+  useEffect(() => {
+    const smoother = ScrollSmoother.create({
+      wrapper: "#smoothWrapper",
+      content: "#smoothContent",
+      smooth: 1,
+      onUpdate: (self) => {
+        // Optional: add custom logic on scroll
+      },
+    });
 
-  // useEffect(() => {
-  //   const mouseMove = (e) => {
-  //     setMousePosition({
-  //       x: e.clientX,
-  //       y: e.clientY,
-  //     });
-  //     console.log(`X: ${e.clientX} | Y: ${e.clientY}`);
-  //   };
-  //   window.addEventListener("mousemove", mouseMove);
-  //   return () => {
-  //     window.removeEventListener("mousemove", mouseMove);
-  //   };
-  // }, []);
+    return () => {
+      smoother.kill();
+    };
+  }, []);
 
   return (
     <>
-      {/* <div
-        style={{
-          left: mousePosition.x - 10,
-          top: mousePosition.y - 10,
-          position: "fixed",
-          zIndex: 9999,
-          pointerEvents: "none",
-        }}
-        className="h-[20px] w-[20px] rounded-full bg-black opacity-[70%] cursor fixed left-0 top-0 z-50 "
-      >
-     
-      </div> */}
-      <RouterProvider router={router} />
+      <div id="smoothWrapper">
+        <div id="smoothContent">
+          <RouterProvider router={router} />
+        </div>
+      </div>
     </>
   );
 }

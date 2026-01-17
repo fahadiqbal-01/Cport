@@ -4,6 +4,8 @@ import LeftSlide from "../Components/LeftSlide";
 import Homesec from "../subPages/Homesec";
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 import { ContactMSG } from "../Components/ContactMSG";
+import { ScrollSmoother, ScrollTrigger } from "gsap/all";
+import gsap from "gsap";
 
 const Home = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -19,6 +21,8 @@ const Home = () => {
       return () => clearTimeout(timer);
     }
   }, []);
+
+
 
   return (
     <>

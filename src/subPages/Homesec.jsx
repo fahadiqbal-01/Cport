@@ -5,35 +5,36 @@ import { easeOut } from "motion";
 import Dream from "../Components/Dream";
 import MySelf from "../Components/MySelf";
 import { href } from "react-router-dom";
+import WorkGallery from "../Components/WorkGallery";
 
 const contents = [
   {
     coverImage: "/image/mrcflyPreview.png",
-    expandedImage: "/image/mrcflyPoster.png",
+    expandedImage: "/image/mrcflyPoster.PNG",
     text: "MRC FLY – Visa and immigration service platform for jobs, work permits, and travel or study visas.",
     href: "https://www.mrcfly.com/",
   },
   {
     coverImage: "/image/gachpalaPreview.png",
-    expandedImage: "/image/gachpalaPoster.png",
+    expandedImage: "/image/gachpalaPoster.PNG",
     text: "Gachapala: Your online destination for a diverse selection of plants and essential accessories to beautifully green your home and garden.",
     href: "https://example.com/redhood",
   },
   {
     coverImage: "/image/portfolioPreview.png",
-    expandedImage: "/image/portfolioPoster.png",
+    expandedImage: "/image/portfolioPoster.PNG",
     text: "A Portfolio site showcasing Fahad Iqbal’s frontend development skills and projects.",
     href: "https://fahad-iqbal.netlify.app/",
   },
   {
     coverImage: "/image/notePreview.gif",
-    expandedImage: "/image/notePoster.png",
+    expandedImage: "/image/notePoster.PNG",
     text: "A Simple to-do app for managing and tracking daily tasks efficiently.",
     href: "https://example.com/redhood",
   },
   {
     coverImage: "/image/exclusivePreview.png",
-    expandedImage: "/image/exclusivePoster.png",
+    expandedImage: "/image/exclusivePoster.PNG",
     text: "Exclusive – Ecommerce site offering curated products with a smooth shopping experience.",
     href: "https://exclusive-io.netlify.app/",
   },
@@ -68,7 +69,7 @@ const Homesec = () => {
             whileInView={{ opacity: 100 }}
             transition={{
               duration: 1,
-              delay:0.3,
+              delay: 0.3,
               ease: easeOut,
             }}
             viewport={{ once: true }}
@@ -127,6 +128,7 @@ const Homesec = () => {
             ))}
           </motion.div>
           <Dream />
+          <WorkGallery />
           <MySelf />
         </ContainerSec>
       </section>
