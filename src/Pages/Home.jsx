@@ -1,11 +1,6 @@
 import React, { useEffect, useState } from "react";
-import HomeMain from "../subPages/HomeMain";
-import LeftSlide from "../Components/LeftSlide";
-import Homesec from "../subPages/Homesec";
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
-import { ContactMSG } from "../Components/ContactMSG";
-import { ScrollSmoother, ScrollTrigger } from "gsap/all";
-import gsap from "gsap";
+import Landing from "../subPages/Landing";
 
 const Home = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -22,19 +17,15 @@ const Home = () => {
     }
   }, []);
 
-
-
   return (
     <>
       {isLoading ? (
-        <div className="h-[100vh] w-full flex justify-center items-center">
+        <div className="flex justify-center items-center">
           <DotLottieReact src="json/hello.lottie" loop autoplay />
         </div>
       ) : (
         <section className="overflow-x-hidden">
-          <HomeMain />
-          <LeftSlide />
-          <Homesec />
+          <Landing />
         </section>
       )}
     </>

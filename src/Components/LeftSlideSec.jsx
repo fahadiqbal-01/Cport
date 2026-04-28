@@ -28,7 +28,7 @@ const LeftSlideSec = () => {
           }}
           style={slideStyle}
         >
-          <div className=" py-[25px] px-[60px] bg-black/10 rounded-lg">
+          <div className=" py-[45px] px-[40px] bg-black/10 rounded-lg">
             <FaReact className=" xl:text-[80px] lg:text-[60px] md:text-[50px] text-[30px] text-[#53c1de] " />
           </div>
         </motion.div>
@@ -41,7 +41,7 @@ const LeftSlideSec = () => {
           }}
           style={slideStyle}
         >
-          <div className=" py-[25px] px-[60px] bg-black/10 rounded-lg">
+          <div className=" py-[45px] px-[40px] bg-black/10 rounded-lg">
             <RiTailwindCssFill className=" xl:text-[80px] lg:text-[60px] md:text-[50px] text-[30px] text-[#01adc1] " />
           </div>
         </motion.div>
@@ -54,7 +54,7 @@ const LeftSlideSec = () => {
           }}
           style={slideStyle}
         >
-          <div className=" py-[25px] px-[60px] bg-black/10 rounded-lg">
+          <div className=" py-[45px] px-[40px] bg-black/10 rounded-lg">
             <SiRedux className=" xl:text-[75px] lg:text-[55px] md:text-[45px] text-[25px] text-[#000000] " />
           </div>
         </motion.div>
@@ -67,7 +67,7 @@ const LeftSlideSec = () => {
           }}
           style={slideStyle}
         >
-          <div className=" py-[25px] px-[60px] bg-black/10 rounded-lg">
+          <div className=" py-[45px] px-[40px] bg-black/10 rounded-lg">
             <FaHtml5 className=" xl:text-[80px] lg:text-[60px] md:text-[50px] text-[30px] text-[#e75000] " />
           </div>
         </motion.div>
@@ -80,7 +80,7 @@ const LeftSlideSec = () => {
           }}
           style={slideStyle}
         >
-          <div className=" py-[25px] px-[60px] bg-black/10 rounded-lg">
+          <div className=" py-[45px] px-[40px] bg-black/10 rounded-lg">
             <FaCss3Alt className=" xl:text-[80px] lg:text-[60px] md:text-[50px] text-[30px] text-[#0377bc] " />
           </div>
         </motion.div>
@@ -93,7 +93,7 @@ const LeftSlideSec = () => {
           }}
           style={slideStyle}
         >
-          <div className=" py-[25px] px-[60px] bg-black/10 rounded-lg">
+          <div className=" py-[45px] px-[40px] bg-black/10 rounded-lg">
             <FaJs className=" xl:text-[80px] lg:text-[60px] md:text-[50px] text-[30px] text-[#fed601] " />
           </div>
         </motion.div>
@@ -106,7 +106,7 @@ const LeftSlideSec = () => {
           }}
           style={slideStyle}
         >
-          <div className=" py-[25px] px-[60px] bg-black/10 rounded-lg">
+          <div className=" py-[45px] px-[40px] bg-black/10 rounded-lg">
             <TbApi className=" xl:text-[80px] lg:text-[60px] md:text-[50px] text-[30px] text-[#000000] " />
           </div>
         </motion.div>
@@ -119,7 +119,7 @@ const LeftSlideSec = () => {
           }}
           style={slideStyle}
         >
-          <div className=" py-[25px] px-[60px] bg-black/10 rounded-lg">
+          <div className=" py-[45px] px-[40px] bg-black/10 rounded-lg">
             <RiNextjsFill className=" xl:text-[80px] lg:text-[60px] md:text-[50px] text-[30px] text-[#000000] " />
           </div>
         </motion.div>
@@ -132,11 +132,11 @@ const LeftSlideSec = () => {
           }}
           style={slideStyle}
         >
-          <div className=" py-[25px] px-[60px] bg-black/10 rounded-lg">
+          <div className=" py-[45px] px-[40px] bg-black/10 rounded-lg">
             <FaGitAlt className=" xl:text-[80px] lg:text-[60px] md:text-[50px] text-[30px] text-[#f4501f] " />
           </div>
         </motion.div>
-         <motion.div
+        <motion.div
           initial={{ scale: 0.9 }}
           whileHover={{ scale: 1 }}
           transition={{
@@ -145,8 +145,59 @@ const LeftSlideSec = () => {
           }}
           style={slideStyle}
         >
-          <div className=" py-[25px] px-[60px] bg-black/10 rounded-lg">
-            <img src="icons/firebase.png" className=" xl:w-[65px] lg:w-[50px] md:w-[40px] w-[25px] " />
+          <div className=" py-[45px] px-[40px] bg-black/10 rounded-lg">
+            <img
+              src="icons/firebase.png"
+              className=" xl:w-[65px] lg:w-[50px] md:w-[40px] w-[25px] "
+            />
+          </div>
+        </motion.div>
+        <motion.div
+          initial={{ scale: 0.9 }}
+          whileHover={{ scale: 1 }}
+          transition={{
+            duration: 0.3,
+            ease: easeOut,
+          }}
+          style={slideStyle}
+        >
+          <div className=" py-[45px] px-[40px] bg-black/10 rounded-lg">
+            <img
+              src="icons/mui.png"
+              className=" xl:w-[65px] lg:w-[50px] md:w-[40px] w-[25px] "
+            />
+          </div>
+        </motion.div>
+        <motion.div
+          initial={{ scale: 0.9 }}
+          whileHover={{ scale: 1 }}
+          transition={{
+            duration: 0.3,
+            ease: easeOut,
+          }}
+          style={slideStyle}
+        >
+          <div className=" py-[45px] px-[40px] bg-black/10 rounded-lg">
+            <img
+              src="icons/flowbite.png"
+              className=" xl:w-[65px] lg:w-[50px] md:w-[40px] w-[25px] "
+            />
+          </div>
+        </motion.div>
+          <motion.div
+          initial={{ scale: 0.9 }}
+          whileHover={{ scale: 1 }}
+          transition={{
+            duration: 0.3,
+            ease: easeOut,
+          }}
+          style={slideStyle}
+        >
+          <div className=" py-[45px] px-[40px] bg-black/10 rounded-lg">
+            <img
+              src="icons/fmotion.png"
+              className=" xl:w-[65px] lg:w-[50px] md:w-[40px] w-[25px] "
+            />
           </div>
         </motion.div>
       </Marquee>
@@ -156,6 +207,12 @@ const LeftSlideSec = () => {
 
 const slideStyle = {
   maxWidth: "300px",
+  maxHeight: "100px",
+  overflow: "hidden",
+  borderRadius: "10px",
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
   margin: "0 10px ",
   background: "transparent",
   color: "white",

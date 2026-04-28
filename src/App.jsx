@@ -9,13 +9,11 @@ import {
   Routes,
 } from "react-router-dom";
 import Home from "./Pages/Home";
-import "./App.css";
 import { NotFound } from "./Pages/NotFound";
 import { About } from "./Pages/About";
-import { ContactMSG } from "./Components/ContactMSG";
-import HireMeNow from "./Components/HireMeNow";
 import { ScrollSmoother, ScrollTrigger } from "gsap/all";
 import gsap from "gsap";
+import Hire from "./Pages/Hire";
 
 gsap.registerPlugin(ScrollSmoother, ScrollTrigger);
 
@@ -29,12 +27,14 @@ function App() {
           <Route index element={<Home />} />
           <Route path="/Explore" element={<Explore />} />
           <Route path="/About" element={<About />} />
-          <Route path="/ContactMSG" element={<ContactMSG />} />
-          <Route path="/HIreMeNOw" element={<HireMeNow />} />
+          <Route
+            path="/lets-build-something-great-together"
+            element={<Hire />}
+          />
         </Route>
         <Route path="*" element={<NotFound />} />
-      </>
-    )
+      </>,
+    ),
   );
 
   useEffect(() => {

@@ -2,39 +2,35 @@ import React from "react";
 import { GiStarFormation } from "react-icons/gi";
 import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 import { Link } from "react-router-dom";
+import { ScrollSmoother } from "gsap/all";
+import { SendMSGbtn } from "./SendMSGbtn";
 
 const Footer = () => {
+  const handleHireClick = () => {
+    const smoother = ScrollSmoother.get();
+
+    if (smoother) {
+      smoother.scrollTo(0, false);
+      return;
+    }
+
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
 
   return (
     <footer className="mt-[120px] p-6 selection:bg-white selection:text-black bg-black text-white relative">
-      <div className="flex justify-between items-start mb-[50px]">
-        <h1 className="font-GeneralSans xl:text-[140px] lg:text-[120px] md:text-[100px] text-[45px] xl:leading-normal lg:leading-[130px] md:leading-[100px] leading-[60px]">
+      <div className="flex 2xl:flex-row xl:flex-row lg:flex-row flex-col justify-between items-start mb-[50px]">
+        <h1 className="font-Gambarino xl:text-[140px] lg:text-[120px] md:text-[100px] text-[45px] 
+        xl:leading-normal lg:leading-[130px] md:leading-[100px] leading-[60px]">
           Let's Connect <br /> There
         </h1>
 
-        <div
-          id="chat"
-          className="xl:mt-0 lg:mt-[-50px] md:mt-[-60px] mt-[-70px] relative "
+        <SendMSGbtn
+          className=" bg-white text-black! hover:border-white hover:after:bg-white hover:text-black! mr-10 "
+          to="lets-build-something-great-together"
         >
-          <Link to="/HireMeNow" >
-            <button
-              className="bg-[#363636] px-[12px] xl:py-[20px] lg:py-[20px] md:py-[20px] py-[20px] rounded-full text-white font-GeneralSans text-[20px] xl:w-[250px] lg:w-[250px] md:w-[250px] w-[150px] xl:h-[80px] lg:h-[80px] md:h-[80px] h-[10px]
-          flex justify-between items-center mt-[80px] cursor-pointer overflow-hidden group relative"
-            >
-              <div
-                className={`xl:p-2 lg:p-2 md:p-2 p-[6px] bg-black rounded-full xl:ml-0 lg:ml-0 md:ml-0 ml-[-4px] group-hover:pl-[178px] duration-300 ease-in-out `}
-              >
-                <MdKeyboardDoubleArrowRight className="xl:text-[40px] lg:text-[40px] md:text-[40px] text-[15px] text-white " />
-              </div>
-              <span
-                className={`xl:text-[20px] lg:text-[20px] md:text-[20px] text-[10px] absolute right-[30px] top-[50%] translate-y-[-50%] 
-                  group-hover:right-[-250px] group-hover:opacity-0 duration-200 ease-out`}
-              >
-                Hire Me Now!
-              </span>
-            </button>
-          </Link>
-        </div>
+          Let's Build
+        </SendMSGbtn>
       </div>
       <div className="py-[40px] flex xl:flex-row lg:flex-row md:flex-row flex-col xl:gap-0 lg:gap-0 md:gap-0 gap-[20px] justify-between border-t-2 border-white/50 xl:pr-[120px] lg:pr-[120px] md:pr-0">
         <div>
@@ -43,7 +39,7 @@ const Footer = () => {
               FAHAD <br /> IQBAL
             </p>
           </Link>
-          <p className="xl:text-balance text-white/70 font-medium w-[300px] pl-[10px] xl:mt-[20px] lg:mt-[20px] md:mt-[20px] mt-[10px]">
+          <p className="xl:text-balance text-white/70 font-medium w-[300px] pl-[10px] mt-5 select-none ">
             I’m Fahad Iqbal — a Web & UX/UI Developer, as well as a visual
             creator. I build clean, user-friendly websites and design graphics
             that connect — from posters and banners to refined photo edits. My
@@ -53,14 +49,19 @@ const Footer = () => {
         </div>
 
         <div className="xl:ml-0 lg:ml-0 md:ml-0 ml-[10px]">
-          <h1 className="font-GeneralSans text-[24px] font-white">Email</h1>
-          <p className="mt-[8px] text-white/70">fahad.iqbal.im.47@icloud.com</p>
-          <p className="mt-[8px] text-white/70">fahadddd.im@gmail.com</p>
+          <h1 className="font-Gambarino text-[24px] font-white">Contact</h1>
+          <div className=" mt-5 ">
+            <p className="text-white/70">fahadddd.im@gmail.com</p>
+            <p className="text-white/70">+880 1748 996699</p>
+          </div>
         </div>
         <div className="xl:ml-0 lg:ml-0 md:ml-0 ml-[10px]">
-          <h1 className="font-GeneralSans text-[24px] font-white">Contact</h1>
-          <p className="mt-[8px] text-white/70">+880 1748 996699</p>
-          <p className="mt-[8px] text-white/70">+880 1601 859894</p>
+          <h1 className="font-Gambarino text-[24px] font-white">Social</h1>
+          <div className=" flex justify-start items-start gap-4 mt-5 ">
+            <img src="icons/x.png" className=" invert-100 w-8 " />
+            <img src="icons/whatsapp.png" className=" w-8 " />
+            <img src="icons/linkedin.png" className=" w-8 " />
+          </div>
         </div>
       </div>
     </footer>

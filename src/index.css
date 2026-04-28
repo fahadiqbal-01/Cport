@@ -6,16 +6,9 @@
   --color-DarkRed: #91040c;
   --color-blood: #822b28;
   --font-aktura: "Aktura", "sans-serif";
-  --font-rosaline: "Rosaline", "sans-serif";
-  --font-styro: "Styro", "sans-serif";
-  --font-melodrama: "Melodrama", "sans-serif";
-  --font-cabinet: "Cabinet", "sans-serif";
-  --font-kihim: "kihim", "sans-serif";
-  --font-kohinoor: "kohinoor", "sans-serif";
-  --font-Stardom: "Stardom", "sans-serif";
-  --font-Zodiak: "Zodiak", "sans-serif";
-  --font-Striper: "Striper", "sans-serif";
-  --font-GeneralSans: "GeneralSans", "sans-serif";
+  --font-Satoshi: "satoshi", "sans-serif";
+  --font-SatoshiSec: "satoshi", "sans-serif";
+  --font-Gambarino: "gambarino", "sans-serif";
 }
 
 @font-face {
@@ -24,62 +17,24 @@
     format("opentype");
 }
 @font-face {
-  font-family: Rosaline;
-  src: url(/src/assets/fonts/Rosaline_Complete/Rosaline_Complete/Fonts/OTF/Rosaline-Regular.otf)
+  font-family: Satoshi;
+  src: url(/src/assets/fonts/Satoshi_Complete/Satoshi_Complete/Fonts/OTF/Satoshi-Bold.otf)
     format("opentype");
 }
 @font-face {
-  font-family: Styro;
-  src: url(/src/assets/fonts/Styro_Complete/Styro_Complete/Fonts/OTF/Styro-Black.otf)
-    format("opentype");
-}
-
-@font-face {
-  font-family: Styro;
-  src: url(/src/assets/fonts/Melodrama_Complete/Melodrama_Complete/Fonts/OTF/Melodrama-Bold.otf)
+  font-family: Satoshi;
+  src: url(/src/assets/fonts/Satoshi_Complete/Satoshi_Complete/Fonts/OTF/Satoshi-Regular.otf)
     format("opentype");
 }
 @font-face {
-  font-family: Styro;
-  src: url(/src/assets/fonts/CabinetGrotesk_Complete/CabinetGrotesk_Complete/Fonts/OTF/CabinetGrotesk-Black.otf)
-    format("opentype");
-}
-@font-face {
-  font-family: kihim;
-  src: url(/src/assets/fonts/Kihim_Complete/Kihim_Complete/Fonts/OTF/Kihim-Regular.otf)
-    format("opentype");
-}
-@font-face {
-  font-family: kohinoor;
-  src: url(/src/assets/fonts/KohinoorZerone_Complete/KohinoorZerone_Complete/Fonts/OTF/KohinoorZerone-Zero.otf)
-    format("opentype");
-}
-@font-face {
-  font-family: Stardom;
-  src: url(/src/assets/fonts/Stardom_Complete/Stardom_Complete/Fonts/OTF/Stardom-Regular.otf)
-    format("opentype");
-}
-@font-face {
-  font-family: Zodiak;
-  src: url(/src/assets/fonts/Zodiak_Complete/Zodiak_Complete/Fonts/OTF/Zodiak-Bold.otf)
-    format("opentype");
-}
-@font-face {
-  font-family: Striper;
-  src: url(/src/assets/fonts/Striper_Complete/Striper_Complete/Fonts/OTF/Striper-Regular.otf)
-    format("opentype");
-}
-@font-face {
-  font-family: GeneralSans;
-  src: url(/src/assets/fonts/GeneralSans_Complete/GeneralSans_Complete/Fonts/OTF/GeneralSans-Medium.otf)
+  font-family: Gambarino;
+  src: url(./assets/fonts/Gambarino_Complete/Gambarino_Complete/Fonts/OTF/Gambarino-Regular.otf)
     format("opentype");
 }
 
 body {
   padding: 0;
   margin: 0;
-  width: full;
-  /* background: #f7f4f1; */
   background: #ffffff;
   overflow-x: hidden;
   scroll-behavior: smooth;
@@ -122,4 +77,3 @@ input[type="date"]:invalid::before {
 input[type="date"]:valid::before {
   content: "";
 }
-

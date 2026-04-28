@@ -19,7 +19,7 @@ const NavBar = () => {
                 stiffness: 70,
               }}
               viewport={{ once: true }}
-              className="drop-shadow-2xl px-[10px] font-thin text-[16px] text-black cursor-pointer select-none font-GeneralSans z-50 
+              className="drop-shadow-2xl px-[10px] font-Satoshi font-bold text-[16px] text-black cursor-pointer select-none z-50 
               after:content-[''] after:h-[30px] after:w-[3px] after:bg-[#91040c] after:absolute after:left-0 after:bottom-[-3px] after:duration-300
                after:ease-out after:-z-50 hover:text-white hover:after:w-[100%] duration-300 ease-out  relative"
             >
@@ -51,7 +51,7 @@ const NavBar = () => {
                 stiffness: 70,
               }}
               viewport={{ once: true }}
-              className=" drop-shadow-2xl px-[10px] font-thin text-[16px] text-black cursor-pointer select-none font-GeneralSans z-50
+              className=" drop-shadow-2xl px-[10px] font-Satoshi font-bold text-[16px] text-black cursor-pointer select-none z-50
               after:content-[''] after:h-[30px] after:w-[3px] after:bg-[#91040c] after:absolute after:right-0 after:bottom-[-3px] after:duration-300
                after:ease-out after:-z-50 hover:text-white hover:after:w-[100%] duration-300 ease-out relative"
             >
