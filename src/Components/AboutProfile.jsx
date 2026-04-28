@@ -2,6 +2,7 @@ import { easeInOut, easeOut } from "motion";
 import { motion } from "framer-motion";
 import Container from "./Container";
 import LeftSlideSec from "./LeftSlideSec";
+import Core from "./Core";
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -94,6 +95,7 @@ export const AboutProfile = () => {
         </motion.div>
       </Container>
 
+      <Core />
       {/* Marquee Section */}
       <LeftSlideSec />
 

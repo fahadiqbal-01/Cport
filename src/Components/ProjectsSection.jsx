@@ -39,11 +39,6 @@ const projects = [
 const ProjectsSection = () => {
   return (
     <section className="w-full bg-[#000000] text-white pt-24 md:pt-32 pb-24 md:pb-40 relative overflow-hidden">
-      {/* Background Decorative Element */}
-      <div className="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none">
-        <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-DarkRed rounded-full blur-[120px]"></div>
-        <div className="absolute bottom-[-10%] right-[-10%] w-[30%] h-[30%] bg-blue-900 rounded-full blur-[120px]"></div>
-      </div>
 
       <div className="max-w-[1200px] mx-auto px-6 md:px-10 relative z-10">
         <motion.h2
