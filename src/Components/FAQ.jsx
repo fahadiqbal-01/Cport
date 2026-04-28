@@ -6,7 +6,7 @@ const faqs = [
   {
     question: "Can you build a full SaaS product?",
     answer:
-      "Yes — I build complete SaaS applications including authentication, dashboards, API integration, and responsive UI using Next.js and Firebase.",
+      "Yes — I build complete SaaS applications including authentication, dashboards, API integration, and responsive UI using Next.js and React.js",
   },
   {
     question: "Do you work with startups and early-stage teams?",

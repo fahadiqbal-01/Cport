@@ -7,7 +7,8 @@ const projects = [
   {
     id: 1,
     title: "A LOST SOUL OF AN OLD WARRIOR",
-    description: "Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.",
+    description:
+      "Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.",
     mainImage: "image/cyberpunk_warrior_1777292086830.png",
     subImage1: "image/cyberpunk_mech_1777292117962.png",
     subImage2: "image/brokensoul.png",
@@ -16,7 +17,8 @@ const projects = [
   {
     id: 2,
     title: "THE FREEDOM WE STRIVE FOR",
-    description: "Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.",
+    description:
+      "Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.",
     mainImage: "image/cyberpunk_girl_1777292101571.png",
     subImage1: "image/catwomen.png",
     subImage2: "image/cyberpunk_mech_1777292117962.png",
@@ -25,34 +27,43 @@ const projects = [
   {
     id: 3,
     title: "STEP IN EVOLUTION TOTAL SUPREMACY",
-    description: "Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.",
+    description:
+      "Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.",
     mainImage: "image/cyberpunk_mech_1777292117962.png",
     subImage1: "image/griffith.png",
     subImage2: "image/cyberpunk_warrior_1777292086830.png",
     reverse: false,
-  }
+  },
 ];
 
 const ProjectsSection = () => {
   return (
-    <section className="w-full mt-10 md:mt-20 bg-[#000000] text-white pt-16 md:pt-24 pb-24 md:pb-40 relative overflow-hidden">
+    <section className="w-full bg-[#000000] text-white pt-24 md:pt-32 pb-24 md:pb-40 relative overflow-hidden">
+      {/* Background Decorative Element */}
+      <div className="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none">
+        <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-DarkRed rounded-full blur-[120px]"></div>
+        <div className="absolute bottom-[-10%] right-[-10%] w-[30%] h-[30%] bg-blue-900 rounded-full blur-[120px]"></div>
+      </div>
 
       <div className="max-w-[1200px] mx-auto px-6 md:px-10 relative z-10">
         <motion.h2
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 1, ease: easeOut }}
-          className="xl:text-[42px] lg:text-[38px] md:text-[36px] text-[30px]
-               font-Gambarino text-center xl:mb-[120px] lg:mb-[100px] md:mb-[80px] mb-[60px] selection:text-black selection:bg-white"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: easeOut }}
+          className="xl:text-[60px] lg:text-[50px] md:text-[40px] text-[32px]
+               font-Gambarino text-center xl:mb-[100px] lg:mb-[80px] md:mb-[60px] mb-[40px] selection:text-black selection:bg-white uppercase tracking-tighter"
         >
-          Tiny fraction of my work...
+          Selected{" "}
+          <span className="font-aktura text-DarkRed lowercase text-[1.2em]">
+            Projects
+          </span>
         </motion.h2>
 
         <div className="flex flex-col gap-28 md:gap-32 lg:gap-40">
           {projects.map((project, index) => (
-            <div 
-              key={project.id} 
-              className={`flex flex-col ${project.reverse ? 'lg:flex-row-reverse' : 'lg:flex-row'} items-center gap-12 md:gap-16 lg:gap-24`}
+            <div
+              key={project.id}
+              className={`flex flex-col ${project.reverse ? "lg:flex-row-reverse" : "lg:flex-row"} items-center gap-12 md:gap-16 lg:gap-24`}
             >
               <div className="w-full lg:w-1/2 relative flex justify-center px-4 md:px-0">
                 <motion.div
@@ -62,14 +73,14 @@ const ProjectsSection = () => {
                   viewport={{ once: true, margin: "-100px" }}
                   className="relative z-10 w-full max-w-[350px] md:max-w-[450px]"
                 >
-                   <div className="relative inline-block w-full">
-                     <div className="absolute inset-0 bg-DarkRed translate-x-3 translate-y-3 md:translate-x-4 md:translate-y-4 -z-10"></div>
-                     <img 
-                       src={project.mainImage} 
-                       alt={project.title} 
-                       className="w-full aspect-square object-cover grayscale hover:grayscale-0 transition-all duration-500"
-                     />
-                   </div>
+                  <div className="relative inline-block w-full">
+                    <div className="absolute inset-0 bg-DarkRed translate-x-3 translate-y-3 md:translate-x-4 md:translate-y-4 -z-10"></div>
+                    <img
+                      src={project.mainImage}
+                      alt={project.title}
+                      className="w-full aspect-square object-cover grayscale hover:grayscale-0 transition-all duration-500"
+                    />
+                  </div>
                 </motion.div>
 
                 <motion.div
@@ -77,9 +88,13 @@ const ProjectsSection = () => {
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.8, delay: 0.2, ease: easeOut }}
                   viewport={{ once: true }}
-                  className={`absolute z-20 ${project.reverse ? '-right-2 md:-right-10 top-[5%] md:top-[10%]' : '-left-2 md:-left-10 top-[5%] md:top-[10%]'} w-24 md:w-32 lg:w-48 border-[4px] md:border-[6px] border-[#111111] bg-black/50`}
+                  className={`absolute z-20 ${project.reverse ? "-right-2 md:-right-10 top-[5%] md:top-[10%]" : "-left-2 md:-left-10 top-[5%] md:top-[10%]"} w-24 md:w-32 lg:w-48 border-[4px] md:border-[6px] border-[#111111] bg-black/50`}
                 >
-                  <img src={project.subImage1} alt="" className="w-full aspect-square object-cover opacity-80 mix-blend-multiply" />
+                  <img
+                    src={project.subImage1}
+                    alt=""
+                    className="w-full aspect-square object-cover opacity-80 mix-blend-multiply"
+                  />
                 </motion.div>
 
                 <motion.div
@@ -87,9 +102,13 @@ const ProjectsSection = () => {
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: 0.4, ease: easeOut }}
                   viewport={{ once: true }}
-                  className={`absolute z-20 ${project.reverse ? 'left-0 md:-left-10 -bottom-6 md:-bottom-10 lg:-bottom-16' : 'right-0 md:-right-10 -bottom-6 md:-bottom-10 lg:-bottom-16'} w-28 md:w-36 lg:w-52 border-[4px] md:border-[6px] border-[#111111] bg-white`}
+                  className={`absolute z-20 ${project.reverse ? "left-0 md:-left-10 -bottom-6 md:-bottom-10 lg:-bottom-16" : "right-0 md:-right-10 -bottom-6 md:-bottom-10 lg:-bottom-16"} w-28 md:w-36 lg:w-52 border-[4px] md:border-[6px] border-[#111111] bg-white`}
                 >
-                  <img src={project.subImage2} alt="" className="w-full aspect-square object-cover grayscale" />
+                  <img
+                    src={project.subImage2}
+                    alt=""
+                    className="w-full aspect-square object-cover grayscale"
+                  />
                 </motion.div>
               </div>
 

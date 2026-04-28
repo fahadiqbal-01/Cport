@@ -44,7 +44,7 @@ const Explore = () => {
                     duration: 0.7,
                     ease: easeOut,
                   }}
-                  className="xl:text-[50px] lg:text-[50px] text-[40px] font-cabinet text-center text-black leading-[75px] selection:text-white selection:bg-black"
+                  className="xl:text-[50px] lg:text-[50px] text-[40px] font-Gambarino text-center text-black leading-[75px] selection:text-white selection:bg-black"
                 >
                   Explore My Work
                 </motion.h1>
@@ -55,7 +55,7 @@ const Explore = () => {
                     duration: 0.7,
                     ease: easeOut,
                   }}
-                  className="text-[20px] font-GeneralSans text-center mt-[10px] selection:text-white selection:bg-black"
+                  className="text-[20px] font-Satoshi text-center mt-[10px] selection:text-white selection:bg-black"
                 >
                   Discover the creative works that showcase my skills and passion.
                 </motion.p>

@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { db } from "../firebaseConfig";
 import { ref, push } from "firebase/database";
 import { Bounce, toast, ToastContainer } from "react-toastify";
+import emailjs from "@emailjs/browser";
 
 export const HireMeNow = () => {
   const [status, setStatus] = useState("submit");
@@ -53,26 +54,12 @@ export const HireMeNow = () => {
         description,
         createdAt: Date.now(),
       });
-
-      const response = await fetch("/api/send-email", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          name,
-          email,
-          phone,
-          budget,
-          targetDate,
-          description,
-        }),
-      });
-
-      if (!response.ok) {
-        const errorData = await response.json();
-        throw new Error(errorData.error?.message || "Failed to send email");
-      }
+      await emailjs.send(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        { name, email, phone, budget, description, targetDate },
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+      );
 
       toast("Message sent successfully!", {
         position: "bottom-right",
@@ -131,12 +118,10 @@ export const HireMeNow = () => {
           className="lg:col-span-4 font-mono text-sm tracking-wide flex flex-col sm:flex-row lg:flex-col gap-8 sm:gap-12 lg:gap-10 text-[#111111]/80"
         >
           <div className="flex-1">
-            <p>fahad.iqbal.im.47@icloud.com</p>
             <p>fahadddd.im@gmail.com</p>
           </div>
           <div className="flex-1">
             <p>+880 1748 996699</p>
-            <p>+880 1601 859894</p>
           </div>
           <div className="flex-1">
             <p>Barishal,</p>
