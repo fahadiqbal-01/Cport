@@ -31,7 +31,7 @@ const faqs = [
   {
     question: "Do you handle both frontend and backend?",
     answer:
-      "Yes — I handle the full product layer: Next.js & React.js frontend, Firebase & Supabase auth and database, API integration, and deployment.",
+      "Yes — I handle the full product layer: HTML, CSS, JavaScript, Next.js & React.js frontend, Firebase & Supabase auth and database, API integration, and deployment.",
   },
 ];
 
@@ -52,7 +52,6 @@ const FAQItem = ({ faq }) => {
           {faq.question}
         </h3>
         <div className="relative w-6 h-6 flex items-center justify-center shrink-0">
-          {/* Vertical line */}
           <motion.div
             animate={{
               rotate: isOpen ? 90 : 0,
@@ -63,7 +62,6 @@ const FAQItem = ({ faq }) => {
               isOpen ? "bg-DarkRed" : "bg-black group-hover:bg-DarkRed"
             }`}
           />
-          {/* Horizontal line */}
           <motion.div
             animate={{
               rotate: isOpen ? 180 : 0,

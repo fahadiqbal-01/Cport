@@ -6,40 +6,31 @@ import { Link } from "react-router-dom";
 const projects = [
   {
     id: 1,
-    title: "A LOST SOUL OF AN OLD WARRIOR",
+    title: "Invoicing & Billing for Freelancers",
     description:
-      "Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.",
-    mainImage: "image/cyberpunk_warrior_1777292086830.png",
-    subImage1: "image/cyberpunk_mech_1777292117962.png",
-    subImage2: "image/brokensoul.png",
+      "A full-featured invoicing web app built for Bangladeshi freelancers and small businesses — in their own language. Hisab lets users create, send, and track invoices in BDT with native support for bKash and Nagad payments. Designed with a familiar Bengali-first UI, it removes the friction of using English-only tools that don’t reflect local payment realities.",
+    mainImage: "hisab/3.png",
+    subImage1: "hisab/2.png",
+    subImage2: "hisab/1.png",
+    src: "https://hisabhere.vercel.app/",
     reverse: false,
   },
   {
     id: 2,
-    title: "THE FREEDOM WE STRIVE FOR",
+    title: "Craft Job-Winning Resumes With AI",
     description:
-      "Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.",
-    mainImage: "image/cyberpunk_girl_1777292101571.png",
-    subImage1: "image/catwomen.png",
-    subImage2: "image/cyberpunk_mech_1777292117962.png",
+      "An AI-powered resume builder that turns your work history into a polished, ATS-friendly resume in minutes. Users input their experience, skills, and target role — the AI generates tailored content, suggests stronger phrasing, and formats everything into a clean, downloadable resume. Built for job seekers who want professional results without the blank-page struggle.",
+    mainImage: "resume/1.png",
+    subImage1: "resume/2.png",
+    subImage2: "resume/3.png",
+    src: "https://resumebuilderairefinement.vercel.app/",
     reverse: true,
-  },
-  {
-    id: 3,
-    title: "STEP IN EVOLUTION TOTAL SUPREMACY",
-    description:
-      "Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.",
-    mainImage: "image/cyberpunk_mech_1777292117962.png",
-    subImage1: "image/griffith.png",
-    subImage2: "image/cyberpunk_warrior_1777292086830.png",
-    reverse: false,
   },
 ];
 
 const ProjectsSection = () => {
   return (
     <section className="w-full bg-[#000000] text-white pt-24 md:pt-32 pb-24 md:pb-40 relative overflow-hidden">
-
       <div className="max-w-[1200px] mx-auto px-6 md:px-10 relative z-10">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
@@ -69,11 +60,11 @@ const ProjectsSection = () => {
                   className="relative z-10 w-full max-w-[350px] md:max-w-[450px]"
                 >
                   <div className="relative inline-block w-full">
-                    <div className="absolute inset-0 bg-DarkRed translate-x-3 translate-y-3 md:translate-x-4 md:translate-y-4 -z-10"></div>
                     <img
                       src={project.mainImage}
                       alt={project.title}
-                      className="w-full aspect-square object-cover grayscale hover:grayscale-0 transition-all duration-500"
+                      loading="lazy"
+                      className="w-full aspect-square object-cover transition-all duration-500"
                     />
                   </div>
                 </motion.div>
@@ -87,8 +78,9 @@ const ProjectsSection = () => {
                 >
                   <img
                     src={project.subImage1}
-                    alt=""
-                    className="w-full aspect-square object-cover opacity-80 mix-blend-multiply"
+                    alt="..."
+                    loading="lazy"
+                    className="w-full aspect-square object-cover mix-blend-multiply"
                   />
                 </motion.div>
 
@@ -101,7 +93,8 @@ const ProjectsSection = () => {
                 >
                   <img
                     src={project.subImage2}
-                    alt=""
+                    alt="..."
+                    loading="lazy"
                     className="w-full aspect-square object-cover grayscale"
                   />
                 </motion.div>
@@ -123,11 +116,15 @@ const ProjectsSection = () => {
                   <p className="text-gray-400 text-sm md:text-[15px] mb-8 md:mb-10 leading-[1.8] font-SatoshiSec max-w-lg selection:text-black selection:bg-white">
                     {project.description}
                   </p>
-                  <Link to="/Explore">
+                  <a
+                    href={project.src}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <button className="border border-white/30 px-6 md:px-8 py-3 md:py-4 uppercase tracking-[0.15em] md:tracking-[0.2em] text-[10px] md:text-xs font-bold hover:bg-DarkRed hover:border-DarkRed hover:text-white transition-all duration-300 w-fit cursor-pointer">
                       View Project
                     </button>
-                  </Link>
+                  </a>
                 </motion.div>
               </div>
             </div>

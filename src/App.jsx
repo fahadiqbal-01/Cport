@@ -42,9 +42,7 @@ function App() {
       wrapper: "#smoothWrapper",
       content: "#smoothContent",
       smooth: 1,
-      onUpdate: (self) => {
-        // Optional: add custom logic on scroll
-      },
+      onUpdate: (self) => {},
     });
 
     return () => {

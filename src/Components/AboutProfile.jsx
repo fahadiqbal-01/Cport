@@ -30,7 +30,6 @@ const itemVariants = {
 export const AboutProfile = () => {
   return (
     <section className="bg-white overflow-hidden">
-      {/* Top Bio Section */}
       <Container className="pt-10 pb-10 sm:pt-12 sm:pb-12 md:pt-16 md:pb-16 px-4 sm:px-6">
         <motion.div
           variants={containerVariants}
@@ -39,22 +38,20 @@ export const AboutProfile = () => {
           viewport={{ once: true, margin: "-50px" }}
           className="flex flex-col lg:flex-row gap-12 sm:gap-16 lg:gap-24 items-center justify-between"
         >
-          {/* Left Column: Image & Quick Info */}
           <motion.div
             variants={itemVariants}
             className="w-full lg:w-5/12 flex flex-col items-center lg:items-start relative"
           >
             <div className="relative group mt-4 sm:mt-8 lg:mt-0 w-[85%] max-w-[280px] sm:max-w-[350px] mx-auto lg:mx-0">
-              {/* Decorative Offset Background */}
               <div className="absolute inset-0 bg-DarkRed/5 translate-x-3 sm:translate-x-4 translate-y-3 sm:translate-y-4 rounded-xl -z-10 transition-transform duration-500 group-hover:translate-x-5 sm:group-hover:translate-x-6 group-hover:translate-y-5 sm:group-hover:translate-y-6"></div>
 
               <img
                 src="image/f3.PNG"
                 alt="Fahad Iqbal"
+                loading="lazy"
                 className="w-full rounded-xl shadow-xl object-cover"
               />
 
-              {/* Floating badge */}
               <div className="absolute -bottom-4 sm:-bottom-6 -left-4 sm:-left-10 bg-white p-4 sm:p-5 rounded-2xl shadow-2xl border border-black/5 z-10 transition-transform duration-500 group-hover:-translate-y-2 max-w-[calc(100%+32px)]">
                 <h1 className="font-Satoshi font-bold text-DarkRed text-base sm:text-lg md:text-xl truncate">
                   Fahad Iqbal
@@ -70,7 +67,6 @@ export const AboutProfile = () => {
             </div>
           </motion.div>
 
-          {/* Right Column: Bio */}
           <motion.div
             variants={itemVariants}
             className="w-full lg:w-7/12 mt-12 sm:mt-16 lg:mt-0 text-center lg:text-left selection:bg-DarkRed selection:text-white px-2 sm:px-0"
@@ -96,10 +92,8 @@ export const AboutProfile = () => {
       </Container>
 
       <Core />
-      {/* Marquee Section */}
       <LeftSlideSec />
 
-      {/* Education & Experience Section */}
       <Container className="py-10 sm:py-16 md:py-20 px-4 sm:px-6">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -176,9 +170,9 @@ export const AboutProfile = () => {
                   Freelance Web Developer
                 </h1>
                 <p className="font-SatoshiSec text-gray-600 mt-2 sm:mt-4 leading-relaxed text-xs sm:text-sm md:text-base">
-                  Designed and developed websites and landing pages for local
-                  clients. Handled client briefs, revisions, and final delivery
-                  end to end.
+                  Designed and developed websites for local clients, including
+                  portfolios, business sites, and agency websites. Handled
+                  client briefs, revisions, and final delivery end to end.
                 </p>
               </div>
 

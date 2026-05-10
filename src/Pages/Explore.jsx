@@ -4,6 +4,7 @@ import ContainerSec from "../Components/ContainerSec";
 import { easeOut, motion, AnimatePresence } from "motion/react";
 import { useLocation } from "react-router-dom";
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
+import GallerySec from "../Components/GallerySec";
 
 const Explore = () => {
   const location = useLocation();
@@ -57,10 +58,12 @@ const Explore = () => {
                   }}
                   className="text-[20px] font-Satoshi text-center mt-[10px] selection:text-white selection:bg-black"
                 >
-                  Discover the creative works that showcase my skills and passion.
+                  Discover the creative works that showcase my skills and
+                  passion.
                 </motion.p>
               </div>
             </ContainerSec>
+            <GallerySec />
             <Gallery />
           </motion.div>
         )}

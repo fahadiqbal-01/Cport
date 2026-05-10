@@ -13,8 +13,17 @@ const SKILLS = [
   "JavaScript",
   "GSAP",
   "Adobe Suite",
-  "Three.js",
   "Git",
+  "Flowbite",
+  "Mui",
+  "Github",
+  "Node.js",
+  "Redux Toolkit",
+  "API Integration",
+  "Built AI-powered features in apps",
+  "Used Claude/ChatGPT/Gemini APIs to integrate LLM into products",
+  "Prompt engineering for specific workflow",
+  "Built artifcats powered by LLM APIs",
 ];
 
 const containerVariants = {
