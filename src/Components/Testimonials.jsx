@@ -5,17 +5,17 @@ import Container from "./Container";
 const testimonials = [
   {
     quote:
-      "Fahad delivered a high-quality landing page for our startup in record time. His attention to detail in the UI is exceptional.",
-    author: "Alex Rivera",
-    role: "Founder, TechFlow",
-    initials: "AR",
+      "Built our complete e-commerce platform — product catalog, cart, checkout, and admin dashboard. The site handles daily transactions smoothly, customers love the navigation, and it was delivered on time and within budget.",
+    author: "MD. Saikat Sikder",
+    role: "Founder, Gachpala",
+    initials: "MS",
   },
   {
     quote:
       "The visual content created for our brand was stunning. He perfectly captured our vision and translated it into a clear, engaging experience.",
-    author: "Sarah Chen",
+    author: "MD. Khan Bahadur",
     role: "Marketing Director, CreativeCo",
-    initials: "SC",
+    initials: "MK",
   },
   {
     quote:
