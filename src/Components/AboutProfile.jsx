@@ -63,6 +63,7 @@ export const AboutProfile = () => {
                 <p className="font-SatoshiSec text-[11px] sm:text-xs md:text-sm text-gray-600 mt-0.5 sm:mt-1 truncate">
                   UI/UX Designer
                 </p>
+                <a href=""></a>
               </div>
             </div>
           </motion.div>
@@ -186,7 +187,7 @@ export const AboutProfile = () => {
                   EDGE Training Program
                 </h1>
                 <p className="font-SatoshiSec text-gray-600 mt-2 sm:mt-4 leading-relaxed text-xs sm:text-sm md:text-base">
-                  Web Development Trainee. Gained practical experience in modern
+                  Web Development Trainer. Gained practical experience in modern
                   web technologies and deployment workflows.
                 </p>
               </div>
