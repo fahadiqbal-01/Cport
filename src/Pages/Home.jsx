@@ -21,7 +21,7 @@ const Home = () => {
     <>
       {isLoading ? (
         <div className="flex justify-center items-center min-h-screen ">
-          <DotLottieReact src="json/hello.lottie" loop autoplay />
+          <DotLottieReact src="json/hello.lottie" loop autoplay className=" max-w-[80%] " />
         </div>
       ) : (
         <section className="overflow-x-hidden">
