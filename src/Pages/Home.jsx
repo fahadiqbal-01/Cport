@@ -20,7 +20,7 @@ const Home = () => {
   return (
     <>
       {isLoading ? (
-        <div className="flex justify-center items-center">
+        <div className="flex justify-center items-center min-h-screen ">
           <DotLottieReact src="json/hello.lottie" loop autoplay />
         </div>
       ) : (
