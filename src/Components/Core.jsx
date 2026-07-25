@@ -16,7 +16,6 @@ const SKILLS = [
   "Figma",
   "Firebase",
   "RESTful API",
-
   "JavaScript",
   "GSAP",
   "Adobe Suite",
