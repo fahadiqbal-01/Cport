@@ -181,7 +181,7 @@ export const AboutProfile = () => {
               <div className="relative pl-6 sm:pl-8 md:pl-10 pb-2 group">
                 <div className="absolute w-2.5 h-2.5 sm:w-3 sm:h-3 bg-black/20 rounded-full top-1.5 left-0 -translate-x-[50%] group-hover:bg-black/40 transition-colors duration-300"></div>
                 <h2 className="font-SatoshiSec text-gray-500 text-[10px] sm:text-[11px] font-bold uppercase tracking-widest mb-1">
-                  Sep 2024 – Mar 2025
+                  Mar 2024 – June 2025
                 </h2>
                 <h1 className="font-Satoshi font-bold text-[16px] sm:text-[18px] md:text-[20px] text-black leading-tight sm:leading-normal">
                   EDGE Training Program

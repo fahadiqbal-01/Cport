@@ -43,7 +43,7 @@ export const HireMeNow = () => {
     if (!email.includes("@") || !email.endsWith(".com")) {
       toast("Please enter a valid email address", {
         position: "bottom-right",
-        autoClose: 3000,
+        autoClose: 4000,
         theme: "colored",
       });
       return;

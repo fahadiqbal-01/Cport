@@ -12,7 +12,7 @@ const projects = [
     mainImage: "hisab/3.png",
     subImage1: "hisab/2.png",
     subImage2: "hisab/1.png",
-    src: "https://hisabhere.vercel.app/",
+    src: "https://hisab.lazystudio.co/sign-up",
     reverse: false,
   },
   {
